@@ -1,0 +1,48 @@
+@import "../../../../styles/vars.scss";
+.feedback-comment-card {
+	justify-content: center;
+}
+
+.feedback-comment-card__header-title {
+	margin-top: 24px;
+	color: $whiteColor;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	text-align: center;
+}
+.feedback-comment-card__header-title p {
+	margin-bottom: 5px;
+}
+
+.feedback-comment-card__description {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.feedback-comment-card__description-review {
+	margin-top: 1.5rem;
+	width: 13.75rem;
+	height: 5rem;
+	line-height: 19px;
+	outline: none;
+	border: none;
+	background-color: transparent;
+	color: $whiteColor;
+	resize: none;
+}
+
+.feedback-comment-card__description-review::placeholder {
+	font-size: 1.0625rem;
+	font-weight: bold;
+	line-height: 20px;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.feedback-comment-card__err-message {
+	padding: 0 10px;
+	font-size: 12px;
+	line-height: 16px;
+	color: $minorNoticeColor;
+}

@@ -1,0 +1,51 @@
+@import '../../../styles/vars.scss';
+@import '../../../styles/modal.scss';
+@include modal-wrap;
+
+.mentorsWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 1223;
+}
+
+.blocksPrice-modal {
+	@include modal-mixin;
+}
+
+.icon-salary {
+	filter: hue-rotate(265deg) brightness(200%);
+	margin: 1rem;
+	width: 35px;
+	height: 35px;
+	margin-left: 40px;
+	margin-top: 25px;
+}
+
+.mentor-container {
+	display: flex;
+	padding: 10px;
+	width: 90vw;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.mentor-resetBtn {
+	border: 1px solid $lightRedColor;
+	border-radius: 50%;
+}
+
+.mentor-name {
+	width: 20%;
+}
+
+.mentors-title {
+	display: flex;
+}
+
+.mentors-heading {
+	justify-content: center;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	color: $whiteColor;
+}

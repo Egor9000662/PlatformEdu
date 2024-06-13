@@ -1,0 +1,79 @@
+@import "./vars.scss";
+
+@mixin modal-mixin {
+	color: $whiteColor;
+	.ant-modal-content {
+		margin: 8px;
+		background-color: rgba(146, 212, 241, 0.3);
+		box-shadow: inset 7px 0px 35px 0px #92d4f17e;
+		clip-path: polygon(
+			7% 0,
+			93% 0,
+			100% 7%,
+			100% 93%,
+			93% 100%,
+			7% 100%,
+			0 93%,
+			0 7%
+		);
+	}
+	.ant-modal-body  {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.primary {
+		padding: 0.625rem 2.5rem;
+		border: 3px solid $whiteColor;
+	}
+	.ant-modal-close-x {
+		margin-top: 7px;
+		margin-right: 12px;
+		color: $whiteColor;
+	}
+
+	.ant-modal-close  {
+		box-shadow: none;
+		color: $whiteColor;
+	}
+
+	.ant-modal-footer {
+		display: flex;
+		justify-content: center;
+		padding-bottom: 24px;
+	}
+
+	.ant-modal-header{
+		padding-top: 24px;
+	}
+
+	.ant-modal-header,
+	.ant-modal-body,
+	.ant-modal-footer {
+		background: none;
+		border: none;
+		color: $whiteColor;
+	}
+
+	.ant-modal-title {
+		text-align: center;
+		font-weight: 700;
+		font-size: 1.3rem;
+		color: $whiteColor;
+	}
+
+	.ant-modal-wrap {
+		background-color: #0e163dd5;
+	}
+
+	.ant-btn:hover {
+		color: $whiteColor;
+		border-color: #fff;
+	}
+}
+
+@mixin  modal-wrap {
+	.ant-modal-wrap {
+	background-color: #0e163dd5;
+}
+}

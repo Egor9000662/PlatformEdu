@@ -1,0 +1,199 @@
+{
+    "block": {
+        "ac34410b-7540-4e46-ba20-9be81edb14da": {
+            "role": "reader",
+            "value": {
+                "id": "ac34410b-7540-4e46-ba20-9be81edb14da",
+                "version": 29,
+                "type": "page",
+                "properties": {
+                    "@Kl:": [
+                        [
+                            "тема"
+                        ]
+                    ],
+                    "title": [
+                        [
+                            "тема 1"
+                        ]
+                    ]
+                },
+                "content": [
+                    "272bb171-699b-4afc-a2df-78cc020aa122"
+                ],
+                "created_time": 1628607023284,
+                "last_edited_time": 1628607360000,
+                "parent_id": "e790d4c3-7e2d-4a4b-b549-47e87110dd38",
+                "parent_table": "collection",
+                "alive": true,
+                "created_by_table": "notion_user",
+                "created_by_id": "3409730b-39b9-4403-91b5-98a321836b6c",
+                "last_edited_by_table": "notion_user",
+                "last_edited_by_id": "3409730b-39b9-4403-91b5-98a321836b6c",
+                "space_id": "4730ce00-73c2-449e-949b-0b4e110587c3"
+            }
+        },
+        "85299087-bc29-48b2-b93a-235841b585bf": {
+            "role": "reader",
+            "value": {
+                "id": "85299087-bc29-48b2-b93a-235841b585bf",
+                "version": 13,
+                "type": "collection_view_page",
+                "view_ids": [
+                    "fc0a2bcb-ea07-4e49-ac45-93434ad1e4e2"
+                ],
+                "collection_id": "e790d4c3-7e2d-4a4b-b549-47e87110dd38",
+                "format": {
+                    "collection_pointer": {
+                        "id": "e790d4c3-7e2d-4a4b-b549-47e87110dd38",
+                        "table": "collection",
+                        "spaceId": "4730ce00-73c2-449e-949b-0b4e110587c3"
+                    }
+                },
+                "permissions": [
+                    {
+                        "role": "reader",
+                        "type": "public_permission",
+                        "added_timestamp": 1628607058792,
+                        "allow_duplicate": false
+                    },
+                    {
+                        "role": "read_and_write",
+                        "type": "bot_permission",
+                        "bot_id": "07c7ce05-bcd0-40b6-86d1-fb34ded09f32"
+                    }
+                ],
+                "created_time": 1628607023284,
+                "last_edited_time": 1628607480000,
+                "parent_id": "a201cd8e-e9e6-4114-bdb9-dd6947a91d6c",
+                "parent_table": "block",
+                "alive": true,
+                "created_by_table": "notion_user",
+                "created_by_id": "3409730b-39b9-4403-91b5-98a321836b6c",
+                "last_edited_by_table": "notion_user",
+                "last_edited_by_id": "3409730b-39b9-4403-91b5-98a321836b6c",
+                "space_id": "4730ce00-73c2-449e-949b-0b4e110587c3"
+            }
+        },
+        "272bb171-699b-4afc-a2df-78cc020aa122": {
+            "role": "reader",
+            "value": {
+                "id": "272bb171-699b-4afc-a2df-78cc020aa122",
+                "version": 57,
+                "type": "text",
+                "properties": {
+                    "title": [
+                        [
+                            "Тут будет вся информация о плане курса!"
+                        ]
+                    ]
+                },
+                "created_time": 1628607360000,
+                "last_edited_time": 1628607360000,
+                "parent_id": "ac34410b-7540-4e46-ba20-9be81edb14da",
+                "parent_table": "block",
+                "alive": true,
+                "created_by_table": "notion_user",
+                "created_by_id": "3409730b-39b9-4403-91b5-98a321836b6c",
+                "last_edited_by_table": "notion_user",
+                "last_edited_by_id": "3409730b-39b9-4403-91b5-98a321836b6c",
+                "space_id": "4730ce00-73c2-449e-949b-0b4e110587c3"
+            }
+        }
+    },
+    "collection": {
+        "e790d4c3-7e2d-4a4b-b549-47e87110dd38": {
+            "role": "reader",
+            "value": {
+                "id": "e790d4c3-7e2d-4a4b-b549-47e87110dd38",
+                "version": 30,
+                "name": [
+                    [
+                        "Тестовая таблицы"
+                    ]
+                ],
+                "schema": {
+                    "@Kl:": {
+                        "name": "Tags",
+                        "type": "select",
+                        "options": [
+                            {
+                                "id": "31900e8a-d0c3-44e8-bdfa-f90ec8eb1b68",
+                                "color": "blue",
+                                "value": "тема"
+                            },
+                            {
+                                "id": "ed5a0ab1-9760-42d1-8349-df7af1210e05",
+                                "color": "yellow",
+                                "value": "тест"
+                            }
+                        ]
+                    },
+                    "title": {
+                        "name": "Name",
+                        "type": "title"
+                    }
+                },
+                "format": {
+                    "collection_page_properties": [
+                        {
+                            "visible": true,
+                            "property": "@Kl:"
+                        }
+                    ]
+                },
+                "parent_id": "85299087-bc29-48b2-b93a-235841b585bf",
+                "parent_table": "block",
+                "alive": true,
+                "migrated": true,
+                "space_id": "4730ce00-73c2-449e-949b-0b4e110587c3"
+            }
+        }
+    },
+    "collection_view": {
+        "fc0a2bcb-ea07-4e49-ac45-93434ad1e4e2": {
+            "role": "reader",
+            "value": {
+                "id": "fc0a2bcb-ea07-4e49-ac45-93434ad1e4e2",
+                "version": 1,
+                "type": "table",
+                "name": "Default view",
+                "format": {
+                    "table_wrap": true,
+                    "table_properties": [
+                        {
+                            "width": 276,
+                            "visible": true,
+                            "property": "title"
+                        },
+                        {
+                            "visible": true,
+                            "property": "@Kl:"
+                        }
+                    ]
+                },
+                "parent_id": "85299087-bc29-48b2-b93a-235841b585bf",
+                "parent_table": "block",
+                "alive": true,
+                "page_sort": [
+                    "ac34410b-7540-4e46-ba20-9be81edb14da",
+                    "183edad2-6fb6-4614-8ee3-e9ae15cd0eda",
+                    "2a090272-e399-4c6a-92a8-3bfd3e807dc3"
+                ],
+                "query2": {
+                    "aggregations": [
+                        {
+                            "property": "title",
+                            "aggregator": "count"
+                        }
+                    ]
+                },
+                "space_id": "4730ce00-73c2-449e-949b-0b4e110587c3"
+            }
+        }
+    },
+    "space": {},
+    "notion_user": {},
+    "collection_query": {},
+    "signed_urls": {}
+}

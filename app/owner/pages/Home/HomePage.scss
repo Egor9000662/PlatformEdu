@@ -1,0 +1,36 @@
+.home-container {
+    width: 100%;
+}
+
+.home-controls {
+    width: 90%;
+    margin: 0 auto;
+	padding: 20px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    position: relative;
+}
+
+.logoutbtn-wrapper {
+	display: flex;
+	justify-content: flex-end;
+	position: absolute;
+	right: 0;
+	top: 20px;
+}
+
+.home-content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#divider {
+    border:#fff;
+}
+
+#divider-text {
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+}

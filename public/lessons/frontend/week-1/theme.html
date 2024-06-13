@@ -1,0 +1,731 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Неделя 1 </title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+</style></head><body><article id="f498fb31-4aca-4466-9b12-f3e8295bd672" class="page sans">
+	<header>
+	<h1 class="page-title">Неделя 1 </h1>
+</header>
+	<div class="page-body">
+		<h2 id="bc1a8ba0-599e-4303-917c-71af0d53c172" class="">Введение в курс</h2>
+		<hr id="d32d196d-e327-40bb-8ea4-81874e65812b"/>
+		<figure id="b541bd57-e499-4c5b-907d-1a38579e9b65">
+			<div class="source">
+				<a href="https://youtu.be/HZ2qsn5fNQo">https://youtu.be/HZ2qsn5fNQo</a>
+			</div>
+		</figure><p id="879c4e65-7942-45b3-9241-2cfd7bbc6a95" class="">
+</p><h2 id="627d957d-8233-47fa-90bf-d474d2df9f06" class="">Знакомство с инструментами</h2><hr id="f0e6b014-09b3-4852-8485-6ea24465c23a"/><p id="66c5842f-a2c5-4b34-a9eb-1aeb89d83173" class="">Видеоурок: </p><figure id="b0b8b71f-42c6-41b4-b6f2-194fc4a2e661"><div class="source"><a href="https://youtu.be/i_zAy1lVVHg">https://youtu.be/i_zAy1lVVHg</a></div></figure><p id="0f20d760-ee90-4ff0-8936-93dd052fa5b3" class="">Для того, чтобы успешно заниматься разработкой и участвовать в курсе нам понадобится ряд специальных программ и инструментов:</p><ol type="1" id="077a4166-3e0a-4e1a-a6c1-0c25dcfe367e" class="numbered-list" start="1"><li><a href="https://slack.com/intl/en-ru/downloads/mac?geocode=en-ru">Slack</a> - это мессенджер, в котором обычно общаются программисты и проектные команды. Инструкция по использованию - <a href="https://yadi.sk/i/WJa_Qp4VtN1Kkg">по ссылке</a>.</li></ol><ol type="1" id="badc0dca-512f-419c-b80c-b2f9b579e97b" class="numbered-list" start="2"><li><a href="https://git-scm.com/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-Git">Git</a> - устанавливаем для своей операционной системы (если сразу не получилось - ничего страшного, он нам понадобится только на 4й неделе)</li></ol><ol type="1" id="ccc02ac0-f5ec-4f97-beb0-ac64ecb801a4" class="numbered-list" start="3"><li><a href="https://github.com/">GitHub</a> - пока просто регистрируемся</li></ol><ol type="1" id="ec9d92b1-9dd6-49d6-9933-a16a7c87404f" class="numbered-list" start="4"><li>Браузеры (ставим в зависимости от возможностей своей ОС)<ul id="b957cbe5-764a-4b80-8c8f-fb7a99eda5bd" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.google.ru/intl/ru/chrome/">Google Chrome</a></li></ul><ul id="7e1bde84-b71e-4aca-8dc2-beb281eb9019" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.mozilla.org/ru/firefox/">Mozilla Firefox</a></li></ul><ul id="67537804-f635-45da-94e4-117f9c26fb76" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.microsoft.com/ru-ru/windows/microsoft-edge">Microsoft Edge</a></li></ul></li></ol><ol type="1" id="d9b2f3d0-d6ed-4b31-9b22-ec19050fb671" class="numbered-list" start="5"><li>Dev Tools F12 (встроены в браузер, устанавливать не надо)</li></ol><ol type="1" id="21202fc6-8fdf-4178-a943-24f6cf0467dd" class="numbered-list" start="6"><li>Графический редактор <a href="https://www.figma.com/downloads/">Figma</a> (альтернативы <a href="https://www.adobe.com/ru/products/photoshop.html">Adobe Photoshop, </a><a href="https://www.adobe.com/ru/products/illustrator.html">Adobe Illustrator, </a><a href="https://www.sketchapp.com/">Sketch</a>, Adobe XD, Zeplin)</li></ol><ol type="1" id="a8720112-e804-4fcc-bb47-a0162b1653a5" class="numbered-list" start="7"><li><a href="https://trello.com/">Trello</a>  - пока просто регистрируемся</li></ol><ol type="1" id="23c03791-b622-45c9-a6e5-dd0f3cc8cb18" class="numbered-list" start="8"><li>Удаленное управление компьютером (сразу не ставим, но на случай если вдруг что-то не заработает и будет нужна наша помощь) от <a href="https://remotedesktop.google.com/support">Google</a> </li></ol><ol type="1" id="830ae1a5-19d7-438c-89ac-91a6cd6a4875" class="numbered-list" start="9"><li>И самое главное - редактор кода <a href="https://code.visualstudio.com/download">VS Code</a> (альтернативы - WebStorm и Atom)<ul id="1052ec9f-e649-4823-98dc-68785d13d9a2" class="bulleted-list"><li style="list-style-type:disc">Обзор функционала </li></ul><figure id="33dc9af0-f1e5-4a2b-8223-3ea451430864"><div class="source"><a href="https://youtu.be/oi0z2xceOoo">https://youtu.be/oi0z2xceOoo</a></div></figure><ul id="db68ab1a-588e-42d2-8108-361b65293fbf" class="bulleted-list"><li style="list-style-type:disc"> Горячие клавиши<pre id="4f2b3f01-5312-4aa2-87d9-50138c30c3c0" class="code"><code>Ctrl+C Копировать
+Ctrl+V Вставить
+Ctrl+A Выделить все
+Ctrl+G Перейти к строке под номером ...
+F2 Переименовать переменную
+F12 Перейти к переменной
+Alt+Z Включить/выключить перенос слов
+Shift+Alt+F либо Ctrl+B Красиво отформатировать код
+Ctrl+Shift+P Поиск по командам внутри редактора</code></pre></li></ul><ul id="781c9c75-4a51-424b-a3ad-a71a47d8f607" class="toggle"><li><details open=""><summary>Дополнения к VS Code</summary><ul id="4a688a37-ccf7-4bc7-9e3a-942a3b0f0dd0" class="bulleted-list"><li style="list-style-type:disc">Для удобной работы с системой контроля версий Git можно добавить плагины <a href="https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory">Git History</a> и <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens">GitLens</a>.</li></ul><ul id="ef892eef-54c8-4e4a-a759-c033d381204b" class="bulleted-list"><li style="list-style-type:disc"><a href="https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync">Settings Sync</a> — синхронизирует настройки и установленные плагины между программами на разных компьютерах</li></ul><ul id="b4899cc9-6fd2-426f-8775-6900bc62fad6" class="bulleted-list"><li style="list-style-type:disc"><a href="https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer">Bracket Pair Colorizer</a> и <a href="https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow">Indent Rainbow</a> - удобные скобки и подсветка вложенности</li></ul><ul id="f1a5e53f-ef58-4d4e-a865-2c2a438b216d" class="bulleted-list"><li style="list-style-type:disc"><a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag">Auto Close Tag</a> и <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag">Auto Rename Tag</a> - авто переименование и автозакрытие тегов</li></ul><ul id="94dd4918-9a98-4496-92af-afc9269f97a4" class="bulleted-list"><li style="list-style-type:disc"><a href="https://marketplace.visualstudio.com/items?itemName=SirTori.indenticator">Indenticator</a> - подсветка отступов</li></ul><ul id="3c2fdc36-178f-48d6-a528-c94e23c589ea" class="bulleted-list"><li style="list-style-type:disc"><a href="https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons">Vscode-icons</a> — заменяет стандартные иконки файлов</li></ul><ul id="b2c1d8a3-415e-429c-92d4-2e0a3e6b67ca" class="bulleted-list"><li style="list-style-type:disc"><a href="https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion">IntelliSense for CSS class names in HTML</a> - для подсказок имен стилей</li></ul><ul id="e2c36bcf-d7b9-4ad5-a22b-8e173424d9bb" class="bulleted-list"><li style="list-style-type:disc"><a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live server</a> - нужен для автоматического обновления страницы в браузере после редактирования. Для запуска нажимаем<em> Ctrl + Shift + P, </em>вводим в поиске команду “Live Server: Open with Live Server” и выбираем её.</li></ul><ul id="5532f487-c476-4be8-98df-7593a8aaede0" class="bulleted-list"><li style="list-style-type:disc">Emmet - включен по умолчанию, работает как автозамена</li></ul></details></li></ul><ul id="b539cd28-9cd5-41bf-8b37-b0c17aa155c5" class="bulleted-list"><li style="list-style-type:disc">Настройки<pre id="99830bdd-f470-4dc8-a2e0-9f095553634c" class="code"><code>File -&gt; Preferences -&gt; settings
+&quot;editor.formatOnSave&quot;: &quot;true&quot;
+&quot;files.autoSave&quot;: &quot;onFocusChange&quot;</code></pre><p id="01452367-6430-411e-aafd-db76d30bbda2" class="">
+</p></li></ul><p id="9c806bb2-bcd9-4b9a-abb0-92c67dc44693" class="">Для качественного отображения структуры вашего проекта, существует дополнительная настройка проводника:</p><figure id="6b83bfe0-5951-4eef-b7a4-60e69a1db0e3" class="image"><a href="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%201%20f498fb314aca44669b12f3e8295bd672/Untitled.png"><img style="width:263px" src="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%201%20f498fb314aca44669b12f3e8295bd672/Untitled.png"/></a></figure><p id="2321caa6-87a5-4384-9427-f4969959f67e" class="">На данную панель вы нажимаете правой кнопкой мыши , и выставляете вот такие настройки:</p><figure id="0f7bcb84-4495-4108-ad59-0e965134f14b" class="image"><a href="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%201%20f498fb314aca44669b12f3e8295bd672/Untitled%201.png"><img style="width:306px" src="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%201%20f498fb314aca44669b12f3e8295bd672/Untitled%201.png"/></a></figure></li></ol><h2 id="360b1557-0b47-48e4-8a3f-837c33bed9fb" class="">Основы HTML - создания веб-страниц</h2><hr id="1b2e1e93-e889-4dea-abe2-d07e77cf122a"/><figure id="d80a3690-3c58-472a-b9f1-ad4875ccd740"><div class="source"><a href="https://youtu.be/vxjC4usxz5U">https://youtu.be/vxjC4usxz5U</a></div></figure><p id="e8c6c2b2-d3c0-48ab-8882-af94560894db" class="">Ссылка на программный код страницы из урока: <a href="https://github.com/itgirlschool/frontend/blob/master/week1/index.html">https://github.com/itgirlschool/frontend/blob/master/week1/index.html</a></p><h2 id="a08518df-3b6d-43c4-97af-39cfd7bed66b" class=""><strong>Что такое теги</strong></h2><p id="55ce8437-fef1-48f8-9f48-3be8c2ad1c1a" class=""><strong>Тег</strong> - это специальный код для создания элементов веб-страницы, например</p><p id="3b964f62-99ae-4b28-aa07-08fb195342fb" class=""><code>&lt;h1&gt;Hello&lt;/h1&gt;</code> - это тег заголовка 1-го уровня</p><p id="79f5ddf2-5a71-4c23-9417-c2a84457ab08" class="">Где <code>&lt;h1&gt;</code> - это открывающий тег, а <code>&lt;/h1&gt;</code> - закрывающий, а внутри - текст, который мы хотим включить в этот тег (то есть, сделать заголовком).</p><p id="5082ea77-59ee-466c-857b-4ce471141ccb" class="">Теги пишем в низком регистре: правильно <code>&lt;p&gt;&lt;/p&gt;</code>, но не <code>&lt;P&gt;&lt;/P&gt;</code>.</p><p id="35da3a66-a401-4520-b647-c15cdcc8da23" class="">Теги бывают парные и одиночные, вложенные и нет, а также они могут иметь, либо не иметь атрибуты.</p><p id="824f25e3-8e8f-46a4-80d0-852a4e9ad7b1" class=""><strong>Атрибут</strong> - это дополнительное свойство внутри тега, которое влияет на его параметры - например, тип тега, его отображение, адрес картинки и пр. Атрибуты пишутся внутри тега через пробел.</p><p id="419903af-8f27-4dfe-aa14-b2782385d7d2" class="">Вот примеры возможных тегов:</p><pre id="450f7493-b554-424a-b683-2cd8b4d7a192" class="code"><code>&lt;html&gt; &lt;body&gt; &lt;section&gt; &lt;article&gt; &lt;div&gt;
+&lt;h1&gt; &lt;nav&gt; &lt;ul&gt; &lt;ol&gt; &lt;li&gt; &lt;p&gt; &lt;a&gt;
+&lt;img&gt; &lt;video&gt; &lt;audio&gt;
+&lt;form&gt; &lt;input&gt; &lt;button&gt; &lt;label&gt;
+&lt;!-- А я комментарий! --&gt;</code></pre><ul id="0d34e58c-e1c9-43e9-a15b-a3a4f5b88d57" class="toggle"><li><details open=""><summary><strong>Основные теги</strong></summary><ul id="ac853c3e-7f64-4274-b076-46a258f6d56b" class="toggle"><li><details open=""><summary>Заголовки <strong>h1, h2... h6</strong></summary><p id="9a57370e-3034-4cc7-9888-a7242dc428f0" class="">Используется для заголовков разных уровней (h1 - самый большой, h6 - самый маленький)</p><p id="fe3578d1-cd21-4c81-9ed6-8ada88c6f667" class=""><code>&lt;h1&gt;Самый большой заголовок&lt;/h1&gt;</code> </p><p id="73cb4f07-dab1-44d7-aa7e-1779b8d4dd7e" class=""><code>&lt;h2&gt;Заголовок поменьше&lt;/h2&gt;</code> </p><p id="183383c8-aca1-406f-aa12-3c609a3d06ec" class=""><code>&lt;h3&gt;Еще меньше&lt;/h3&gt;</code> </p><p id="6951ce44-4762-48fe-ab2a-165d54f1783c" class="">...</p><p id="6dab6321-c32f-4568-b72e-f62589218fa6" class=""><code>&lt;h6&gt;Самый маленький заголовок&lt;/h6&gt;</code> </p><hr id="b8e7786b-4cd4-4084-b717-ddf1aba6525d"/></details></li></ul><ul id="f93c53f4-7292-49d5-9a11-9e727a62e5e4" class="toggle"><li><details open=""><summary>Параграф <strong>p</strong></summary><p id="107e84a9-71fe-42fa-9b00-51ee365219ad" class="">Используется для разметки параграфов</p><p id="a71140fe-4520-4790-93f3-5b1971905265" class=""><code>&lt;p&gt;Здесь пишем текст параграфа&lt;/p&gt;</code> </p></details></li></ul><ul id="d35981d3-db2a-47ce-8808-335feaca3b87" class="toggle"><li><details open=""><summary>Ссылка <strong>a</strong></summary><p id="84457a29-36b3-4344-b6dd-5fd8fa1b3cf8" class="">Используется для указания ссылок</p><p id="87b7b881-9f1b-4f69-ad28-2e127750846d" class=""><code>&lt;a href=&quot;а тут ссылка на нужную страничку&quot;&gt;нажми меня&lt;/a&gt;</code></p><p id="69b29c6b-a8c4-4456-81fa-aa9364099ed7" class=""><strong>href</strong> здесь - это атрибут, который содержит ссылку на страницу</p></details></li></ul><ul id="60d5a100-73c9-4dfa-9858-5094fc625bff" class="toggle"><li><details open=""><summary>Картинка <strong>img</strong></summary><p id="dcd2688c-cee8-42ea-8e58-27b8033c557c" class="">Размечает картинки</p><p id="bbeb92a4-e25e-49d8-9ed6-2fc4647fc1c4" class=""><code>&lt;img src=&quot;ссылка на картинку&quot; alt=&quot;описание картинки&quot;&gt;</code></p><p id="acdab15b-bd55-4045-b5cb-5a2817b36f5e" class="">Пример:</p><p id="09fd1be4-0673-4258-a940-163147350536" class=""><code>&lt;img src=&quot;cat.jpg&quot; alt=&quot;the cat&quot;&gt;</code></p><p id="c60c0f01-60e0-47f2-8e3b-eae9458713cb" class="">Атрибут <strong>alt</strong>-текст нужен для любого изображения, которое иллюстрирует или дополняет текст. Например, для изображений в теге <code>&lt;a&gt;</code>, если у ссылки нет текстового содержимого.</p><p id="599a56df-631a-4e04-b864-234b11fc6611" class="">Как его писать?</p><ul id="ed3aaf20-d7e1-4a22-b7db-ec5a689a8a97" class="bulleted-list"><li style="list-style-type:disc">Кратко и четко, желательно не более 125 символов. </li></ul><ul id="e3004544-57b5-432c-8eef-a9708147e340" class="bulleted-list"><li style="list-style-type:disc">Уникально, без повторений</li></ul><p id="042ebe33-c129-4eb2-8756-b4eb134b594a" class="">Часто картинка и ссылка используются вместе, например, так:</p><pre id="fa835188-ac8c-425c-a728-846f126564ae" class="code"><code>&lt;a href=&quot;/about&quot;&gt;
+  &lt;img src=&quot;about_button.jpg&quot; alt=&quot;О компании&quot;&gt;
+&lt;/a&gt;</code></pre></details></li></ul><ul id="01a30a21-b3b7-4c41-9ee6-5e2a67bfea1a" class="toggle"><li><details open=""><summary>Блок с переносом <strong>div</strong></summary><p id="b7d8dcd4-7a21-47fb-bffb-99edd6ac0faa" class="">Это один из самых часто используемых тегов в HTML, контейнер для большинства других элементов. Обычно срабатывает как блок с переносом строки.</p><p id="4962c959-f17c-4d1e-8427-df13d3f72fa5" class=""><code>&lt;div&gt;Тут может быть что угодно&lt;/div&gt;</code></p></details></li></ul><ul id="2d3092c2-1fe2-4781-93d3-e668adeb663d" class="toggle"><li><details open=""><summary>Блок без переноса <strong>span</strong></summary><p id="af0122c8-146a-423c-9066-61b32029d9ff" class="">Универсальный блок без переноса (обычно используется, когда надо выделить какое-то одно слово или маленький блок)</p><p id="37771302-b4c5-47dd-9291-7620bdf8595e" class=""><code>Здравствуйте, &lt;span&gt;Иван Иванович&lt;/span&gt;!</code></p></details></li></ul><ul id="2cbb9e1a-202c-4166-a3bf-eea46cc1da12" class="toggle"><li><details open=""><summary>Перенос строки <strong>br</strong></summary><p id="0b4f50d7-dba0-4edd-bb7b-85f7ce74dbd1" class="">Используется для принудительного переноса строки.</p><pre id="e644bdcd-e8ea-43bd-b04c-84203579af01" class="code"><code>Здесь&lt;br /&gt;
+будут&lt;br /&gt;
+переносы&lt;br /&gt;</code></pre></details></li></ul></details></li></ul><ul id="f957ae0c-e33e-4902-8398-679409b9095f" class="toggle"><li><details open=""><summary><strong>Теги списков</strong> <strong>ul, ol, li</strong></summary><p id="349e2bff-eef6-4b31-a899-0ec0104f41b9" class="">Эти теги используются для задания списков:</p><ul id="dd38c405-7c10-4eb5-a1ea-c2cfa68444fc" class="toggle"><li><details open=""><summary>маркированных</summary><pre id="9a81080d-0bf5-4c64-86ab-8b53f2277206" class="code"><code>&lt;ul&gt;
+&lt;li&gt;здесь&lt;/li&gt;
+&lt;li&gt;будет&lt;/li&gt;
+&lt;li&gt;список&lt;/li&gt;
+&lt;li&gt;с точечками&lt;/li&gt;
+&lt;/ul&gt;</code></pre><p id="8bda3ea9-fa16-4b06-a2a9-5565c88f144a" class="">Результат:</p><ul id="664249e7-48b4-4514-8121-9896843e680c" class="bulleted-list"><li style="list-style-type:disc">здесь</li></ul><ul id="34177423-e3df-4bab-96e5-2445e90529a2" class="bulleted-list"><li style="list-style-type:disc">будет</li></ul><ul id="878371a0-08bf-456c-b47c-4c87a8230420" class="bulleted-list"><li style="list-style-type:disc">список</li></ul><ul id="dfcdee70-08f5-49d2-aa34-db0d05a6a32f" class="bulleted-list"><li style="list-style-type:disc">с точечками</li></ul></details></li></ul><ul id="d576bf46-5b9f-46ac-ac6a-1799e8b0b687" class="toggle"><li><details open=""><summary>и нумерованных</summary><p id="b683ca9e-3ccf-4013-9550-bea8b7393f21" class="">Вот этот код:</p><pre id="ef84fbbf-42e4-4488-afb8-4d8be3841d7a" class="code"><code>&lt;ol&gt;
+&lt;li&gt;получится&lt;/li&gt;
+&lt;li&gt;список&lt;/li&gt;
+&lt;li&gt;с циферками&lt;/li&gt;
+&lt;/ol&gt;</code></pre><p id="e189a0cb-234f-4242-8b44-4b4c226505e5" class="">на странице станет выглядеть так:</p><ol type="1" id="5c121e5a-2294-40ab-91a6-a67245107262" class="numbered-list" start="1"><li>получится</li></ol><ol type="1" id="118be23c-f42e-4031-90c2-4d5da62887dc" class="numbered-list" start="2"><li>список</li></ol><ol type="1" id="5673b208-11d2-4502-ad2d-73288c1074fd" class="numbered-list" start="3"><li>с циферками</li></ol></details></li></ul></details></li></ul><ul id="6c10d8fa-af29-419e-a0e8-0ea832109042" class="toggle"><li><details open=""><summary><strong>Стилевые теги</strong></summary><p id="a422b544-6cbf-403c-997c-5e164b853a7c" class="">Используются для различного выделения текста:</p><pre id="137d705f-3e38-4fff-aeb8-e03bc29be1f5" class="code"><code>&lt;strong&gt;это важно!&lt;/strong&gt;
+&lt;em&gt;это тоже важно!&lt;/em&gt;
+&lt;i&gt;а это термин&lt;/i&gt;
+&lt;b&gt;а я просто жирный&lt;/b&gt;</code></pre><p id="5ce00310-a2c6-48b8-9ee0-4951a9baa671" class=""><em>&lt;i&gt;</em><strong> </strong>— дополнительное выделение (иностранные слова, термины) или просто курсив
+<em>&lt;em&gt;</em><strong> </strong>— эмоционально выделяем слово или фразу</p><p id="badce5ba-e9b3-471a-bfac-10ef7a1a98bc" class=""><strong>&lt;b&gt; </strong>— ключевые слова или просто жирное начертание</p><p id="521e52b5-6b8b-4d1f-98f2-12b8906d4a60" class=""><strong>&lt;strong&gt; </strong>— высокая важность (отображается как жирность)</p></details></li></ul><ul id="6f82027f-86a4-4ac8-9aaf-782be6594270" class="toggle"><li><details open=""><summary><strong>Теги структуры страницы</strong></summary><p id="b54e8dac-8a27-41ca-b123-f6572710300b" class="">Типовая страница структурно выглядит так:</p><figure id="53d78b10-5176-4dc6-a4df-af406243f1f4" class="image"><a href="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%201%20f498fb314aca44669b12f3e8295bd672/Untitled%202.png"><img style="width:336px" src="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%201%20f498fb314aca44669b12f3e8295bd672/Untitled%202.png"/></a></figure><p id="d3f6ea72-985f-40e9-a9ef-b17c707babf2" class="">Или в коде:</p><pre id="51603deb-f744-41be-9362-f22ce12a1ab0" class="code"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;ru&quot;&gt;
+&lt;head&gt;
+		&lt;link rel=&quot;shortcut icon&quot; href=&quot;/images/favicon.png&quot; type=&quot;image/png&quot;&gt;
+    &lt;title&gt;Я заголовок страницы&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    А я содержимое страницы
+&lt;/body&gt;
+&lt;/html&gt;</code></pre><p id="5c277265-5f44-4746-a285-0e0a09e90c82" class="">Расшифруем содержимое:</p><ul id="06094acb-74ff-4d52-8fcb-bf22b9f22ed2" class="toggle"><li><details open=""><summary><strong>DOCTYPE</strong></summary><pre id="00b9e109-9b1b-41b6-a857-063d0055cdb7" class="code"><code>&lt;!DOCTYPE html&gt; </code></pre><p id="0b9d4f1d-fd74-4aee-bf3d-b24e78a31485" class="">Первая строчка <code>&lt;!DOCTYPE html&gt;</code> нужна, чтобы браузер «не путался» и понимал, по какому стандарту отображать веб-страницу (а стандартов много разных, мы будем использовать HTML5 и именно для него мы всегда пишем <code>&lt;!DOCTYPE html&gt;</code> в самом начале).</p></details></li></ul><ul id="25a3b29e-06e4-47f3-b46a-86ff444c949d" class="toggle"><li><details open=""><summary><strong>html</strong></summary><pre id="79b84baa-f047-4330-9ec8-743ddab57c64" class="code"><code>&lt;html lang=&quot;ru&quot;&gt;</code></pre><p id="219fdd97-fd16-4711-8787-1e6b89b31352" class="">Дальше идет тег <code>&lt;html&gt; </code>- он является контейнером, который заключает в себе все содержимое веб-страницы. Теги <code>&lt;html&gt;</code> в документе необязательны, но хорошим стилем считается их использовать. Как правило, тег <code>&lt;html&gt;</code> идет в документе вторым, сразу после <code>&lt;!DOCTYPE&gt;</code>. Закрывающий тег <code>&lt;/html&gt;</code> должен всегда стоять в документе последним.</p></details></li></ul><ul id="f8867f96-9a7b-4eca-9cd6-01330616bce6" class="toggle"><li><details open=""><summary><strong>head</strong></summary><pre id="ea589bde-d40c-4d98-b174-255634885bac" class="code"><code>&lt;head&gt;
+		&lt;link rel=&quot;shortcut icon&quot; href=&quot;/images/favicon.png&quot; type=&quot;image/png&quot;&gt;
+    &lt;title&gt;Я заголовок страницы&lt;/title&gt;
+&lt;/head&gt;</code></pre><p id="b9917263-5b71-49d5-ae75-48b098977d77" class="">Затем идет блок &lt;head&gt; - он предназначен для заголовка страницы и технической информации. Здесь же мы указываем то, что относится к вкладке нашей страницы (иконку <code>&lt;link rel=&quot;shortcut icon&quot; ...&gt;</code> и заголовок вкладки <code>&lt;title&gt;</code>).</p><p id="7ba5a948-8d35-40cf-955a-b3b8e203bf8f" class="">Внутри <code>&lt;head&gt;</code> допускается размещать только следующие теги: </p><pre id="5ad35303-199e-418f-8d74-a5a7290a11cd" class="code"><code>&lt;base&gt;, &lt;basefont&gt;, &lt;bgsound&gt;, &lt;link&gt;, &lt;meta&gt;, &lt;script&gt;, &lt;style&gt;, &lt;title&gt;</code></pre></details></li></ul><ul id="1b8053c8-2d3a-4969-acae-7f2932de0f04" class="toggle"><li><details open=""><summary><strong>body</strong></summary><pre id="67fb56fc-9c5f-49a1-81a8-5061a1e7c1aa" class="code"><code>&lt;body&gt;
+    А я содержимое страницы
+&lt;/body&gt;</code></pre><p id="e3aa399a-812c-46e4-a1c7-1b58a6996694" class="">Блок <code>&lt;body&gt;</code> предназначен для хранения содержания страницы, которую мы видим в окне браузера. Всю информацию, которую мы хотим там увидеть, следует располагать именно внутри <code>&lt;body&gt;</code>. Это может быть текст, изображения, теги, скрипты JavaScript и т.д.</p><p id="a568589b-ff2c-4bad-80f5-50b63c850be3" class="">
+</p></details></li></ul></details></li></ul><ul id="73908684-4242-4ff9-83db-1119eca6bbb2" class="toggle"><li><details open=""><summary><strong>Атрибуты тегов</strong></summary><p id="8508c872-6ac8-4692-820f-8435b5a46479" class=""><strong>Атрибут тега</strong> добавляет в него некое свойство или настройку. Есть атрибуты, которые можно написать практически к любому тегу, например, <code>class</code> или <code>style</code>, а есть те, которые специфичны для конкретных тегов, например <code>&lt;img src=&quot;...&quot; alt=&quot;...&quot;&gt;</code></p></details></li></ul><ul id="794eced6-3c76-43ce-a4db-4f7cf70c0fd1" class="toggle"><li><details open=""><summary><strong>Комментарии</strong></summary><p id="6cdab2ac-2797-4f26-996b-bada710c07d2" class=""><code>&lt;!-- комментарии --&gt;</code> - это такие небольшие подсказки, которые мы оставляем сами для себя или для своих коллег, кто будет работать с этим же кодом. Они не влияют на структуру страницы, но помогают программистам лучше понять, что же здесь происходит (особенно важно, если ты возвращаешься к коду спустя много времени и успел забыть, о чем вообще там речь или почему было выбрано то или иное решение)</p><p id="171fe091-40fa-4bb8-9bcd-60b3d1509435" class="">
+</p></details></li></ul><p id="0eba8b2a-582a-46f6-84bb-de40ebbdc228" class="">Примеры:</p><figure id="26df6eaf-bb12-4d55-81a9-75464ace4c7d" class="image"><a href="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%201%20f498fb314aca44669b12f3e8295bd672/Untitled%203.png"><img style="width:1404px" src="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%201%20f498fb314aca44669b12f3e8295bd672/Untitled%203.png"/></a></figure><p id="b2c58ddf-757b-4368-a7b6-f38ff7a64907" class="">Тег <code>h1</code> - обозначает заголовок 1-ого порядка, может использоваться на странице только  один раз , остальные заголовки мы оборачиваем в теги <code>h2</code>-<code>h6</code> (их мы можем использовать на странице сколько нам потребуется).</p><figure id="90a36a57-2cfc-427f-8bad-3a1e56dc8f9b" class="image"><a href="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%201%20f498fb314aca44669b12f3e8295bd672/Untitled%204.png"><img style="width:1361px" src="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%201%20f498fb314aca44669b12f3e8295bd672/Untitled%204.png"/></a></figure><p id="ca831e86-bb42-422b-8c7f-5ad046dba7e0" class="">Тег <code>p</code> - отвечает у нас за параграф текста, в нем мы размещаем наш текст. Он не любит дочерних элементов внутри себя - за исключением стилевых тегов, тега <code>span</code>, а так же в редких случаях тега <code>a</code>.</p><figure id="20e0c018-84c8-48ef-8b3e-d2234be59ccf" class="image"><a href="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%201%20f498fb314aca44669b12f3e8295bd672/Untitled%205.png"><img style="width:1442px" src="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%201%20f498fb314aca44669b12f3e8295bd672/Untitled%205.png"/></a></figure><p id="2b78ea44-dba9-405c-8a7d-96402358b316" class="">Тег <code>div</code> - логическое создание блоков на странице, может объединять несколько тэгов в один блок. </p><figure id="8e421a82-b180-4427-a28f-1bfa5cfce55e" class="image"><a href="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%201%20f498fb314aca44669b12f3e8295bd672/Untitled%206.png"><img style="width:1460px" src="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%201%20f498fb314aca44669b12f3e8295bd672/Untitled%206.png"/></a></figure><p id="5af0948a-7ece-4e26-9f89-e3ce88c9a7b9" class="">В данном примере можно наблюдать два логических блока которые разделены между собой тэгом <code>div</code>, в будущем вы будете строить скелет сайта, основываясь на этом теге.</p><h3 id="5c4f6424-24ec-40f4-a35f-1a2211f27d20" class="">Итоги</h3><ol type="1" id="daafe0c1-9d5c-44c2-aefb-b3e238d72053" class="numbered-list" start="1"><li>Для написания кода используем редактор Visual studio Code. </li></ol><ol type="1" id="1b691eec-6f64-42bd-b4ba-aa44cff9093d" class="numbered-list" start="2"><li>Основные плагины: <strong>Emmet, Live Server, Auto rename tag , Path autocomplete, Auto Close   Tag, Beautify.</strong></li></ol><ol type="1" id="a853ea18-2fc5-4622-932e-7c79874573b9" class="numbered-list" start="3"><li><strong>Тег</strong> - это идентификатор для задания структуры страницы</li></ol><ol type="1" id="38a99a40-80bb-4126-a240-d84f908dcc34" class="numbered-list" start="4"><li>Тег  <code>h1</code>  используется на странице один раз.</li></ol><ol type="1" id="bfb01963-34df-47aa-9530-f7142e2b8fcf" class="numbered-list" start="5"><li>Основные теги которые мы прошли: <code> h1-h6</code> , <code>p</code> , <code>a</code> , <code>img</code> ,<code> div</code> , <code>span</code> ,<code> ol</code> ,<code>ul</code> ,<code> li</code>.</li></ol><ol type="1" id="ef60d4a8-b5ec-4257-be83-a7e1054881d2" class="numbered-list" start="6"><li><strong>Атрибуты</strong> - это специальные слова, которые управляют поведением HTML-элемента. Они добавляют дополнительную функциональность, либо меняют поведение элемента по умолчанию. Атрибуты элемента выражаются внутри начального тега элемента.</li></ol><p id="9c87425c-9106-4ca2-86f6-77f6b3c4db69" class="">
+</p><p id="9686318a-ed74-42d1-bae6-688fde384dc8" class="">
+</p></div></article></body></html>

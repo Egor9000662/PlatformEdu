@@ -1,0 +1,129 @@
+@import "../../../../styles/vars.scss";
+.form-createGroup {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+	width: 280px;
+	max-height: 630px;
+	padding: 5px;
+	border: 0 0 10px rgba(0, 0, 0, 0.5);
+	border-radius: 30px;
+}
+
+.createGroup-title {
+	color: $whiteColor;
+	font-weight: 600 !important;
+	font-size: 1.5rem;
+	font-weight: 500;
+	text-align: center;
+}
+
+.createGroup-input {
+	padding: 16px;
+	margin-bottom: 16px;
+	width: 16.75rem;
+	height: 3.125rem;
+	border-radius: 50px;
+	color: $whiteColor;
+	background-color: transparent;
+	border: 1px solid $azureColor;
+}
+
+.createGroup-input .ant-picker-input > input {
+	color: $whiteColor;
+}
+
+.createGroup-input::placeholder {
+	color: $whiteColor;
+}
+
+.createGroup-input:focus {
+	outline: $inputOutline;
+}
+
+.createGroup-btn {
+	width: 13.375rem;
+	height: 2.75rem;
+	font-size: 1rem;
+	font-weight: 600;
+	color: $whiteColor;
+	background: $colorBlueBtn;
+	border-radius: 50px;
+	border: 3px solid $whiteColor;
+}
+
+.createGroup-btn:hover {
+	cursor: pointer;
+	background: $colorBlueBtnHover;
+}
+
+.createGroupButton {
+	margin: 1rem auto 2rem auto;
+}
+
+.form-createGroup .ant-picker-input::placeholder {
+	color: red;
+}
+
+.createGroup-select option {
+	background-color: $optionBackground;
+}
+
+.createGroup-select {
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+.createGroup-selectContainer {
+	position: relative;
+	width: 16.8rem;
+}
+
+.createGroup-checkMark {
+	position: absolute;
+	top: 9px;
+	right: 5%;
+	z-index: -1;
+}
+
+.createGroup-input .ant-picker-input input::placeholder,
+.createGroup-input .ant-picker-suffix {
+	color: rgba(255, 255, 255, 0.801);
+}
+
+._modal {
+	max-width: 85px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-left: 1.5rem;
+}
+
+._back-btn {
+	background: $colorRedBtn;
+	margin: 0.5rem;
+	padding: 0.625rem 0rem !important;
+	&:hover {
+		cursor: pointer;
+		background: $colorRedBtnHover;
+	}
+}
+
+
+._forward-btn {
+	background: $colorGreenBtn;
+	margin: 0.5rem;
+	padding: 0.625rem 0rem !important;
+	&:hover {
+		cursor: pointer;
+		background: $colorGreenBtnHover;
+	}
+}
+
+.createGroup-modal {
+	.ant-form-item-label > label {
+		color: white;
+		padding-top: 1.2rem;
+	}
+}

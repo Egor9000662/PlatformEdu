@@ -1,0 +1,92 @@
+@import '../../../styles/vars.scss';
+@import '../../../styles/modal.scss';
+
+.messengerWindow-container {
+    border-left: 1px dashed rgb(146, 213, 241);
+    width: 100%;
+    padding: 0 10px 7rem 10px;
+    height: calc(100vh - 105px);
+}
+
+.messengerWindow-header {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .messengerWindow-container {
+    width: 100%;
+    border-left: none;
+    }
+
+    .messengerWindow-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(228.3deg, rgba(196, 196, 196, 0.01) -33.36%, rgba(196, 196, 196, 0.219) 72.4%);
+        border: 1px solid #989898;
+        border-radius: 20px;
+        box-shadow: 0px 4px 8px rgba(196, 196, 196, 0.04), 0px 0px 2px rgba(196, 196, 196, 0.06), 0px 0px 1px rgba(196, 196, 196, 0.04);
+    }
+
+    .messengerWindow-header-title {
+        color: $whiteColor;
+        margin-bottom: 0;
+        padding: 10px 0;
+    }
+}
+
+.messengerWindow-innerContainer {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 105px);
+    padding-bottom: 7rem;
+}
+
+.messengerWindow-messages {
+    overflow-y: scroll;
+	scroll-behavior: smooth;
+	z-index: 0;
+    display: flex;
+	flex-direction: column-reverse;
+	flex: 1 1 auto;
+	padding: 0 10px 3px;
+}
+
+.messengerWindow-messages::-webkit-scrollbar {
+    width: 10px;
+	border-radius: 20px;
+	background: #0b2e6741;
+
+    @media screen and (max-width: 766px) {
+		width: 10px;
+	}
+	@media screen and (max-width: 375px) {
+		width: 5px;
+	}
+}
+
+.messengerWindow-messages::-webkit-scrollbar-thumb {
+	border-radius: 20px;
+	background-color: white;
+}
+
+.messengerWindow-noChat {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.messages-none-text {
+	color: $whiteColor;
+}
+
+.messengerWindow-backButton {
+    color: $whiteColor;
+    text-align: center;
+}

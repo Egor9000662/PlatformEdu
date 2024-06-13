@@ -1,0 +1,52 @@
+@import "../../../styles/vars.scss";
+
+.upArrow {
+	position: absolute;
+	right: 5%;
+	bottom: 40px;
+	z-index: 1;
+	border-radius: 50%;
+
+	img {
+		width: 55px;
+		height: 55px;
+		background-color: #92d5f1;
+		border-radius: 50%;
+		padding: 9px;
+
+		&:active {
+			background-color: #6bb8ffee;
+		}
+
+		&:hover {
+			cursor: pointer;
+			background-color: $blueColor;
+		}
+
+		@media screen and (max-width: 480px) {
+			width: 45px;
+			height: 45px;
+		}
+		@media screen and (min-width: 481px) and (max-width: 768px) {
+			width: 50px;
+			height: 50px;
+		}
+	}
+
+	@media screen and (min-width: 1280px) and (max-width: 1500px) {
+		right: 10vw;
+	}
+	@media screen and (min-width: 1501px) and (max-width: 1815px) {
+		right: 15vw;
+	}
+	@media screen and (min-width: 1816px) and (max-width: 2135px) {
+		right: 20vw;
+	}
+	@media screen and (min-width: 2136px) {
+		right: 27vw;
+	}
+}
+
+.displayNone {
+	display: none;
+}

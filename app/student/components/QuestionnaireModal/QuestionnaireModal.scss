@@ -1,0 +1,14 @@
+@import '../../../styles/vars.scss';
+@import '../../../styles/modal.scss';
+
+.questionnaire-modal {
+	@include modal-mixin;
+}
+
+.questionnaire-modal .ant-modal-close-x {
+	display: none;
+}
+
+.questionnaire-modal a {
+	color: $whiteColor;
+}

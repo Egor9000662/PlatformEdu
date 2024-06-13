@@ -1,0 +1,15 @@
+version: "3.8"
+
+volumes:
+  itg-core-db_data:
+
+networks:
+  itg:
+
+services:
+  front:
+     build: .
+     ports:
+       - "80:80"
+     networks:
+       - itg

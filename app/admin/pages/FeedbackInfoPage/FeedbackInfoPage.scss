@@ -1,0 +1,69 @@
+@import "../../../styles/vars.scss";
+@import "../../../styles/search&selects.scss";
+
+.feedbackInfo-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.feedbackInfo-header {
+	width: 90vw;
+	max-width: 1270px;
+	padding: 20px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	&__btn{
+		position: absolute;
+		left: 0px;
+		top: 20px;
+	}
+}
+
+.feedbackInfo-header h1 {
+	margin: 0 auto;
+	padding-top: 10px;
+	font-weight: 600;
+	color: $whiteColor;
+}
+
+.feedbackInfo-main {
+	padding: 1px 0;
+	width: 90vw;
+	max-width: 1270px;
+}
+
+.fI-select-container {
+	position: relative;
+	width: 100%;
+}
+
+.feedbackInfo-filtering {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.fI-select {
+	width: 100%;
+	cursor: pointer;
+	margin-bottom: 15px;
+	@include search-selects-mixin;
+}
+
+.fI-select-button {
+	cursor: pointer;
+	@include search-selects-icon;
+}
+
+.est-toggle {
+	padding: 2px 0;
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+}

@@ -1,0 +1,59 @@
+@import '../../../../styles/modal.scss';
+@import '../../../../styles/vars.scss';
+
+.skill-border {
+	padding: 12px 10px;
+	clip-path: polygon(
+		0px 20%,
+		50% 0px,
+		100% 20%,
+		100% 80.02%,
+		50% 100%,
+		0px 80%
+	);
+	background-color: rgba(255, 255, 255, 0.404);
+}
+
+.skill-content-modal {
+	@include modal-mixin;
+}
+
+.skill-content {
+	width: 80%;
+}
+
+.skill-icon {
+	width: 42px;
+	height: 42px;
+}
+
+.skill-inner-container {
+	padding: 16px 14px;
+	clip-path: polygon(
+		0px 20%,
+		50% 0px,
+		100% 20%,
+		100% 80.02%,
+		50% 100%,
+		0px 80%
+	);
+	&.skill-done {
+		background-color: $whiteColor;
+	}
+	&.skill-wip {
+		background-color: $azureColor;
+	}
+	&.skill-new {
+		background-color: $whiteColor;
+		filter: opacity(40%);
+	}
+	&:not(.skill-new):hover {
+		cursor: pointer;
+	}
+}
+
+.skill-done,
+.skill-wip,
+.skill-new {
+	box-shadow: 0px 0px 8px 5px rgba(34, 60, 80, 0.35) inset;
+}

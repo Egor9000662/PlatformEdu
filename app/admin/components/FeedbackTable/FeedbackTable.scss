@@ -1,0 +1,204 @@
+@import '../../../styles/vars.scss';
+.feedback-cards {
+	@media (min-width: 1280px) {
+		margin-left: 30px;
+	}
+}
+
+.feedback-card {
+	display: flex;
+	padding: 10px;
+	margin-bottom: 10px;
+	flex-direction: column;
+	border-radius: 10px;
+	background: rgba(12, 131, 243, 0.3);
+	box-shadow: inset 7px 0px 35px 0px #92bef16e;
+	border: 2px solid #c0f8f5;
+	color: $whiteColor;
+}
+
+.feedback-card__name {
+	padding-bottom: 10px;
+	width: 100%;
+	font-size: 1.25rem;
+	font-weight: 600;
+	text-align: center;
+	border-bottom: 2px solid #c0f8f5;
+}
+
+.fI-average-container {
+	margin-bottom: 10px;
+	text-align: justify;
+	background: rgba(100, 12, 243, 0.575);
+	color: $whiteColor;
+}
+
+.fI-average-container span {
+	font-size: 20px;
+	font-weight: 600;
+	margin-right: 5%;
+}
+
+.fI-average-container p {
+	margin-bottom: 0;
+	margin-left: 10%;
+	width: 300px;
+}
+
+.feedback-name {
+	text-align: center;
+	text-decoration: underline;
+	font-size: 1.15rem;
+}
+
+.feedback-card__body {
+	padding: 10px 0;
+	border-bottom: 1px dotted #c0f8f5dc;
+}
+
+.feedback-card__body:last-of-type {
+	border-bottom: none;
+}
+
+.feedbackInfo-empty {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 45vh;
+}
+
+.feedbackInfo-empty h1 {
+	text-align: center;
+	font-weight: 600;
+	color: $whiteColor;
+}
+
+.feedback-hometaskFields {
+	display: flex;
+	justify-content: space-around;
+}
+
+.fI-checkbox {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.fI-checkbox-title {
+	padding: 6px 0;
+	text-align: start;
+	margin-right: 20px;
+	margin-left: 20px;
+	color: $whiteColor;
+	font-size: 1.25rem;
+	font-weight: 600;
+}
+
+.fI-slider {
+	position: relative;
+	display: inline-block;
+	width: 71px;
+	height: 31px;
+	margin: 0;
+	vertical-align: top;
+	background: #cacaca;
+	border-radius: 30px;
+	outline: none;
+	cursor: pointer;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	transition: all 0.5s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+}
+
+.fI-slider::after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	left: 2px;
+	top: 2px;
+	width: 27px;
+	height: 27px;
+	background-color: $whiteColor;
+	box-shadow: 4px 4px 8px 0px rgba(15, 28, 37, 0.2);
+	border-radius: 50%;
+	transform: translateX(0);
+	transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+}
+
+.fI-slider:checked::after {
+	transform: translateX(150%);
+	background-color: $whiteColor;
+}
+
+.fI-slider:checked {
+	background-color: #07b9f1;
+}
+
+.fICard-empty {
+	text-align: center;
+	color: #fff;
+	font-size: medium;
+}
+
+.feedback-commentsList li {
+	margin: 0 20px;
+}
+
+.feedback-video {
+	margin-top: 15px;
+	& > h3 {
+		color: $whiteColor;
+		text-align: center;
+	}
+}
+
+@media (min-width: 483px) {
+	.feedbackTable-school .fI-average-container {
+		align-items: center;
+		& > div > p {
+			margin-left: 10px;
+			width: 70vw;
+			max-width: 50%;
+		}
+	}
+}
+
+.feedbackTable-school .ant-progress-text {
+	color: $whiteColor;
+}
+
+.fI-average-recAmount,
+.fI-average-quality {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+	padding: 10px;
+	& span {
+		width: 94px;
+		margin: 0;
+	}
+	max-width: 1223px;
+}
+.feedbackTable-school
+	.ant-progress-inner:not(.ant-progress-circle-gradient)
+	.ant-progress-circle-path {
+	stroke: $minorNoticeColor;
+}
+
+.negativeFeedback {
+	background: rgba(243, 12, 12, 0.575);
+	border-radius: 10px;
+}
+
+.feedbackTable-school .feedback-card__body {
+	text-align: center;
+}
+
+.school-stats {
+	display: flex;
+	justify-content: space-evenly;
+}

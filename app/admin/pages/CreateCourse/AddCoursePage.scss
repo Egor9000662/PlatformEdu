@@ -1,0 +1,320 @@
+@import "../../../styles/vars.scss";
+@import '../../../styles/search&selects.scss';
+@import '../../../styles/modal.scss';
+
+#divider {
+    border: #fff;
+    margin-top: 0;
+}
+
+#divider-text {
+    color:#fff;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.constructor-header {
+    width: 90%;
+    margin-inline: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.constructor-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.constrictor-form {
+    width: 90%;
+}
+
+.block-title {
+    color: $whiteColor;
+	font-weight: 600;
+	font-size: 1.5rem;
+	font-weight: 500;
+	text-align: center;
+}
+
+.constructor-select {
+	width: 100%;
+	cursor: pointer;
+	@include search-selects-mixin;
+	margin-bottom: 15px;
+
+    &-block {
+        position: relative;
+        width: 90vw;
+    }
+
+	&-button {
+		cursor: pointer;
+		@include search-selects-icon;
+	}
+
+	&-defaultValue {
+		color: rgba(255, 255, 255, 0.5);
+	}
+}
+
+.constructor-input {
+	padding: 16px;
+	margin-bottom: 16px;
+	width: 90vw;
+	cursor: pointer;
+	@include search-selects-mixin;
+}
+
+.constructor-textarea {
+    width: 100%;
+	height: 19.875rem;
+    resize: none;
+	color: $whiteColor;
+	background: radial-gradient(
+		80% 80%,
+		rgba(255, 255, 255, 0),
+		rgba(176, 241, 243, 0.192)
+	);
+	border: none;
+	box-shadow: inset 4px 0px 35px 0px #92d4f17e;
+	padding: 24px 32px;
+
+	&:focus {
+		outline: $inputOutline;
+	}
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+	@media screen and (min-width: 769px) {
+		padding: 28px 36px;
+	};
+}
+
+.constructor-card {
+    color:  $whiteColor;
+    text-align: center;
+    border-radius: 53px;
+    border: none;
+    background: radial-gradient(40% 65%, rgba(73, 156, 233, 0.287), rgba(119, 241, 229, 0.4));
+    margin-bottom: 40px;
+}
+
+.constructor-moduleInfo {
+    font-size: larger;
+    border: none;
+    padding: 20px;
+}
+
+.constructor-moduleLessons {
+    padding-bottom: 20px;
+}
+
+.constructor-moduleBtns {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-plus {
+    margin-right: 5px;
+    font-weight: 900;
+}
+
+.constructor-button {
+    border: none;
+    outline: none;
+    padding-inline: 20px;
+
+    &-big {
+    width: 30%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    }
+}
+
+.center {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    }
+
+.accordion-item {
+    margin-bottom: 10px;
+}
+
+.accordion-title {
+    font-size: larger;
+    background-color: rgba(245, 245, 245, 0.4);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+
+    &-button {
+    width: 30px;
+    background-color: azure;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+    box-shadow: 0px 5px 7px 3px rgba(0, 0, 0, 0.3);
+    }
+    }
+}
+
+.rotated {
+    transform: rotate(45deg);
+}
+
+.accordion-content {
+    background-color: rgba(245, 245, 245, 0.3);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion-content-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    &-left {
+        justify-content: flex-start;
+    }
+
+    &-leftColumn {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.accordion-message {
+    width: 18rem;
+
+    @media screen and (max-width: 450px) {
+        width: 15rem;
+    }
+}
+
+.accordion-contetnt-form {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.accordion-contetnt-label {
+    font-size: larger;
+    font-weight: 700;
+}
+
+.accordion-contetnt-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.radio-text {
+    color: $whiteColor;
+    text-align: left;
+}
+
+.accordion-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    color:  $whiteColor;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.5);
+
+    &:focus {
+        outline: none;
+        box-shadow: 0px 5px 7px 3px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.accordion-input-number {
+    color:  $whiteColor;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    margin-inline: 5px;
+    width: 3rem;
+
+    &:focus {
+        outline: none;
+        box-shadow: 0px 5px 7px 3px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.accordion-switch {
+    width: 3rem;
+    margin-right: 5px;
+}
+
+.accordion-content-controls {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.error-message {
+    color: $redColor;
+    margin-bottom: 2px;
+}
+
+  // Modal
+  .form-addModule{
+    padding: 20px;
+  }
+
+  .addModule-title {
+    color: $whiteColor;
+    margin-bottom: 10px;
+  }
+
+  .addModule__input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.5);
+
+    &:focus {
+        outline: none;
+        box-shadow: 0px 5px 7px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    &::placeholder {
+        color: $lightGreyColor;
+    }
+  }
+
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+  }

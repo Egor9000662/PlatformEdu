@@ -1,0 +1,39 @@
+@import "../../../styles/vars.scss";
+@import '../../../styles/search&selects.scss';
+
+.tests-container {
+    max-width: 100%;
+    color: $whiteColor;
+    padding-top: 20px;
+}
+
+.tests-header {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.tests-header-icon {
+    width: 50px;
+    height: 50px;
+    color: white;
+    border-radius: 50%;
+    border: 1px solid rgb(46, 170, 220);;
+    padding: 5px;
+}
+
+.tests-content-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.tests-block-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;   
+    margin-bottom: 40px;
+}

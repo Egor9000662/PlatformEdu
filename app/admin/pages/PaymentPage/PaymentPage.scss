@@ -1,0 +1,238 @@
+@import '../../../styles/search&selects.scss';
+@import '../../../styles/vars.scss';
+@import '../../../styles/modal.scss';
+
+.paymentWrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding-inline: 10px;
+}
+
+.payment-header {
+	position: relative;
+	width: 90vw;
+	max-width: 1270px;
+	padding: 20px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&__title h1 {
+		font-weight: 600;
+		color: $whiteColor;
+	}
+
+	&__settings {
+		position: absolute;
+		right: 0;
+		border-radius: 50%;
+		box-shadow: 11px 8px 20px -6px rgba(146, 213, 241, 0.2);
+	}
+
+	&__settings img {
+		width: 65px;
+		height: 65px;
+
+		@media screen and (max-width: 480px) {
+			width: 45px;
+			height: 45px;
+		}
+		@media screen and (min-width: 481px) and (max-width: 768px) {
+			width: 55px;
+			height: 55px;
+		}
+	}
+
+	&__settings img:hover {
+		border-radius: 50%;
+		background-color: #a8daf165;
+	}
+}
+
+.payment-main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0 10px;
+	width: 100%;
+	max-width: 1270px;
+
+	&__debtors-block,
+	&__beneficiary-block {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		width: 97%;
+		min-height: 35vh;
+		max-height: 45vh;
+		padding: 10px;
+		border-radius: 20px;
+		backdrop-filter: blur(6px);
+	}
+
+	&__debtors-block h3,
+	&__beneficiary-block h3 {
+		margin: 10px auto;
+		font-weight: 600;
+		color: $whiteColor;
+	}
+
+	&__debtors-block {
+		background: linear-gradient(
+			228.3deg,
+			rgba(251, 84, 86, 0.01) -33.36%,
+			rgba(251, 84, 86, 0.1) 72.4%
+		);
+		border: 1px solid $lightRedColor;
+		box-shadow: 0px 4px 8px rgba(251, 84, 86, 0.04),
+			0px 0px 2px rgba(251, 84, 86, 0.06),
+			0px 0px 1px rgba(251, 84, 86, 0.04);
+
+		@media screen and (max-width: 767px) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__beneficiary-block {
+		background: linear-gradient(
+			228.3deg,
+			rgba(196, 196, 196, 0.01) -33.36%,
+			rgba(196, 196, 196, 0.1) 72.4%
+		);
+		border: 1px solid #c4c4c4;
+		box-shadow: 0px 4px 8px rgba(196, 196, 196, 0.04),
+			0px 0px 2px rgba(196, 196, 196, 0.06),
+			0px 0px 1px rgba(196, 196, 196, 0.04);
+	}
+}
+
+.payment-studentList {
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+	max-height: 32vh;
+	max-height: 75vh;
+}
+
+.payment-studentList::-webkit-scrollbar {
+	display: none;
+}
+
+.payment-selectContainer {
+	position: relative;
+	width: 90vw;
+	max-width: 1270px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.payment-select {
+	width: 100%;
+	cursor: pointer;
+	@include search-selects-mixin;
+	margin-bottom: 15px;
+
+	&-button {
+		cursor: pointer;
+		@include search-selects-icon;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.payment-main {
+		flex-direction: row;
+		justify-content: space-between;
+		&__debtors-block,
+		&__beneficiary-block {
+			width: 45vw;
+			max-width: 591px;
+			height: 70vh;
+		}
+	}
+	.payment-studentList {
+		max-height: 77vh;
+	}
+}
+
+.beneficiary-debt {
+	& > .studentInfo__name,
+	.studentInfo__courseInfo {
+		color: $lightRedColor;
+	}
+}
+
+.paymentSettingsModal .ant-modal-body {
+	padding: 0 10px;
+}
+
+.paymentSettingsModal {
+	@include modal-mixin;
+}
+
+.paymentSettingsModal .ant-modal-footer button {
+	width: 100px;
+}
+
+.paymentSettings-input {
+	padding: 16px;
+	margin-bottom: 16px;
+	width: 16.75rem;
+	height: 3.125rem;
+	border-radius: 50px;
+	color: #fff;
+	background-color: transparent;
+	border: $inputBorder;
+	cursor: pointer;
+}
+
+.paymentSettings-input .ant-picker-input > input {
+	color: #fff;
+}
+
+.paymentSettings-input::placeholder {
+	color: #fff;
+}
+
+.paymentSettings-input:focus {
+	outline: $inputOutline;
+}
+
+.paymentSettings-input .ant-picker-input input::placeholder,
+.paymentSettings-input .ant-picker-suffix {
+	color: rgba(255, 255, 255, 0.801);
+}
+
+.ant-picker.paymentSettings-input.ant-picker-disabled {
+	background-color: transparent;
+	border: $inputBorder;
+}
+
+.paymentSettings-input.ant-picker.ant-picker-disabled .ant-picker-suffix {
+	color: rgba(255, 255, 255, 0.801);
+}
+
+.paymentSettings-selectContainer {
+	position: relative;
+	width: 16.8rem;
+}
+
+.paymentSettings-select {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.paymentSettings-select option {
+	background-color: $optionBackground;
+}
+
+.paymentSettings-checkMark {
+	position: absolute;
+	top: 9px;
+	right: 5%;
+	z-index: -1;
+}

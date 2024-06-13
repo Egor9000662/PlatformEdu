@@ -1,0 +1,72 @@
+@import "../../../styles/vars.scss";
+.counter {
+	width: 33px;
+	height: 33px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 8px;
+}
+.counter-circle {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+.counter-circle > * {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border: 4px solid var(--c, #e0e0e0);
+	border-radius: 50%;
+	clip-path: polygon(50% 50%, 55% 0%, 100% 0%, 100% 45%);
+}
+
+.part1 {
+	transform: rotate(-144deg) translate(5px, -5px);
+}
+.part2 {
+	transform: rotate(-72deg) translate(5px, -5px);
+}
+.part3 {
+	transform: rotate(0) translate(5px, -5px);
+}
+.part4 {
+	transform: rotate(72deg) translate(5px, -5px);
+}
+.part5 {
+	transform: rotate(144deg) translate(5px, -5px);
+}
+
+.colored-circle {
+	--c: rgb(129, 203, 233);
+}
+
+.uncolored-circle {
+	--c: rgba(235, 235, 235, 0.2);
+}
+
+.counter-num {
+	color: $whiteColor;
+	font-size: 25px;
+}
+@media screen and (max-width: 480px) {
+	.counter {
+		width: 17px;
+		height: 17px;
+		.counter-num {
+			font-size: 12px;
+		}
+	}
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	.counter {
+		width: 25px;
+		height: 25px;
+	}
+	.counter-num {
+		font-size: 20px;
+	}
+}

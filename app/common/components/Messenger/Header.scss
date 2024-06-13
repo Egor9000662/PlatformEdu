@@ -1,0 +1,31 @@
+@import '../../../styles/vars.scss';
+
+.messenger-header {
+	width: 100%;
+	padding: 0 0 20px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+
+	@media screen and (min-width: 360px) and (max-width: 769px) {
+		width: 90vw;
+		padding: 20px 0;
+	}
+}
+
+.messenger-header-backBlock {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.hidden-arrow{
+	display: none;
+}
+
+@media screen and (min-width: 769px) {
+	.arrow-mobile {
+		display: none;
+	}
+}

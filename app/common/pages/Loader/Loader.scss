@@ -1,0 +1,32 @@
+@import "../../../styles/vars.scss";
+
+.background {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.background__load {
+	height: 50vh;
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+@keyframes moon {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.load__img-moon {
+	width: 172px;
+	height: 172px;
+	animation: moon 4s linear 0s infinite;
+}

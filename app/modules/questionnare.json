@@ -1,0 +1,252 @@
+{
+	"blocks": [
+			{
+				"title": "Личные данные",
+				"questions": [
+					{   "id": "23b10a4d-9d45-438a-b1f7-6bb64b611390",
+						"type": "write",
+						"theme":"personal",
+						"title": "ФИО(полностью  и  на русском языке, в формате: ИМЯ ОТЧЕСТВО ФАМИЛИЯ)",
+						"notice": "(необходимо для выдачи сертификатов об окончании школы)",
+						"required": true,
+						"answerType": "string"
+					},
+					{
+						"id": "68c3b478-0373-4825-a5bf-0a829d3c8a6e",
+						"type": "write",
+						"theme":"personal",
+						"title": "Сколько тебе лет?",
+						"required": true,
+						"answerType": "number"
+					},
+					{
+						"id": "b21fee86-2c2a-4c36-b188-f63f36943de8",
+						"type": "write",
+						"theme":"personal",
+						"title": "Твой ник в Telegram",
+						"required": false,
+						"answerType": "string"
+					},
+					{
+						"id": "0c5e7634-9c9e-4ee4-954b-6628709463b3",
+						"type": "write",
+						"theme":"employment",
+						"title": "В каком городе ты живешь?",
+						"notice": "(необходимо для трудоустройства по окончанию)",
+						"required": true,
+						"answerType": "string"
+					},
+					{
+						"id": "29d5ebbd-a5f4-4d52-85f6-a312663900fe",
+						"type": "write",
+						"theme":"employment",
+						"title": "Гражданство какой страны?",
+						"notice": "(необходимо для трудоустройства по окончанию)",
+						"required": true,
+						"answerType": "string"
+					}
+				]
+			},
+		{
+				"title": "Твой опыт",
+				"questions": [
+					{
+						"id": "d519c087-4182-43c6-8e37-98ac62923239",
+						"type": "write",
+						"theme":"personal",
+						"title": "В какой сфере сейчас работаешь?",
+						"notice": "Если сейчас не работаешь, то можешь написать направления образования или что сейчас не работаешь.",
+						"required": true,
+						"answerType": "string"
+					},
+					{
+						"id": "d7eee031-b723-4464-90c7-e285d6796e6e",
+						"options": [
+							{"id":1,
+							"title":"0-50000р/мес"
+							},
+							{"id":2,
+							"title":"50000-100000 р/мес"
+							},
+							{"id":3,
+							"title":"100000-300000 р/мес"
+							},
+							{"id":4,
+							"title":"300000+ р/мес"
+							}
+						],
+						"type": "check",
+						"theme":"marketing",
+						"title": "Твой уровень дохода (личный)?",
+						"required": true,
+						"answerType": "string"
+        			}
+				]	
+		},
+		{
+				"title": "Обучение",
+				"questions": [
+					{
+						"id": "7f1cc0b6-8ac0-487f-b0ab-f46642d4da8d",
+						"options": [
+							{"id":1,
+							"title":"Frontend-разработчик"
+							},
+							{"id":2,
+							"title":"Мобильный разработчик"
+							},
+							{"id":3,
+							"title":"Backend-разработка"
+							}
+						],
+						"type": "select",
+						"theme":"personal",
+						"title": "Направление обучения",
+						"required": true,
+						"answerType": "string"
+					},
+					{
+						"id":"5db7ae81-c53e-409d-baf6-4b358783419f",
+						"options": [
+							{"id":1,
+							"title":"Стать программистом и найти работу в компании"
+							},
+							{"id":2,
+							"title":"Стать фрилансером"
+							},
+							{"id":3,
+							"title":"Просто для себя, чтобы мозги не заржавели"
+							},{
+								"id":"other",
+								"title": "Иное"
+							}
+							],
+						"type": "select",
+						"theme":"personal",
+						"title": "Твоя цель на обучение?",
+						"required": true,
+						"answerType": "string"
+					},
+					{"id": "8663b219-bbce-4317-a661-f7e996cd57ff",
+						"options": [
+							{"id":1,
+							"title":"Да"
+							},
+							{"id":2,
+							"title":"Нет"
+							},
+							{"id":3,
+							"title":"Пока не знаю"
+							}
+						],
+						"type": "check",
+						"theme":"employment",
+						"title": "Нужна ли будет помощь трудоустройстве с нашей помощью?",
+						"required": true,
+						"answerType": "string"
+					},
+					{"id": "dcfde5ec-45d2-4073-b466-30a1ecc74113",
+						"options": [
+							{"id":1,
+							"title":"Без разницы"
+							},
+							{"id":2,
+							"title":"Женщину"
+							},
+							{"id":3,
+							"title":"Мужчину"
+							}
+						],
+						"type": "check",
+						"theme":"studing",
+						"title": "Кого бы ты хотела в преподаватели?",
+						"required": true,
+						"answerType": "string"
+					},
+					{"id": "b193cc63-881c-45d9-88c4-3ccddd8ec99b",
+						"options": [
+							{"id":1,
+							"title":"понедельник"
+							},
+							{"id":2,
+							"title":"вторник"
+							},
+							{"id":3,
+							"title":"среда"
+							},
+							{
+								"id":4,
+								"title": "четверг"
+							},
+							{
+								"id":5,
+								"title": "пятница"
+							},
+							{
+								"id":6,
+								"title": "суббота"
+							},
+							{
+								"id":7,
+								"title": "воскресенье"
+							}
+							],
+						"type": "multi",
+						"theme":"studing",
+						"title": "В какие дни тебе было бы удобно участвовать в групповых созвонах с преподавателем?",
+						"notice": "Выбранные дни не гарантируют 100% попадание в группу с удобным днем созвона, но мы постараемся выбрать подходящий  для тебя вариант",
+						"required": true,
+						"answerType": "string"
+					},
+					{"id": "10a7b465-aada-481d-a4d3-66e0e1bd582b",
+						"type": "write",
+						"theme":"marketing",
+						"title": "Откуда про нас узнала?",
+						"required": true,
+						"answerType": "string"
+					},
+					{"id": "e075ee9e-5e37-41b2-89dc-19badf641299",
+						"type": "write",
+						"theme":"marketing",
+						"title": "Почему ты решила учиться на нашем курсе?",
+						"required": true,
+						"answerType": "string"
+					},
+					{"id": "304ee4b4-a172-4a6d-aba5-de5faff14b6b",
+						"type": "write",
+						"theme":"personal",
+						"title": "Твой email, который ты указывала при оплате обучения",
+						"required": true,
+						"answerType": "string"
+					},
+					{"id": "60f2aca5-7c9b-44ff-ac02-516b1800940a",
+						"options": [
+							{"id":1,
+							"title":"Да"
+							},
+							{"id":2,
+							"title":"Нет"
+							}
+						],
+						"type": "check",
+						"theme":"marketing",
+						"title": "Согласна ли ты, чтобы мы добавили тебя во внутреннюю базу участниц нашего сообщества ITGIRLS?",
+						"required": true,
+						"answerType": "string"
+					},
+					{"id": "45df2fce-0b9c-4c31-9d17-747e770d610e",
+						"options": [
+							{"id":1,
+							"title":"Нажимая на кнопку, я даю согласие на обработку моих персональных данных"
+							}
+						],
+						"type": "check",
+						"theme":"personal",
+						"title": "Обработка персональных данных",
+						"required": true,
+						"answerType": "string"
+					}
+				]
+			}
+		]
+	}

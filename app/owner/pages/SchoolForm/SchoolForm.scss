@@ -1,0 +1,98 @@
+@import '../../../styles/vars.scss';
+@import '../../../styles/search&selects.scss';
+@import '../../../styles/forms.scss';
+
+    #divider {
+        border:#fff;
+    }
+    
+    #divider-text {
+        color: #fff;
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+.addschool-container {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.addschool-content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.form-item-label {
+    font-size: 1.7em;
+    line-height: 3rem;
+    font-weight: 700;
+    color:$whiteColor;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.addschool-form-item {
+    margin-bottom: 20px;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addschool-form-input-container {
+    position: relative;
+}
+
+.input-password-icon {
+    position: absolute;
+    cursor: pointer;
+    width: 60px;
+    top: 15%;
+    right: 20px;
+    z-index: 2;
+}
+
+.addschool-form-button {
+    @media screen and (min-width: 425px) {
+    transform: scale(1.5);
+    }
+   &:hover {
+    color: $whiteColor;
+    border-color: $whiteColor;
+   }
+}
+
+.addschool-form-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.form-item-title {
+    font-size: 2em;
+    font-weight: 700;
+    color:$whiteColor;
+    text-align: center;
+}
+
+.error-message {
+    color: $redColor;
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.searchInput-input {
+	@include search-selects-mixin;
+	width: 100%;
+}
+
+.school-form-input:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0 50px #0b2d56;/* цвет вашего фона */
+    -webkit-text-fill-color: $whiteColor; /* цвет текста */
+}

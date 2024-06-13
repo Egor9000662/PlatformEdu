@@ -1,0 +1,4 @@
+*
+app/common/components/HomeworkChat/HomeworkChatBody.jsx
+app/common/components/HomeworkChat/HomeworkChatMessage.jsx
+app/common/store/chatStore.js

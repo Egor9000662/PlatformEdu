@@ -1,0 +1,171 @@
+@import '../../../styles/vars.scss';
+.container-group {
+	width: 90vw;
+	max-width: 1270px;
+	padding: 20px 0;
+	display: flex;
+	justify-content: space-between;
+	color: $whiteColor;
+
+	&__info {
+		margin-top: 2rem;
+	}
+
+	& > div {
+		display: flex;
+		gap: 50px;
+	}
+
+	@media screen and (max-width: 768px) {
+		flex-direction: column;
+	}
+}
+
+.container-span {
+	color: $azureColor;
+	font-weight: 600;
+}
+
+.container-group .icon {
+	width: 1.25rem;
+	height: 1.25rem;
+	filter: hue-rotate(226deg) brightness(200%);
+}
+
+.container-line {
+	color: $azureColor;
+	font-weight: 700;
+}
+
+.group-pausedText {
+	padding-left: 10px;
+	font-weight: 600;
+	color: $minorNoticeColor;
+}
+
+.groupMove-input {
+	padding: 16px;
+	margin-bottom: 16px;
+	width: 16.75rem;
+	border-radius: 25px;
+	color: $whiteColor;
+	background-color: transparent;
+	border: 1px solid $azureColor;
+}
+
+.groupMove-input::placeholder {
+	color: $whiteColor;
+}
+
+.groupMove-input:focus {
+	outline: $inputOutline;
+}
+
+.container-group__edit {
+	display: flex;
+	align-items: baseline;
+}
+
+.vacation-error {
+	font-weight: 600;
+	color: rgb(225, 55, 55);
+}
+
+.noSchedule {
+	cursor: initial;
+	opacity: 0.4;
+}
+
+.hidden {
+	display: none;
+}
+
+.editDates-numbers {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.editDates-numbers h3 {
+	font-weight: 600;
+	color: $whiteColor;
+}
+.editDates-numbers .ant-form-item {
+	width: 97%;
+}
+.editDates-numbers .ant-form-item-control {
+	align-items: flex-end;
+}
+.hidden-mentor {
+	color: $lightGreyColor;
+}
+
+.pausedModal-container__error-message {
+	max-width: 265px;
+	text-align: center;
+	font-size: 13px;
+	color: #ffef77;
+}
+
+.groupModal-body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding-bottom: 15px;
+	& .stdMove-heading {
+		margin-bottom: 5px;
+	}
+	& .ant-row {
+		flex-wrap: nowrap;
+		align-items: baseline;
+	}
+}
+
+.group__link-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 10px;
+	width: 18rem;
+	padding-top: 30px;
+
+	@media screen and (max-width: 768px) {
+		width: 100%;
+		align-items: center;
+	}
+}
+
+.button__link {
+	height: 2.75rem;
+	background: linear-gradient(180deg, #a0fafa 0%, #35c8f7 16.67%, #07b9f1 43.23%, #5589d6 94.27%, #5d9cca 100%);
+	box-shadow: 0px 2px 2px rgba(10, 89, 133, 0.75);
+	border-radius: 50px;
+	border: 3px solid #ffffff;
+	font-weight: 600;
+	font-size: 16px;
+
+	@media screen and (max-width: 768px) {
+		width: 250px;
+	}
+}
+
+.group__link-icon-text-container {
+	position: relative;
+}
+
+.group__link_icon_copy {
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.group__link-text {
+	word-wrap: break-word;
+	border: 0.5px solid rgb(146, 213, 241);
+	border-radius: 10px;
+	padding: 10px 15px;
+	background: radial-gradient(80% 80%, rgba(146, 213, 241, 0.01), rgba(146, 213, 241, 0.1))
+}

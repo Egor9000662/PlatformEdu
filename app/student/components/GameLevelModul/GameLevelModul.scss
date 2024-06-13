@@ -1,0 +1,55 @@
+@import "../../../styles/vars.scss";
+.gameLevels-Text {
+	font-family: "Rubik";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	margin-bottom: 0;
+	color: $whiteColor;
+	width: 160px;
+}
+
+.gameLevels-Diamonds {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 8.75;
+	margin-top: 12.48px;
+}
+
+.diamond:nth-child(2n) {
+	margin: 0 3px;
+}
+
+.gameLevels-Modul {
+	display: flex;
+	width: 160px;
+}
+
+.gameLevels-Content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.gameLevels-Number {
+	position: relative;
+	margin-bottom: 0;
+	top: 75px;
+	z-index: 9;
+}
+
+.gL-animatedIcon {
+	width: 125px;
+	height: 125px;
+}
+
+@media screen and (min-width: 769px) {
+	.gameLevels-Text {
+		margin-bottom: 10px;
+	}
+}

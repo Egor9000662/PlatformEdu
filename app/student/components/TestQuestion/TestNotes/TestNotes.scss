@@ -1,0 +1,32 @@
+@import "../../../../styles/vars.scss";
+
+.test-notes-wrapper {
+	margin: 5% auto;
+	padding: 0.5%;
+	max-width: 450px;
+	border: 1px solid $azureColor;
+	border-radius: 0.625rem;
+	background: linear-gradient(
+			rgba(255, 255, 255, 0.342) 20%,
+			rgba(255, 255, 255, 0) 50%
+		),
+		linear-gradient(
+			to right,
+			rgba(255, 255, 255, 0.151) 20%,
+			rgba(255, 255, 255, 0) 60%
+		);
+}
+
+.test-notes {
+	color: $whiteColor;
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	&__text {
+		margin: 0;
+	}
+	.test-notes__img {
+		width: 40px;
+		height: 40px;
+	}
+}

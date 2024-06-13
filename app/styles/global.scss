@@ -1,0 +1,30 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* rubik-regular - latin_cyrillic */
+@font-face {
+	font-family: 'Rubik';
+	font-style: normal;
+	font-weight: 400;
+	src: local(''),
+		url('../assets/fonts/rubik-v14-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		url('../assets/fonts/rubik-v14-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+  /* rubik-700 - latin_cyrillic */
+@font-face {
+	font-family: 'Rubik';
+	font-style: normal;
+	font-weight: 700;
+	src: local(''),
+		 url('../assets/fonts/rubik-v14-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		 url('../assets/fonts/rubik-v14-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body {
+	// background: linear-gradient(225deg, rgba(146, 213, 241, 0.4) 40%, rgba(233,176,243, 0.4) 60%, rgba(255, 255, 255, 0.2) 100%);
+	// backdrop-filter: blur(6px);
+	font-family: 'Rubik';
+}

@@ -1,0 +1,161 @@
+@import '../../../styles/vars.scss';
+
+.stdList-student {
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+	align-items: center;
+	width: 100%;
+	min-height: 3rem;
+	margin: 0 0 15px 0;
+	border-radius: 10px;
+	padding: 5px 10px 5px 0;
+
+	.student {
+		max-width: 1270px;
+	}
+}
+
+.student-avatar__img {
+	position: absolute;
+	top: -68px;
+	left: -2px;
+	border-radius: 50%;
+	object-fit: cover;
+	width: 60px;
+	height: 60px;
+
+	@media screen and (max-width: 481px) {
+		width: 40px;
+		height: 40px;
+		top: -45px;
+		left: 3px;
+	}
+
+	@media screen and (min-width: 481px) and (max-width: 696px) {
+		width: 40px;
+		height: 40px;
+		top: -53px;
+		left: 5px;
+	}
+
+	@media screen and (min-width: 696px) and (max-width: 1111px) {
+		width: 50px;
+		height: 50px;
+		top: -63px;
+		left: 3px;
+	}
+}
+
+.student-avatar {
+	position: relative;
+}
+
+.student-crownIcon {
+	position: absolute;
+	top: -87px;
+	left: -5px;
+	max-width: 30px;
+	max-height: 30px;
+	z-index: 2;
+	@media screen and (max-width: 481px) {
+		top: -67px;
+		left: -2px;
+	}
+
+	@media screen and (min-width: 481px) and (max-width: 696px) {
+		top: -73px;
+		left: -2px;
+	}
+
+	@media screen and (min-width: 696px) and (max-width: 1111px) {
+		top: -83px;
+		left: -2px;
+	}
+}
+
+.student-data {
+	flex-direction: column;
+	margin: 10px 0 0 45px;
+	color: rgba(255, 255, 255, 1);
+}
+
+.std-name {
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.bestStd {
+	color: #00b95b;
+}
+
+.student_best {
+	background: linear-gradient(
+		228.3deg,
+		rgba(49, 212, 184, 0.01) -33.36%,
+		rgba(49, 212, 184, 0.1) 72.4%
+	);
+	border: 1px solid #31d4b8;
+}
+
+.std-weeks_info {
+	display: flex;
+    justify-content: space-around;
+	flex-direction: row;
+	align-items: center;
+}
+.std-accessNextWeek {
+	margin-right: 15px;
+}
+
+.email {
+	font-size: 1.7em;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.data {
+	display: flex;
+	flex-direction: column;
+}
+
+.week-student {
+	font-size: 1.7em;
+	color: rgba(146, 213, 241, 1);
+}
+
+.student-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding-left: 2rem;
+
+	.notice {
+		margin-right: 15px;
+	}
+}
+
+@media screen and (max-width: 481px) {
+	.std-name {
+		font-size: 1.5em;
+	}
+
+	.student-data {
+		margin: 10px 0 0 30px;
+	}
+
+	.week-student,
+	.email {
+		font-size: 1em;
+	}
+}
+
+@media screen and (min-width: 1279px) {
+	.stdList-student {
+		max-width: 1270px;
+	}
+
+	a {
+		max-width: 1270px;
+	}
+}

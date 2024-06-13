@@ -1,0 +1,8 @@
+{
+    "AUTH_URL": "http://localhost:9099",
+    "BASE_URL": "http://localhost:3001",
+    "STORAGE_HOST": "localhost",
+    "STORAGE_PORT": "9199",
+    "DATABASE_HOST": "localhost",
+    "DATABASE_PORT": "9000"
+}

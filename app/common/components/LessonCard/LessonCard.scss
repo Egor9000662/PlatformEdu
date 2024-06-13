@@ -1,0 +1,74 @@
+@import "../../../styles/vars.scss";
+.w-card {
+	width: 18rem;
+	min-height: 14rem;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	border: 1px solid $azureColor;
+	clip-path: polygon(
+		61% 8%,
+		53% 0%,
+		8% 0%,
+		0% 8%,
+		0% 93%,
+		8% 100%,
+		92% 100%,
+		100% 93%,
+		100% 14%,
+		94% 8%
+	);
+	padding: 30px 10px;
+	background: radial-gradient(
+		80% 80%,
+		rgba(255, 255, 255, 0),
+		rgba(176, 233, 243, 0.3)
+	);
+}
+
+@media screen and (min-width: 799px) {
+	.w-card {
+		width: 35vw;
+	}
+}
+
+.w-card__header-wrap {
+	width: 100%;
+	min-height: fit-content;
+	margin: 15px 0px;
+	position: relative;
+	border-top: 2px solid $azureColor;
+	border-bottom: 2px solid $azureColor;
+	border-image: linear-gradient(
+		90deg,
+		rgba(233, 176, 243, 0) 0%,
+		rgba(176, 239, 243, 0.5) 31.25%,
+		rgba(176, 241, 243, 0.5) 63.75%,
+		rgba(233, 176, 243, 0) 100%
+	);
+	border-image-slice: 1;
+	text-align: center;
+}
+
+.w-card__header {
+	margin: 5px 0px;
+	padding: 0.5rem;
+	background: linear-gradient(
+		90deg,
+		rgba(236, 32, 5, 0) 0%,
+		rgba(176, 239, 243, 0.5) 31.25%,
+		rgba(176, 241, 243, 0.5) 63.75%,
+		rgba(233, 176, 243, 0) 100%
+	);
+	color: $whiteColor; /*стили для примера надписи*/
+	font-size: 14px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+.w-card__description {
+	color: $whiteColor;
+	margin: 1rem auto;
+	text-align: center;
+}

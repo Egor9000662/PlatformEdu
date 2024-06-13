@@ -1,0 +1,19 @@
+@import '../../../../styles/vars.scss';
+@import '../../../../styles/modal.scss';
+
+.estimation-meetings-modal {
+	@include modal-mixin;
+}
+
+.estimation-meetings-modal .feedback-form-card__description-btnSend {
+    margin-top: 90px;
+}
+.feedbackMeetingSent-text {
+    color: $whiteColor;
+    margin-top: 20px;  
+}
+
+@media screen and (min-width: 769px) {
+    .feedbackMeetingSent-text {
+        color: $blueColor;    }
+}

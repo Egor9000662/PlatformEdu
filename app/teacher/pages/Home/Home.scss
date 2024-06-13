@@ -1,0 +1,247 @@
+@import '../../../styles/search&selects.scss';
+@import '../../../styles/vars.scss';
+
+.homeWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	h1 {
+		margin: 0;
+	}
+}
+
+.headerContainer {
+	width: 90vw;
+	max-width: 1270px;
+	padding: 20px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	position: relative;
+
+	&__btn {
+		position: absolute;
+		left: 0;
+		top: 20px;
+	}
+}
+
+.homeHeader-title {
+	color: $whiteColor;
+	font-weight: 600;
+	line-height: 81.5px;
+}
+
+.homeCounter-wrapper {
+	position: absolute;
+	right: 0;
+	top: 50px;
+}
+
+.homeHeader-logout-btn {
+	position: absolute;
+	right: 1rem;
+	top: 40px;
+}
+
+//  background of entire app
+.upperSide {
+	overflow: auto;
+	height: 100vh;
+	padding-bottom: 4rem;
+}
+
+.teacherHome-controls {
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
+	max-width: 1223px;
+	width: 100vw;
+	height: 60px;
+	position: fixed;
+	bottom: 2%;
+}
+
+.bell {
+	img {
+		margin-left: 12%;
+		background: radial-gradient(
+			100% 100%,
+			rgba(73, 156, 233, 0.1),
+			rgba(119, 217, 241, 0.3)
+		);
+		border: 2px solid rgba(144, 238, 250, 0.8);
+		border-radius: 100%;
+		width: 55px;
+		height: 55px;
+
+		@mixin hover-btn {
+			background: #4f8cd8;
+		}
+
+		&:hover {
+			@include hover-btn;
+		}
+
+		&:active {
+			@include hover-btn;
+		}
+	}
+}
+
+.group-button {
+	margin-right: 10px;
+	padding: 10px;
+	max-width: 700px;
+	font-size: 25px;
+	font-family: inherit;
+	font-weight: 600;
+	color: $whiteColor;
+	background: $colorBlueBtn;
+	border-radius: 50px;
+	border: $borderBtn;
+	text-align: center;
+
+	&:hover {
+		background: $colorBlueBtnHover;
+	}
+
+	&:active {
+		background: $colorBlueBtnHover;
+		top: 2px;
+		background: linear-gradient(to bottom, #a8dce6, #539bb1, #395f8b);
+	}
+}
+
+.select-container {
+	position: relative;
+	width: 90vw;
+	max-width: 1270px;
+	display: flex;
+	justify-content: center;
+	margin-top: 2rem;
+}
+#mentor-home-select {
+	width: 90vw;
+}
+.homeCounter__groups {
+	width: 90vw;
+	max-width: 1270px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	.homeCounter__group {
+		width: 100%;
+
+		@media screen and (min-width: 1279px) {
+			margin-right: 25px;
+		}
+	}
+}
+
+.homeCounter__group_error {
+	margin-top: 30px;
+	color: $whiteColor;
+	font-weight: 600;
+	font-size: 25px;
+}
+
+.select-teacher-groups {
+	width: 100%;
+	max-width: 1270px;
+	zoom: 1;
+	font-size: 30px;
+	font-weight: initial;
+	text-align: start;
+	margin-bottom: 15px;
+	cursor: pointer;
+	@include search-selects-mixin;
+}
+
+.select-button {
+	@include search-selects-icon;
+	cursor: pointer;
+}
+
+.blockPrice-modal {
+	display: flex;
+	text-align: center;
+}
+@media screen and (max-width: 323px) {
+	.group-button {
+		font-size: 16px;
+		padding: 10px;
+	}
+}
+
+@media screen and (min-width: 324px) and (max-width: 480px) {
+	.headerContainer {
+		img {
+			width: 55px;
+		}
+	}
+
+	.teacherHome-controls {
+		max-width: 300px;
+	}
+
+	.group-button {
+		font-size: 16px;
+		width: 132px;
+		padding: 10px;
+		margin-right: 5px;
+	}
+
+	.sizeCounter > .counter {
+		top: 40%;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	.headerContainer {
+		img {
+			width: 60px;
+		}
+	}
+
+	.group-button {
+		font-size: 18px;
+		width: 145px;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+	.group-button {
+		font-size: 22px;
+		max-height: 100px;
+	}
+
+	.bell img {
+		width: 65px;
+		height: 65px;
+	}
+}
+
+@media screen and (min-width: 1279px) {
+	.group-button {
+		max-height: 100px;
+		font-size: 25px;
+	}
+
+	.bell img {
+		width: 65px;
+		height: 65px;
+	}
+}
+
+@media screen and (max-width: 1455px) {
+	.homeCounter-wrapper {
+		position: absolute;
+		left: calc(50% + 110px);
+	}
+}

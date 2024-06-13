@@ -1,0 +1,492 @@
+@import '../../../styles/vars.scss';
+@import '../../../styles/modal.scss';
+@include modal-wrap;
+
+.meetingPage {
+	display: flex;
+	flex-direction: column;
+	width: 95%;
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
+}
+
+.callHeader {
+	width: 100%;
+	max-width: 1270px;
+	padding: 20px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	&__btn {
+		position: absolute;
+		top: 20px;
+		left: 0;
+	}
+	&__btn_right {
+		position: absolute;
+		top: 20px;
+		right: 0;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	&__btn__add,
+	&__btn__add:active,
+	&__btn__add:focus {
+		background: $colorBlueBtn;
+		box-shadow: 0px 24px 32px rgba(233, 176, 243, 0.04),
+			0px 16px 24px rgba(233, 176, 243, 0.04),
+			0px 4px 8px rgba(233, 176, 243, 0.04),
+			0px 0px 1px rgba(233, 176, 243, 0.04);
+		border-radius: 50px;
+		border: $borderBtn;
+		font-family: 'Rubik', sans-serif;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 19px;
+		text-align: center;
+		height: 50px;
+	}
+}
+
+.callTitle {
+	font-family: 'Rubik', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 2em;
+	line-height: 81.5px;
+	text-align: center;
+	color: $whiteColor;
+	margin: 0 auto;
+}
+
+.dateSection {
+	display: flex;
+	align-items: center;
+}
+
+.todayText {
+	font-family: 'Rubik', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+	color: $whiteColor;
+	margin-bottom: 0px;
+}
+
+.date {
+	color: #8a96c3;
+	font-family: 'Rubik', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.monthCarousel {
+	display: flex;
+	flex-direction: row;
+	color: $whiteColor;
+	align-items: center;
+	margin-left: 24px;
+}
+
+.current {
+	font-family: 'Rubik', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	padding: 8px 26px;
+	background: linear-gradient(
+		225deg,
+		rgba(146, 213, 241, 0.01) 0%,
+		rgba(146, 213, 241, 0.1) 100%
+	);
+	border: 1px solid $azureColor;
+	box-shadow: 0px 4px 8px rgba(146, 213, 241, 0.04),
+		0px 0px 2px rgba(146, 213, 241, 0.06),
+		0px 0px 1px rgba(146, 213, 241, 0.04);
+	border-radius: 50px;
+}
+
+.current::first-letter {
+	text-transform: capitalize;
+}
+
+.previous {
+	cursor: pointer;
+}
+
+.next {
+	cursor: pointer;
+}
+
+.dayCarousel {
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.month {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	overflow-x: scroll;
+	scroll-behavior: smooth;
+	width: 342px;
+}
+
+#element::-webkit-scrollbar {
+	display: none;
+}
+.selected {
+	color: $whiteColor;
+	text-align: center;
+	margin-right: 16px;
+	border-radius: 30px;
+	width: 50px;
+	height: 82px;
+	background: rgb(40, 71, 147, 0.9);
+	border: 1px solid $azureColor;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 8px rgba(146, 213, 241, 0.04),
+		0px 0px 2px rgba(146, 213, 241, 0.06),
+		0px 0px 1px rgba(146, 213, 241, 0.04);
+}
+
+/* added red circule notification on the top of the day  */
+.notification {
+	position: relative;
+	top: 15%;
+	right: 45%;
+	width: 12px;
+	height: 12px;
+	background: $lightRedColor;
+	border-radius: 50px;
+	text-align: center;
+}
+.weekday {
+	background: $whiteColor;
+	text-align: center;
+	margin-right: 16px;
+	border-radius: 30px;
+	color: $blueColor;
+	width: 50px;
+	height: 82px;
+	cursor: pointer;
+	}
+
+.weekday_container {
+	position: relative;
+	}
+
+.weekday_meeting {
+		::after {
+			content: '';
+			position: absolute;
+			right: 4px;
+			top: 2.5px;
+			width: 12px;
+			height: 12px;
+			background: #FE66FF;
+			border-radius: 50px;
+			text-align: center;
+		}
+	}
+
+.dayNumber {
+	padding-top: 16px;
+	font-family: 'Rubik', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+.dayName {
+	font-family: 'Rubik', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 14px;
+	text-align: center;
+	padding-top: 8px;
+}
+
+.add-button,
+.add-button:active,
+.add-button:focus {
+	background: $colorBlueBtn;
+	box-shadow: 0px 24px 32px rgba(233, 176, 243, 0.04),
+		0px 16px 24px rgba(233, 176, 243, 0.04),
+		0px 4px 8px rgba(233, 176, 243, 0.04),
+		0px 0px 1px rgba(233, 176, 243, 0.04);
+	border-radius: 50px;
+	border: $borderBtn;
+	font-family: 'Rubik', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	color: $whiteColor;
+	position: fixed;
+	top: 85%;
+	width: 184px;
+	height: 50px;
+}
+
+.add-button:hover {
+	background: $colorBlueBtnHover;
+}
+
+.input-video {
+	padding: 16px;
+	margin-bottom: 16px;
+	width: 16.75rem;
+	border-radius: 25px;
+	color: $whiteColor;
+	background-color: transparent;
+	border: 1px solid $azureColor;
+}
+
+.input-video::placeholder {
+	color: $whiteColor;
+}
+
+.input-video:focus {
+	outline: $inputOutline;
+}
+
+.input-video::-webkit-input-placeholder {
+	color: $whiteColor;
+	font-size: 14px;
+}
+.video-err-message {
+	padding: 0 10px;
+	font-size: 12px;
+	line-height: 16px;
+	color: $minorNoticeColor;
+}
+
+.meeting-empty_video {
+	display: flex;
+	height: 70vh;
+	align-items: center;
+}
+.meeting-empty_text {
+	font-weight: 600;
+	text-align: center;
+	color: $whiteColor;
+}
+
+/* files upload */
+.upload-files-label {
+	padding: 16px;
+	margin-bottom: 16px;
+	width: 16.75rem;
+	border-radius: 25px;
+	color: $whiteColor;
+	background-color: transparent;
+	border: 1px solid $azureColor;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+.upload-files-label:focus {
+	outline: $inputOutline;
+}
+
+.upload-files-label::-webkit-input-placeholder {
+	color: $whiteColor;
+	font-size: 14px;
+}
+
+.upload-files-text {
+	margin: 0;
+}
+
+.upload-files-img {
+	height: 30px;
+	width: 30px;
+}
+
+.upload-files {
+	display: none;
+}
+
+button.preview-files_button-cancel.materials-button-cancel {
+	left: 30px;
+}
+
+.meeting-container {
+	display: flex;
+	flex-direction: column;
+	background-color: $whiteColor;
+	width: 90%;
+	padding: 20px;
+	border-radius: 20px;
+	margin-bottom: 20px;
+}
+
+.meetingIcon {
+	margin-right: 5px;
+}
+
+.meeting-description {
+	display: flex;
+	gap: 30%;
+	margin-bottom: 20px;
+}
+
+.addMaterials-button,
+.addMaterials-button:active,
+.addMaterials-button:focus {
+	background: $colorBlueBtn;
+	box-shadow: 0px 24px 32px rgba(233, 176, 243, 0.04),
+		0px 16px 24px rgba(233, 176, 243, 0.04),
+		0px 4px 8px rgba(233, 176, 243, 0.04),
+		0px 0px 1px rgba(233, 176, 243, 0.04);
+	border-radius: 50px;
+	border: $borderBtn;
+	font-family: 'Rubik', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	color: $whiteColor;
+	width: 90%;
+	height: 50px;
+	align-self: center;
+}
+
+ .meeting-title {
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	font-size: 26px;
+	margin-top: 26px;
+	margin-bottom: 26px;
+	color: $blueColor;
+}
+/* media queries */
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+	.month {
+		width: 90vw;
+	}
+
+	.dateSection {
+		width: 90vw;
+		justify-content: space-between;
+		margin-bottom: 15px;
+	}
+
+	.todayText {
+		font-size: 34px;
+		margin-bottom: 8px;
+	}
+	.date {
+		font-size: 18px;
+	}
+
+	.current {
+		font-size: 28px;
+	}
+
+	.add-button,
+	.add-button:active,
+	.add-button:focus {
+		font-size: 20px;
+		width: 200px;
+		height: 50px;
+	}
+
+	.addMaterials-button,
+	.addMaterials-button:active,
+	.addMaterials-button:focus {
+		width: 60%;
+	}
+
+	.videoTitle .meeting-title {
+		color: $blueColor;
+	}
+}
+@media (min-width: 769px) {
+.callHeader__item {
+	flex-direction: row;
+	margin-left: 65px;
+	margin-bottom: 0;
+}
+
+	.month {
+		width: 100%;
+	}
+
+	.dateSection {
+		width: 100%;
+		justify-content: space-between;
+		margin-bottom: 15px;
+	}
+
+	.todayText {
+		font-size: 38px;
+		margin-bottom: 8px;
+	}
+	.date {
+		font-size: 30px;
+	}
+
+	.current {
+		font-size: 34px;
+		padding: 12px 28px;
+		border: 2px solid $azureColor;
+	}
+
+	.arrow_left,
+	.arrow_right {
+		width: 55px;
+	}
+
+	.add-button,
+	.add-button:active,
+	.add-button:focus {
+		font-size: 30px;
+		width: 350px;
+		height: 70px;
+	}
+
+	.meeting-container {
+		display: flex;
+		flex-direction: column;
+		background-color: $whiteColor;
+		width: 90%;
+		padding: 20px;
+		border-radius: 20px;
+		margin-bottom: 20px;
+	}
+
+	.addMaterials-button,
+	.addMaterials-button:active,
+	.addMaterials-button:focus {
+		width: 32%;
+}
+}

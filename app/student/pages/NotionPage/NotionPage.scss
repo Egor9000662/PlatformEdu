@@ -1,0 +1,192 @@
+@import '../../../styles/vars.scss';
+@import '../../../styles/modal.scss';
+
+.notion-viewport {
+	position: static;
+}
+
+.notion-full-page {
+	padding-bottom: 2rem;
+}
+
+.notionPage-card {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.notionPage-message {
+	width: 92vw;
+	min-height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $whiteColor;
+	margin-top: 25px;
+	border-radius: 10px;
+	font-size: 20px;
+}
+
+.notion {
+	border-radius: 10px;
+	height: min-content;
+	font-weight: 400;
+	color: $blueColor;
+	width: 92vw;
+	max-width: 1280px;
+}
+
+@media screen and (max-width: 767px) {
+	.notion-list-numbered {
+		margin-left: 15px;
+	}
+	.notion-list-disc,
+	.notion-list-numbered {
+		max-width: 80vw;
+		padding-inline-start: 5px;
+	}
+	.notion-app code[class*='language-'],
+	.notion-app .notion-code {
+		font-size: 0.85em;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.notion {
+		margin: 1rem;
+	}
+}
+
+.notion-app {
+	min-height: auto;
+	width: 100%;
+}
+
+.notion-blank {
+	display: none;
+}
+
+.notion-frame {
+	justify-content: space-between;
+}
+
+.notion-page-scroller {
+	flex-direction: row;
+	align-content: flex-start;
+	min-height: auto;
+}
+
+.notion-page {
+	flex: 0 0 auto;
+	margin: 0;
+	padding: 20px;
+	width: 100%;
+}
+
+.notion-page-no-cover {
+	margin-bottom: 48px;
+}
+
+.notion-title {
+	text-align: center;
+}
+
+.notion-title,
+.notion-h-title {
+	font-weight: 700;
+	color: $blueColor;
+}
+
+.notion-table-of-contents-item,
+.notion-link {
+	border-color: #07b9f1;
+	color: #07b9f1;
+}
+
+.AnyClassForContainer {
+	position: fixed;
+	right: 5%;
+	bottom: 10%;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+.AnyClassForTransition {
+	right: 20px;
+}
+
+.notion-hash-link {
+	display: none;
+	pointer-events: none;
+}
+
+.notionPage-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* position: relative; */
+	justify-content: center;
+}
+
+.notionPage-header {
+	width: 90vw;
+	max-width: 100%;
+	padding: 20px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.lessonPage-meetingFeedback {
+	display: flex;
+	height: 65px;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+}
+
+.lessonPage-meetingFeedback:hover {
+	cursor: pointer;
+}
+.lessonPage-meetingFeedback:hover span {
+	color: #ffb44f;
+}
+
+@media screen and (max-width: 480px) {
+	.notion-app {
+		min-height: auto;
+		width: 92vw;
+		margin: 0 auto;
+	}
+	.lessonPage-meetingFeedback {
+		height: 45px;
+	}
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	.notion-app {
+		min-height: auto;
+		width: 92vw;
+		margin: 0 auto;
+	}
+	.lessonPage-meetingFeedback {
+		height: 55px;
+	}
+}
+
+.np-scrollSpan {
+	width: 10px;
+}
+
+.notion-asset-wrapper-video {
+	max-width: 50vw;
+}
+
+@media screen and (min-width: 1024px) {
+	.notionPage-header {
+		display: none;
+	}
+
+	.notionPage-card{
+		width: 100%;
+	}
+}

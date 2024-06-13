@@ -1,0 +1,133 @@
+@import "../../../styles/vars.scss";
+.top-container {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+.studentProfile_container {
+	width: 90vw;
+	max-width: 1270px;
+	padding: 20px 0;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	position: relative;
+}
+
+.student_name {
+	flex-grow: 2;
+	pointer-events: none;
+}
+
+.student_crystals {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	margin-bottom: -35px;
+}
+
+.student_crystals_sum {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 19px;
+	color: $whiteColor;
+}
+
+.studentProfile_weeks {
+	height: 80px;
+	// background: linear-gradient(
+	// 	180deg,
+	// 	rgba(88, 133, 182, 0.8),
+	// 	rgba(88, 133, 182, 0.07)
+	// );
+	background: rgba(88, 133, 182, 0.4);
+
+	clip-path: polygon(
+		40% 49%,
+		64% 49%,
+		75% 0,
+		100% 0,
+		100% 100%,
+		0 100%,
+		0 0,
+		29% 0
+	);
+}
+
+.studentProfile_weeks-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: linear-gradient(
+		180deg,
+		rgba(88, 133, 182, 0.4),
+		rgba(88, 133, 182, 0.01)
+	);
+}
+
+.studentProfile_weeks-container_text {
+	color: $whiteColor;
+	font-size: 20px;
+}
+
+.studentProfile_counter{
+	position: absolute;
+	top: 40px;
+	right: 0;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	.studentProfile_weeks {
+		padding-top: 80px;
+		clip-path: polygon(
+			42% 49%,
+			62% 49%,
+			72% 0,
+			100% 0,
+			100% 100%,
+			0 100%,
+			0 0,
+			32% 0
+		);
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1278px) {
+	.studentProfile_weeks {
+		padding-top: 90px;
+		clip-path: polygon(
+			42% 49%,
+			59% 49%,
+			66% 0,
+			100% 0,
+			100% 100%,
+			0 100%,
+			0 0,
+			35% 0
+		);
+	}
+	.student_crystals_sum {
+		font-size: 24px;
+	}
+}
+
+@media screen and (min-width: 1279px) {
+	.studentProfile_weeks {
+		padding-top: 100px;
+		clip-path: polygon(
+			44% 49%,
+			56% 49%,
+			60% 0,
+			100% 0,
+			100% 100%,
+			0 100%,
+			0 0,
+			40% 0
+		);
+	}
+	.student_crystals_sum {
+		font-size: 25px;
+	}
+}

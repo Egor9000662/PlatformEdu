@@ -1,0 +1,49 @@
+@import '../../../styles/vars.scss';
+
+.pb__wrapper {
+	position: relative;
+	padding: 10px;
+	max-width: 100%;
+}
+.pb__triangle {
+	position: absolute;
+	align-self: center;
+	height: 10px;
+	bottom: 7px;
+	clip-path: polygon(99% 0%, 3% 60%, 99% 100%);
+	max-width: 100%;
+	background: $azureColor;
+}
+
+.pb__dot {
+	position: absolute;
+	box-shadow: 0 0 0.8em 0.2em rgba(146, 213, 241, 0.6);
+	bottom: 5px;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background: linear-gradient(
+		90deg,
+		rgba(146, 213, 241, 1) 60%,
+		rgba(255, 255, 255, 1) 100%
+	);
+}
+.pb__line {
+	align-self: center;
+	box-sizing: border-box;
+	max-width: 100%;
+
+	background: linear-gradient(
+		90deg,
+		rgba(146, 213, 241, 1) 40%,
+		rgba(146, 213, 241, 0) 100%
+	);
+	@media screen and (max-width: 480px) {
+		width: 200px;
+		height: 1px;
+	}
+	@media screen and (min-width: 481px) {
+		width: 400px;
+		height: 2px;
+	}
+}

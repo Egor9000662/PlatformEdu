@@ -1,0 +1,266 @@
+@import '../../../styles/vars.scss';
+@import '../../../styles/modal.scss';
+
+.chat-avatar {
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+}
+
+.chat-header-avatar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 100%;
+	height: 64px;
+	position: relative;
+}
+
+.chat-name-student {
+	color: white;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.status-circle {
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	bottom: 0;
+	right: 3%;
+	border-radius: 50%;
+}
+
+.status-circle-shadow {
+	position: absolute;
+	bottom: 8%;
+	right: 5%;
+}
+
+.user-online-circle {
+	background-color: #ccef82;
+}
+
+.user-online-circle-shadow {
+	box-shadow: 0px 0px 6px 6px #ccef82ab;
+}
+
+.user-offline-circle {
+	background-color: #a1a19f;
+}
+
+.user-offline-circle-shadow {
+	box-shadow: none;
+}
+
+.chat-message-container {
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+	z-index: 0;
+	height: 70vh;
+	max-height: 70vh;
+	flex-direction: column-reverse;
+	flex: 1 1 auto;
+	padding-top: 0;
+	padding-bottom: 3px;
+}
+
+.chat-none-block {
+	display: flex;
+	height: 70vh;
+}
+
+.chat-message-container::-webkit-scrollbar {
+	border-radius: 20px;
+	background: #0b2e6741;
+}
+
+.chat-message-container::-webkit-scrollbar-thumb {
+	border-radius: 20px;
+	background-color: white;
+}
+
+.chat-message-none {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.messages-none-text {
+	color: $whiteColor;
+}
+
+.chat-message {
+	margin: 10px 0px 10px 30px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	flex-direction: column;
+}
+
+.chat-message-files {
+	margin-right: 15px;
+	margin-top: 20px;
+}
+
+.chat-message-files img {
+	width: 200px;
+	height: 200px;
+	object-fit: contain;
+}
+
+.chat-message.recipient {
+	flex-flow: row-reverse;
+}
+
+.chat-message__text-container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.chat-message__text {
+	display: flex;
+	flex-direction: column;
+	padding: 20px 30px;
+	text-align: left;
+	line-height: 118.5%;
+	font-family: inherit;
+	font-weight: 400;
+	font-size: calc(16px + (16 + 16 * 0.7) * ((50vw - 375px) / 1280));
+	border-radius: 15px;
+	/* To wrap the line */
+	-ms-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+	word-break: break-word;
+	white-space: pre-wrap;
+}
+
+.chat-practice-title {
+	line-height: 1.5rem;
+}
+
+.chat-text {
+	margin-bottom: 5px;
+}
+
+.sender-link a {
+	color: #196aec;
+}
+
+.recipient-link a {
+	color: #4acbf4;
+}
+
+.chat-message__text a {
+	text-decoration: underline;
+}
+
+.chat-message__text a:hover {
+	text-decoration: underline;
+	color: #11388d;
+}
+
+.edit-input {
+	border: 1px solid $blueColor;
+	border-radius: 5px;
+	padding: 5px;
+	margin-right: 2px;
+	outline: none;
+	background: transparent;
+	color: $blueColor;
+	font-size: calc(16px + (16 + 16 * 0.7) * ((50vw - 375px) / 1280));
+
+	&:focus {
+		border: 2px solid #11388d;
+	}
+}
+
+.message-icons img {
+	width: 1.2rem;
+	height: 1.2rem;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.edit-icon {
+	filter: invert(40%) sepia(85%) saturate(2120%) hue-rotate(192deg) brightness(103%) contrast(100%);
+
+	&:hover {
+		filter: invert(8%) sepia(52%) saturate(1845%) hue-rotate(207deg) brightness(99%) contrast(101%);
+	}
+}
+
+.delete-icon {
+	filter: hue-rotate(226deg) brightness(200%);
+
+	&:hover {
+		filter: invert(8%) sepia(52%) saturate(1845%) hue-rotate(207deg) brightness(99%) contrast(101%);
+	}
+}
+
+.chat-icon {
+	filter: invert(40%) sepia(85%) saturate(2120%) hue-rotate(192deg) brightness(103%) contrast(100%);
+	max-height: 16px;
+	margin-right: 5px;
+}
+
+.seen-icon {
+	width: 15px;
+	height: 18px;
+}
+
+.message__side-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.message__inputs {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 5px;
+	margin-bottom: 10px;
+}
+
+.message-time {
+	color: $lightGreyColor;
+}
+
+.message-seen {
+	margin-left: 5px;
+}
+
+.sender .chat-message__text {
+	background: $azureColor;
+	color: $blueColor;
+}
+
+.recipient .chat-message__text {
+	background: $whiteColor;
+	color: $blueColor;
+}
+
+.message-accepted .chat-message__text {
+	border: thick double #7cbc55;
+	background: #ccef82;
+	color: #203314;
+}
+
+.message-declined .chat-message__text {
+	border: dashed #f33f33;
+	background: #faa0a0;
+	color: #291010;
+}
+
+.discussion-btn {
+	margin-top: 1rem;
+	border: none;
+}
+
+.discussion-btn:hover {
+	border: none;
+}

@@ -1,0 +1,28 @@
+.select {
+	width: 220px;
+	color: rgb(0, 0, 0);
+	min-height: 40px;
+	max-height: 40px;
+	width: 100%;
+	text-indent: 6px;
+	padding: 6px;
+	margin: 5px;
+	border: 1px solid rgba(146, 213, 241, 1);
+	background: radial-gradient(80% 80%,
+			rgba(146, 213, 241, 0.01),
+			rgba(189, 217, 230, 0.356));
+	box-shadow: 0px 24px 32px rgb(45 44 45 / 4%),
+		0px 16px 24px rgb(45 44 45 / 4%), 0px 4px 8px rgb(45 44 45 / 4%),
+		0px 0px 1px rgb(45 44 45 / 4%);
+	border-radius: 50px;
+
+	option {
+		color: rgba(66, 61, 61, 0.5);
+	}
+}
+
+.select:focus {
+	outline: none;
+	border: 1px solid #b0e0f3;
+	box-shadow: 0 0 7px #b0def3;
+}

@@ -1,0 +1,27 @@
+@import '../../../styles/vars.scss';
+@import "../../../styles/search&selects.scss";
+
+.messengerStudents-container {
+	cursor: pointer;
+	width: 100%;
+}
+
+.messengerSearch {
+	position: relative;
+}
+
+.messengerSearch input.searchInput-input {
+	font-size: 16px;
+	max-width: 100%;
+	
+}
+
+.messenger_search_icon {
+	@include search-selects-icon;
+}
+
+@media screen and (max-width: 768px) {
+	.messengerSearch input.searchInput-input{
+		max-width: 98%;
+	}
+}

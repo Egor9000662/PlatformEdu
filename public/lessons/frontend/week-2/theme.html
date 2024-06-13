@@ -1,0 +1,775 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Неделя 2</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+</style></head><body><article id="48ce0ab7-c086-4b74-a229-829f8697224a" class="page sans">
+	<header>
+		<h1 class="page-title">Неделя 2</h1>
+	</header><div class="page-body">
+	<p id="303a4381-e2e6-4d90-8dbf-17a4c3aca08a" class="">
+</p>
+	<figure id="ca524673-2b78-4c72-85ea-e02e0c193ad6" class="image">
+		<a href="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled.png">
+			<img style="width:600px" src="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled.png"/></a>
+	</figure>
+	<p id="25e77467-536d-4ad7-99e3-65e59385cdef" class="">Видео недели:</p>
+	<ol type="1" id="8bd0637c-d474-4304-a18d-ceb59c8fc185" class="numbered-list" start="1">
+		<li>
+			<a href="https://youtu.be/7su79CRwkv8">Семантическая верстка (теги HTML5)</a>
+		</li>
+	</ol>
+	<ol type="1" id="8d75c12c-69db-4668-8d10-da4b0eafd955" class="numbered-list" start="2">
+		<li>
+			<a href="https://youtu.be/4IZYQawY5rY">Теги форм</a>
+		</li>
+	</ol>
+	<ol type="1" id="51bbc130-858c-4636-b50f-05a10382e3c1" class="numbered-list" start="3">
+		<li>
+			<a href="https://youtu.be/ipWouO8neXc">Что такое хорошая разметка</a>
+		</li>
+	</ol>
+	<h2 id="cc645a14-4d23-4f9f-9335-c5f9f5a08ea6" class="">1. Теги HTML5 (семантические)</h2>
+	<figure id="511a1008-3ed7-48de-8d3c-9f1ef06053e7">
+		<div class="source">
+			<a href="https://www.youtube.com/watch?v=7su79CRwkv8&amp;feature=youtu.be">https://www.youtube.com/watch?v=7su79CRwkv8&amp;feature=youtu.be</a>
+		</div>
+	</figure>
+	<h2 id="8b1dc65d-186a-401f-83fe-364df3b4eaf0" class="">Что это и зачем они нужны</h2>
+	<p id="01a729c7-f335-400e-87d3-0fe8ddaa81ea" class="">
+		<strong>Семантические теги</strong> - это одно из самых значимых нововведений в <strong>HTML5</strong>. До их появления вся разметка веб-страниц строилась при помощи элементов <code>&lt;div&gt;</code>, которым присваивались соответствующие его смыслу атрибуты (например, <code>&lt;div id=&quot;header&quot;&gt;</code>). С их помощью в HTML-документе размещали &quot;шапку&quot; и &quot;подвал&quot;, боковые панели, навигацию и многое другое. Это приводило к тому, что для поисковых систем и браузеров все элементы страницы были одинаковыми, ведь тег &lt;div&gt; - это по сути обычная прямоугольная область на странице, не несущая какую-то конкретную информацию, кроме той, которую в нее заложит разработчик. Для решения этой проблемы было принято решение ввести семантические теги, которые делают структуру страницы более понятной и логичной.</p><p id="878edebf-7ae1-4f95-8246-a7595fc7cf7b" class="">Семантические теги HTML5 четко описывают, какой контент содержат (например, было <code>&lt;div id=&quot;footer&quot;&gt;</code>, стало <code>&lt;footer&gt;</code>). Для отображения внешнего вида элементов не задано никаких правил - элементы можно стилизовать по своему усмотрению. Для всех элементов доступны <a href="https://html5book.ru/html-attributes/">‎</a>универсальные атрибуты (<code>id</code>, <code>class</code>, <code>style</code> и другие).</p><p id="6ef64357-36f3-4305-a941-16d3105dcd94" class="">Это важно для смартфонов и ридеров – например, используя браузер Safari на iPhone или iPad, можно перейти в режим чтения, когда на экране выводится только текстовая информация страницы – и воспринимать ее гораздо легче, ведь нет отвлекающих элементов в виде картинок, баннеров, рекламы. Но этот режим будет доступен лишь в том случае, если страница имеет семантическую разметку, благодаря которой браузер может понять, где находится заголовок, где текст, а где навигация. </p><p id="1723f03f-c991-436f-b880-03cdb5e6052f" class="">Не стоит забывать и о поисковых роботах – семантическая разметка поможет им правильно проанализировать страницу, отделив важную информацию, касающуюся содержимого страницы, от второстепенной (шапка, подвал, навигация). И это обязательно положительно скажется на SEO-продвижении сайта.</p><p id="6ba349da-0968-4be2-b241-c4a98867ccca" class="">Таким образом, главное предназначение семантической разметки – делать структуру документа более понятной на всех этапах использования, от разработки до публикации в сети и индексации поисковиками.</p><h2 id="12029f53-2be6-4770-8124-5654a5f841ea" class="">Структура документа в HTML4 и HTML5</h2><p id="c32a6de1-2e2f-4216-946a-b70ed71c490e" class="">Смотрите какая наглядная разница в разметке:</p><figure id="b5423969-b777-4504-b42a-49763f7d298d" class="image"><a href="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/D09DD0B5D0B4D0B5D0BBD18F202.20D09FD180D0B8D0BCD0B5D180.png"><img style="width:963px" src="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/D09DD0B5D0B4D0B5D0BBD18F202.20D09FD180D0B8D0BCD0B5D180.png"/></a></figure><p id="c8809f44-3ed0-43f3-96a8-c7382f745c89" class="">Пример посложнее:</p><figure id="e86e48db-f97a-43c7-9e0e-59b23c78f299" class="image"><a href="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled%201.png"><img style="width:1134px" src="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled%201.png"/></a></figure><p id="76a371cc-fd1c-444e-9581-6e72bdeb9dc5" class="">Несложно заметить, что обновленная разметка представляет собой более прозрачную и интуитивно понятную структуру, которая ко всему прочему удобна при разработке.</p><p id="d851b56b-4657-4b11-87fc-2ef2c60aee1c" class="">Примеры использования:</p><h2 id="f23d284b-b6d8-4275-901c-0bab793bd132" class="">Новые семантические элементы разметки HTML5</h2><p id="2f34a0ec-08c1-45ab-b6a5-798f94217656" class="">Причем, в HTML5 не исчезли какие-то старые элементы – наоборот, теперь разработчики могут использовать новые, более удобные теги, каждый из которых выполняет свою особенную функцию. </p><p id="dab61c32-02da-492e-a890-8aff2289b2e7" class="">Вот основные из них:</p><ul id="34f8e984-fbae-4256-94cf-adaf401bdbd9" class="toggle"><li><details open=""><summary><strong>header</strong></summary><p id="2c6f7d86-792a-48ea-9903-d7b06c1ecacf" class="">Элемент <a href="https://ru.w3docs.com/uchebnik-html/html-teg-header.html">&lt;header&gt;</a> формирует заголовочный блок или “шапку” документа, используется как контейнер для группировки вводных и навигационных элементов (логотип, навигационное меню, форма поиска и т.д.). Может располагаться в любой части страницы или вообще отсутствовать.</p></details></li></ul><ul id="61168722-3d0d-49c2-9556-3f258c2b0c93" class="toggle"><li><details open=""><summary><strong>nav</strong></summary><p id="89c71fcf-6aae-42ce-9a0f-8680a44044ec" class=""><a href="https://ru.w3docs.com/uchebnik-html/html-teg-nav.html">&lt;nav&gt;</a> - навигационный раздел со ссылками на другие страницы. В качестве элементов меню могут выступать теги списков <code>&lt;ul&gt;</code>, <code>&lt;li&gt;</code> и тег адреса документа <code>&lt;a href=&quot;URL&quot;&gt;</code>, допускается использование заголовков (к примеру, <code>&lt;h2&gt;</code>).</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="7b5ed183-e66b-40bd-b6e3-aa838522f8e8"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><strong><em>Совет</em></strong><p id="e73d7c42-1aeb-41a2-947b-15ee8a02fbe2" class=""><em>С короткими списками ссылок (например, в подвале) тег </em><code><em>&lt;nav&gt;</em></code><em> использовать не рекомендуется. Используй данный тег для главной навигации и поиску по сайту, а также внутренней навигации</em></p><pre id="3ce06121-0bdc-4d06-8618-12974bf9120b" class="code"><code>&lt;nav&gt;
+&lt;a href=&#x27;/html/&#x27;&gt;HTML&lt;/a&gt; |
+&lt;a href=&#x27;/css/&#x27;&gt;CSS&lt;/a&gt; |
+&lt;a href=&#x27;/js/&#x27;&gt;JavaScript&lt;/a&gt; |
+&lt;a href=&#x27;/react/&#x27;&gt;React&lt;/a&gt;
+&lt;/nav&gt;</code></pre></div></figure></details></li></ul><ul id="f99bccc7-1d24-4f9a-84e9-1cdcdeb1456f" class="toggle"><li><details open=""><summary><strong>article</strong></summary><p id="7db82ec8-0947-40d5-9e78-485b3453315b" class=""><a href="https://ru.w3docs.com/uchebnik-html/html-teg-article.html">&lt;article&gt;</a> - независимый, самодостаточный контент, например, комментарий, запись в блоге или статья. </p><p id="ae536eea-846e-4459-8869-1b48b42ee139" class="">Контент, помещенный в этот элемент, должен иметь смысл сам по себе, т. е. он должен быть понятен в отрыве от остальных частей веб-сайта.</p><pre id="4e34349e-5251-40ec-aeac-0000b8b9bb72" class="code"><code>&lt;article&gt;
+&lt;h1&gt;Что делает Всемирный фонд дикой природы?&lt;/h1&gt;
+&lt;p&gt;Задача Всемирного фонда дикой природы остановить
+деградацию окружающей среды на нашей планете и
+построить будущее, в котором человечество будет
+жить в гармонии с дикой природой.&lt;/p&gt;
+&lt;/article&gt;
+
+</code></pre><figure id="2af26976-27c0-441a-ab7b-d1a6e53fe2cb" class="image"><a href="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled%202.png"><img style="width:802px" src="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled%202.png"/></a></figure></details></li></ul><ul id="b1eab25b-6be3-47d2-9791-f5e45193c2d7" class="toggle"><li><details open=""><summary><strong>section</strong></summary><p id="3ad3369d-9896-4b05-9f32-9873e78770d8" class=""><a href="https://ru.w3docs.com/uchebnik-html/html-teg-section.html">&lt;section&gt;</a> - разделяет страницы или записи на тематические блоки, но при этом, в отличие от тега <code>&lt;div&gt;</code>, он не является универсальным блоком-оберткой, тег <code>&lt;section&gt;</code> - это смысловой раздел документа, в котором крайне желательно поместить заголовок.</p><pre id="0693e94f-24f3-4a97-8495-965e72f367e3" class="code"><code>&lt;section&gt;
+&lt;h1&gt;WWF&lt;/h1&gt;
+&lt;p&gt;Всемирный фонд дикой природы (WWF) это....&lt;/p&gt;
+&lt;/section&gt;</code></pre></details></li></ul><ul id="e2c1e70e-6381-46ed-b86f-4c3f56b52aa5" class="toggle"><li><details open=""><summary><strong>main</strong></summary><p id="3a52e31b-74e3-45fa-b00b-ce830b4f541e" class=""><a href="https://ru.w3docs.com/uchebnik-html/html-teg-main.html">&lt;main&gt;</a> - основное, не повторяющееся на других страницах, содержание страницы. Такой тег на странице должен быть <strong>один</strong>.</p></details></li></ul><ul id="5ba1fd40-619c-4c08-b989-51ac224ae021" class="toggle"><li><details open=""><summary><strong>aside</strong></summary><p id="20f2f234-18dd-4475-a7e9-a4592caaa271" class=""><a href="https://ru.w3docs.com/uchebnik-html/html-teg-aside.html">&lt;aside&gt;</a> - группирует содержимое, которое будет показано сбоку от основного содержания страницы (например, для выделения цитат, карточек, баннеров и т.д.).</p></details></li></ul><ul id="c3bd2257-eec9-4c9e-b835-08ba9b6134d6" class="toggle"><li><details open=""><summary><strong>footer</strong></summary><p id="56faae9a-3a46-4d3f-90a7-77a0f01491bf" class=""><a href="https://ru.w3docs.com/uchebnik-html/html-teg-footer.html">&lt;footer&gt;</a> - формирует нижнюю часть элемента или страницы, которая обычно состоит из технической и юридической информации, контактных данных.</p></details></li></ul><ul id="a003af60-76df-463a-8d54-a6ce2ec1cad7" class="toggle"><li><details open=""><summary><strong>address</strong></summary><p id="64505edd-cb0a-4497-a924-2ab82a4d2e76" class=""><a href="https://ru.w3docs.com/uchebnik-html/html-teg-address.html">&lt;address&gt;</a> - определяет контактную информацию, касающуюся автора текста или страницы.</p><pre id="7b7f87af-1970-410e-8424-93e85d7b7718" class="code"><code>&lt;address&gt;
+&lt;p&gt;Автор И.И.Иванов&lt;/p&gt;
+&lt;p&gt;Контактная информация:
+&lt;a href=&quot;mailto:someone@example.com&quot;&gt;someone@example.com&lt;/a&gt;.
+&lt;/p&gt;
+&lt;/address&gt;</code></pre></details></li></ul><ul id="4ab62b50-728a-4222-b58f-7319f2a97856" class="toggle"><li><details open=""><summary><strong>figure</strong></summary><p id="15ce40f7-8d2a-4f5f-a522-f7bfb4441243" class=""><a href="https://ru.w3docs.com/uchebnik-html/html-teg-figure.html">&lt;figure&gt;</a> - группирует элементы (например, иллюстрации и подписи, но не ограничивается именно этими элементами – вы можете группировать видео, аудиоконтент, цитаты, таблицы и многое другое по своему желанию), для создания подписи необходимо внутри данного тега использовать тег <code>&lt;figcaption&gt;</code>.</p><pre id="92b20f47-444f-471b-bf12-3dc4ef765186" class="code"><code>&lt;figure&gt;
+&lt;img src=&#x27;img_pulpit.jpg&#x27; alt=&quot;The Pulpit Rock&quot; width=&quot;304&quot; height=&quot;228&quot;&gt;
+&lt;figcaption&gt;Рис. 1 — Палпит Рок. Гора в Норвегии&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre></details></li></ul><h2 id="89167e73-7be4-4b0c-b768-6b29d8eb6e0f" class="">2. Теги форм</h2><figure id="b7f376e2-acb4-413f-bebb-acfa1aa2e437"><div class="source"><a href="https://youtu.be/4IZYQawY5rY">https://youtu.be/4IZYQawY5rY</a></div></figure><p id="0261f034-db62-462d-a157-6b1d97ad84e7" class="">Сложно представить себе страницу без интерактивности. Практически всегда, когда у пользователя есть возможность как-то взаимодействовать со страницей, это делается благодаря формам и полям ввода в них. </p><p id="cb48b4e5-8f16-4987-a0d5-64e7e1bfa576" class="">Логика работы форм - пользователь вводит данные, которые потом обработает клиентское, либо серверное приложение. Если необходимо отправлять данные на сервер, то все теги форм необходимо поместить внутрь формы (тег <code>&lt;form&gt;</code>).</p><p id="15f1e23a-772c-437b-8928-f751617c793d" class="">Ключевые теги форм:</p><ul id="a92dda76-47a4-4cb7-a056-3bf7d8e79f0b" class="toggle"><li><details open=""><summary>Поля <strong>input</strong></summary><p id="556ca21e-4a7b-46b6-882d-9d7dbf3cb4d2" class=""><a href="https://ru.w3docs.com/uchebnik-html/html-teg-input.html">&lt;input&gt;</a> – это основа всего мира форм. Тип поля (текст, радиокнопка, флажок, поле для ввода пароля и т.д.) определяется значением атрибута <code>type</code>. Он может быть десяти видов:</p><ul id="13d9e715-7b1c-4c74-9dc3-2993709b29a4" class="bulleted-list"><li style="list-style-type:disc"><code>&lt;input type=&quot;text&quot;/&gt;</code> - стандартное текстовое поле. Также здесь может присутствовать атрибут <code>value</code>, который определяет текст по умолчанию, заданный в текстовом поле.<p id="b24630c7-9281-4aab-b1e9-8c1fbf4d7b59" class="">Атрибут <strong>placeholder </strong>- помещает внутрь текстового поля подсказку  пользователю.</p><figure id="6116069f-98b9-46c8-b8e4-f7841d972532" class="image"><a href="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled%203.png"><img style="width:1358px" src="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled%203.png"/></a></figure></li></ul><ul id="a3e49fb7-311b-4dec-b737-bc6072d394a7" class="bulleted-list"><li style="list-style-type:disc"><code>&lt;input type=&quot;password&quot; /&gt; </code>- тоже текстовое поле, но вводимые пользователем символы будут скрыты за звездочками ***.</li></ul><ul id="9e9e810d-72d4-4627-a856-45070f03fee6" class="bulleted-list"><li style="list-style-type:disc"><code>&lt;input type=&quot;checkbox&quot; /&gt;</code> - создает поле выключателей (checkbox) или флажков, которые пользователь может либо включить, либо отключить. Также здесь можно использовать атрибут <code>checked</code>, который используется в формате <code>&lt;input type=&quot;checkbox&quot; checked=&quot;checked&quot; /&gt;</code> и который задает начальное состояние флажка &quot;включен&quot;.</li></ul><pre id="36b86ff5-9030-41bf-83dc-2e03122f0c0f" class="code"><code>&lt;form&gt;
+&lt;p&gt; Как вы относитесь к полетам в космос? &lt;/p&gt;
+&lt;input type=&quot;checkbox&quot; name=&quot;space&quot; value=&quot;1&quot; /&gt;
+ Положительно, всегда хотел полететь в космос&lt;br /&gt;
+&lt;input type=&quot;checkbox&quot; name=&quot;space&quot; value=&quot;2&quot; /&gt;
+Безразлично, никогда не думал об этом серьезно &lt;br /&gt;
+&lt;input type=&quot;checkbox&quot; name=&quot;space&quot; value=&quot;3&quot; /&gt;
+ Отритцательно, меня с детства отталкивают мысли о космосе &lt;br /&gt;
+&lt;/form&gt;</code></pre><ul id="ebe8f614-c1c1-437f-a6c4-4f1d9703a594" class="bulleted-list"><li style="list-style-type:disc"><code>&lt;input type=&quot;radio&quot; /&gt; </code>- создает поле переключателей, которые очень похожи на флажки, однако в этом случае пользователь может выбрать только один объект в группе переключателей. Здесь также можно использовать атрибут <em>checked</em>, который задается аналогичным образом, как и в случае с флажками.<figure id="1c88e03b-4929-4771-b558-2770aef4d869" class="image"><a href="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled%204.png"><img style="width:997px" src="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled%204.png"/></a></figure><p id="f2acfbbc-51de-4a90-b027-5cbeb94ddd3b" class="">Атрибут <code>name</code> задает им общность (группу), позволяя правильно переключать флажки в рамках этой группы.</p></li></ul><ul id="70cdf748-5a75-4047-bec3-112901c5f27a" class="bulleted-list"><li style="list-style-type:disc"><code>&lt;input type=&quot;file&quot; /&gt; </code>- создает поле ввода, которое показывает файлы на вашем компьютере подобно тому, как вы открываете или сохраняете документы в большинстве программ. Оно позволяет пользователям загружать файлы на сервер.</li></ul><ul id="19c24a67-e8a5-4580-badc-31f3d172f290" class="bulleted-list"><li style="list-style-type:disc"><code>&lt;input type=&quot;submit&quot; /&gt;</code> - создает кнопку отправки данных формы программе-обработчику. Можно самому задавать текст, который будет отображаться на кнопке отправки (то же самое можно сделать и с типами <em>button</em> и <em>reset</em> – см.ниже). Это делается при помощи атрибута <em>value</em>, например, <code>&lt;input type=&quot;submit&quot; value=&quot;Ого. Надпись на кнопке&quot; /&gt;.</code><p id="eea38471-016b-4728-b038-9aba6a68d124" class="">Если мы используем кнопку типа submit и нам нужно отправлять данные в серверное приложение, то мы пишем дополнительные атрибуты в тег формы (ссылку на серверный скрипт <code>action</code> и метод передачи параметров <code>method</code>).</p><figure id="234800b0-7072-4fd4-9fdb-394c9da557a7" class="image"><a href="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled%205.png"><img style="width:894px" src="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled%205.png"/></a></figure></li></ul><ul id="fafd744f-dbd8-4364-af22-7e93c7070151" class="bulleted-list"><li style="list-style-type:disc"><code>&lt;input type=&quot;button&quot; /&gt;</code> - создает кнопку, которая без дополнительного кода ничего не будет делать.</li></ul><ul id="b576fe22-f4d7-4aad-bdb0-54794a501ea5" class="bulleted-list"><li style="list-style-type:disc"><code>&lt;input type=&quot;hidden&quot; /&gt;</code> - создает поле, которое не отображается в окне браузера. Оно используется для передачи различной вспомогательной информации, например, имени страницы, на которой находится пользователь, или электронный адрес, куда должна пересылаться форма.</li></ul><p id="d7e2d715-2b2a-4774-a6ec-b8af3b59776c" class="">Обратите внимание, что тег <code>&lt;input&gt;</code> закрывает сам себя при помощи конструкции <code>/&gt;</code>.</p></details></li></ul><ul id="0c762e9d-dcf7-4c56-9a8b-487136d10310" class="toggle"><li><details open=""><summary>Большой текст <strong>textarea</strong></summary><p id="91b1dda5-8784-4dc1-8d59-09aa9d6aa5ec" class=""><a href="https://ru.w3docs.com/uchebnik-html/html-teg-textarea.html">&lt;textarea&gt; </a>– большое текстовое поле ввода на несколько строк. Оно требует использование атрибутов <em><strong>rows</strong></em> (строки, по факту - длина) и <em><strong>cols </strong></em><em>(</em>колонки, по факту - ширина<em>)</em>, которые задают размер области ввода:</p><pre id="ba4436cd-7266-419c-ab32-c8c8f7495b47" class="code"><code>&lt;textarea rows=&quot;5&quot; cols=&quot;20&quot;&gt;Здесь вводят много текста&lt;/textarea&gt;</code></pre></details></li></ul><ul id="47fec4bf-5911-4eec-a478-247463ba2e57" class="toggle"><li><details open=""><summary>Выпадающие списки <strong>select</strong></summary><p id="fd701fa1-805c-499d-a368-5d401404b3ea" class="">Тег <a href="https://ru.w3docs.com/uchebnik-html/html-teg-select.html">&lt;select&gt;</a> и тег &lt;option&gt; используются для создания выпадающего списка. Они работают следующим образом:</p><pre id="dde77322-6e52-49ef-94d6-fd4fccccb071" class="code"><code>&lt;select&gt;
+&lt;option value=&quot;first option&quot;&gt;Опция 1&lt;/option&gt;
+&lt;option value=&quot;second option&quot;&gt;Опция 2&lt;/option&gt;
+&lt;option value=&quot;third option&quot;&gt;Опция 3&lt;/option&gt;
+&lt;/select&gt;</code></pre><p id="eeafefe0-a30d-40ff-89c2-7a2a7d5b1631" class="">Аналогично атрибуту <code>checked</code> в флажках и переключателях тег <code>&lt;option&gt;</code> может иметь атрибут <code>selected</code>:</p><pre id="e32b8852-06ec-455d-9166-3506267f661d" class="code"><code>&lt;option value=&quot;mouse&quot; selected=&quot;selected&quot;&gt;Грызун&lt;/option&gt;</code></pre><p id="ab365c46-17da-4b10-977d-a83bdaff6cd5" class="">Именно с помощью <code>selected</code> мы отмечаем выбранный элемент списка.</p><p id="f53cb057-4bf2-4af1-b7c5-0bbaf4e3d40a" class="">А с помощью атрибута <code>multiple</code> можно указать, что в выпадающем списке могут быть выбраны одновременно несколько элементов.</p></details></li></ul><ul id="54b759fc-cde2-406f-baac-634d403fcc5a" class="toggle"><li><details open=""><summary>Кнопка <strong>button</strong> </summary><p id="723f0b9d-1050-4136-9b4e-4d53ff60e6e4" class=""><a href="https://ru.w3docs.com/uchebnik-html/html-teg-button.html">&lt;button&gt;</a> используется для создания кнопок. В отличие от тега <code>&lt;input&gt;</code> содержимым тега <code>&lt;button&gt;</code> может быть как текст, так и изображение. </p><p id="d34e452d-49ee-4f2f-b2db-18cf2d7a3f72" class="">Желательно явно указывать атрибут <code>type</code>. Его значение по умолчанию - это <code>submit</code>, но часто нужно значение <code>button</code>(просто кнопка, без отправки формы на сервер). Кнопка не обязательно должна находиться в пределах формы. Часто это просто интерактивный элемент, который «оживляется» с помощью JavaScript. Например, кнопка закрытия всплывающего окошка или открытия меню.</p></details></li></ul><ul id="568e0623-da76-42be-983a-44f39b48f387" class="toggle"><li><details open=""><summary>Метки<strong> label</strong></summary><p id="31aa33a9-09ba-42b5-8628-438b5a2b7736" class="">Крайне желательно, чтобы у каждого поля формы была своя метка. <a href="https://ru.w3docs.com/uchebnik-html/html-teg-label.html">&lt;label&gt;</a> решает эту задачу, а атрибут <code>for</code> определяет элемент формы, к которому относится данная метка.</p><pre id="f38fd989-baf2-4e48-b468-5b17e88188e7" class="code"><code>&lt;label for=&quot;yourName&quot;&gt;Ваше имя&lt;/label&gt;
+&lt;input type=&quot;text&quot; id=&quot;yourName&quot; /&gt;</code></pre><p id="ee151719-3e4b-473b-b4d3-75adcba31c6c" class="">В зависимости от браузера при клике на метку может автоматически активизировать соответствующее поле ввода. Метка облегчает использование формы, так как в элементы формы не всегда удобно попасть курсором.</p><p id="994e57e5-fe30-464d-ad67-1108c78e00d0" class="">Обратите внимание, что обязательно использовать атрибут <code>id</code> - он ассоциирует метку с данным элементом формы.</p></details></li></ul><ul id="57d5bd54-6b21-425a-9a29-bfe71f24b696" class="toggle"><li><details open=""><summary>Группы<strong> fieldset</strong></summary><p id="6ac1fa61-367b-4515-a3fa-91638e0ea4e2" class="">Родственные поля формы, например, имя (фамилия, имя, отчество и т.д.) или адрес (строка 1, строка 2, индекс, область, район, город и т.д.), можно группировать при помощи <a href="https://ru.w3docs.com/uchebnik-html/html-teg-fieldset.html">тега &lt;fieldset&gt;</a>.</p><p id="3bf2462f-13dd-4f28-a980-d61048a0579e" class="">Внутри групп полей формы также можно использовать групповые метки, которые определяются при помощи <a href="https://ru.w3docs.com/uchebnik-html/html-teg-legend.html">тега &lt;legend&gt;</a>.</p><p id="68009d1b-23fc-494d-ab5c-8d3bda3a16d5" class="">Современные браузеры, как правило, помечают группы полей формы при помощи окружающей группу рамки, а групповые метки отображаются в верхнем левом разрыве этой рамки.</p></details></li></ul><ul id="3c4ffc08-d130-41e5-aada-8e8686a7f92d" class="toggle"><li><details open=""><summary><strong>Навигация по полям</strong></summary><p id="87f28fd7-c7a6-4261-be59-69f69af6750f" class="">У пользователя должна быть возможность перемещаться по полям формы (и группам полей) не используя указатель мыши. Для этого к любому тегу формы, как тег <code>&lt;input&gt; </code>и тег <code>&lt;legend&gt;</code>, добавляются атрибуты <code>accesskey</code> и <code>tabindex</code>.</p><pre id="282e6461-ee44-46ce-8daa-d83458d08b41" class="code"><code>&lt;input type=&quot;text&quot; name=&quot;firstName&quot; accesskey=&quot;f&quot; tabindex=&quot;1&quot; /&gt;</code></pre><p id="deffc0f0-ba50-4cc0-99bc-d1167620a6ac" class="">
+</p><pre id="c0bb3032-c898-4f09-8a9b-d083645f4421" class="code"><code>&lt;form&gt;
+&lt;fieldset&gt;
+&lt;legend&gt;Имя&lt;/legend&gt;
+&lt;p&gt;Имя &lt;input type=&quot;text&quot; name=&quot;firstName&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Фамилия &lt;input type=&quot;text&quot; name=&quot;lastName&quot; /&gt;&lt;/p&gt;
+&lt;/fieldset&gt;
+&lt;fieldset&gt;
+&lt;legend&gt;Адрес&lt;/legend&gt;
+&lt;p&gt;Адрес &lt;textarea name=&quot;address&quot; &gt;&lt;/textarea&gt;&lt;/p&gt;
+&lt;p&gt;Индекс &lt;input type=&quot;text&quot; name=&quot;postcode&quot; /&gt;&lt;/p&gt;
+&lt;/fieldset&gt;
+&lt;/form&gt;
+</code></pre></details></li></ul><p id="ea0fa484-a92f-4b0d-8512-a536323aeb75" class="">Пример простой готовой формы:</p><pre id="cb14daa2-9407-4ffd-a2e7-a655c1281fd5" class="code code-wrap"><code>&lt;form&gt;
+&lt;label for=&quot;name&quot;&gt;Имя:&lt;/label&gt;
+&lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;name&quot; value=&quot;Ваше имя&quot; /&gt;
+&lt;label for=&quot;comments&quot;&gt;Комментарий:&lt;/label&gt;
+&lt;textarea name=&quot;comments&quot; id=&quot;comments&quot; rows=&quot;5&quot; cols=&quot;20&quot;&gt;Ваш комментарий&lt;/textarea&gt;
+&lt;p&gt;Вы:&lt;/p&gt;
+&lt;input type=&quot;radio&quot; name=&quot;areyou&quot; value=&quot;male&quot; id=&quot;man&quot; /&gt;
+&lt;label for=&quot;man&quot;&gt;Мужчина&lt;/label&gt;
+&lt;input type=&quot;radio&quot; name=&quot;areyou&quot; value=&quot;female&quot; id=&quot;woman&quot; /&gt;
+&lt;label for=&quot;woman&quot;&gt;Женщина&lt;/label&gt;
+&lt;input type=&quot;radio&quot; name=&quot;areyou&quot; value=&quot;neither&quot; id=&quot;neither&quot; /&gt;
+&lt;label for=&quot;neither&quot;&gt;Ни то ни другое&lt;/label&gt;
+&lt;input type=&quot;submit&quot; /&gt;
+&lt;input type=&quot;reset&quot; /&gt;
+&lt;/form&gt;
+</code></pre><p id="1885bee1-f83a-4461-b017-0431ce1a7626" class="">
+</p><p id="2619935f-88d8-4cd8-8768-12e8a306212f" class="">В каких случая мы используем<code> label</code>, что бы подписать <code>input</code> а в каких мы можем использовать текстовый тег <code>p</code> либо<code> span</code> :</p><p id="08449a33-da48-4fa1-ac79-6ff9b2ce3866" class="">
+</p><p id="945c1dff-f8ab-44a1-9ba3-1609bbb131c1" class="">Тег <code>label</code> используется для связки тега <code>input</code> с надписью, это делается для того что бы при клике на надпись(подсказку) срабатывал и <code>input</code>, очень актуален этот вопрос для<strong> input type</strong> - <code>checkbox</code>,<code>radio</code>.</p><figure id="363add81-63f4-481b-a11d-0aec5a63fee9" class="image"><a href="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled%206.png"><img style="width:961px" src="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled%206.png"/></a></figure><p id="edb196c6-2f99-4c1f-8bf1-8b75826c86f1" class="">В данные атрибуты<strong> for</strong> и<strong> id</strong>, вы можете подставлять любые значения, главное что бы они были одинаковы, тогда произойдет связка.</p><p id="5cf72ca7-4f7d-466d-be66-0e4aeace0911" class="">Благодаря связке атрибута <strong>for</strong> в теге <code>label</code> и атрибута<strong> id</strong> в теге <code>input</code>,  при клике на подсказку будет срабатывать<code> input</code>.</p><figure id="6f387a05-8b19-414a-98b8-08e4c1cc4936" class="image"><a href="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled%207.png"><img style="width:883px" src="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled%207.png"/></a></figure><p id="3ef864f6-f32c-445b-ae2c-b525097ffe0e" class="">В остальных случаях когда привязка подсказки и поля  ввода вам не нужна, можете использовать другие теги для создания подсказки или использовать атрибут placeholder, который так же дает подсказку пользователю.</p><h2 id="49b030ed-5e11-46e8-83a0-34c51142ec2a" class="">3. Спецсимволы HTML</h2><p id="caf7c6d2-c8c0-48dd-8b7b-3b8630c86ed5" class="">Помимо тегов в языке HTML используется специальный управляющий символ <strong>&amp; </strong>— амперсант. Этот символ используется для вывода специальных символов и символов, которые нельзя ввести с клавиатуры. </p><p id="c76f4422-e33e-450b-bb06-c39ea66da2f4" class="">Самый часто используемый спецсимвол – это неразрывный пробел (он пишется так - <strong>&amp;nbsp;</strong>). </p><p id="84f84bfe-0cc9-4034-9a97-70c7bd35d99d" class="">Он используется для контроля переноса строки (после данного символа автоматический перевод строки невозможен) и для вставки в текст подряд идущих пробелов (обычно браузер сокращает идущие подряд пробелы и показывает не больше одного сразу).</p><p id="1318eb68-7b05-4981-a492-e759aaeb693a" class="">
+</p><p id="94606cb9-f6da-45c0-8597-102a5836e91c" class="">Часто используемые спецсимволы:</p><figure id="98a855e4-36a1-4eea-9916-5a0093329b27" class="image"><a href="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled%208.png"><img style="width:336px" src="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled%208.png"/></a></figure><h2 id="d9e5f669-fe63-4640-a4e3-291179ef8002" class="">4. Про разметку</h2><h3 id="922ab8bb-f855-4794-b839-f6db61180bf0" class="">Алгоритм - как мы делаем разметку</h3><ul id="e3ce4994-15b9-45b8-b9a5-0f90d8cd72e4" class="bulleted-list"><li style="list-style-type:disc">Определяем повторяющиеся элементы (header, footer, возможно какие-то доп. меню и пр.) и основное содержимое.</li></ul><ul id="784930fb-e4ca-470d-a788-ce5e10583205" class="bulleted-list"><li style="list-style-type:disc">Внутри них размечаем основные смысловые элементы.</li></ul><ul id="8dccf0c7-2bd8-41b7-a338-e88ad3ee5104" class="bulleted-list"><li style="list-style-type:disc">Находим заголовки на странице и в каждом блоке (если они есть).</li></ul><ul id="c4d1e241-f60a-472b-a1d6-306480a063d4" class="bulleted-list"><li style="list-style-type:disc">Размечаем всё оставшееся методом исключения:<ul id="ca13db2c-7985-4f2c-a181-58eac433ef5f" class="bulleted-list"><li style="list-style-type:circle">если получилось найти самый подходящий тег — берем его</li></ul><ul id="d39fad91-1a40-4ca1-b97e-2c3437c45117" class="bulleted-list"><li style="list-style-type:circle">для блоков с переносами строки &lt;div&gt;</li></ul><ul id="0e95fdd9-ca36-420e-8702-2eaffdc2292e" class="bulleted-list"><li style="list-style-type:circle">для абзацев в тексте &lt;p&gt;</li></ul><ul id="78982986-de8a-49cd-8405-d3305a9d6400" class="bulleted-list"><li style="list-style-type:circle">для маленьких элементов без переноса строки &lt;span&gt;</li></ul></li></ul><h2 id="233d6a9d-87fa-41b3-b85b-ad67ac4d653a" class="">5. Видео на HTML- странице</h2><p id="1d530291-d35e-40a4-9bf8-202c93717e9a" class="">Существует два варианта добавления видео на страницу:</p><p id="654777b8-c267-4519-985c-413406678565" class="">
+</p><ol type="1" id="0986f7d0-1955-4c2a-a2fd-f19e1b94452a" class="numbered-list" start="1"><li>С помощью <strong>YouTube</strong>. Находим нужное видео и нажимаем кнопку “Поделиться<figure id="e94ba7a8-eae2-458e-a32c-5fdc55e39925" class="image"><a href="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled%209.png"><img style="width:672px" src="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled%209.png"/></a></figure><figure id="d695970f-4d5e-4df6-85c1-a523592dbda1" class="image"><a href="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled%2010.png"><img style="width:1552px" src="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled%2010.png"/></a></figure><p id="fe430bec-bbc8-40d0-aac9-2eb3e7710846" class="">
+</p></li></ol><ol type="1" id="47878608-5795-432f-a27e-afea7a6d8257" class="numbered-list" start="2"><li>С помощью тега <code>video</code>, мы добавляем к себе на страницу встроенный плеер:<ul id="6b6bb215-e549-4406-b740-f04cf53569b0" class="bulleted-list"><li style="list-style-type:disc">Загружаем  на компьютер видео , и размещаем его в папке с проектом.</li></ul><figure id="d976feca-39b7-4484-a16b-ccf6a2d26101" class="image"><a href="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled%2011.png"><img style="width:672px" src="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled%2011.png"/></a></figure><ul id="31e41015-198d-4809-954c-c33049b7fdac" class="bulleted-list"><li style="list-style-type:disc">Cоздаем тег<code> video</code> , файле <strong>index.html</strong> и в атрибуте <strong>src </strong>указываем путь.</li></ul><figure id="2053087e-23fa-4fa3-9ab3-747f73d511e2" class="image"><a href="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled%2012.png"><img style="width:768px" src="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled%2012.png"/></a></figure><ul id="d062a6c4-9f64-4a12-ad07-c73c23333b1d" class="bulleted-list"><li style="list-style-type:disc">После этих действий мы уже можем видеть результат на странице:</li></ul><figure id="983691e7-0188-47ce-93a8-6ee04f475d32" class="image"><a href="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled%2013.png"><img style="width:819px" src="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled%2013.png"/></a></figure><ul id="08408088-ce99-49c7-a85f-8c099e7c0255" class="bulleted-list"><li style="list-style-type:disc">Теперь нужно добавить необходимые атрибуты :</li></ul><figure id="2f4bd47d-b128-4919-8d21-c2ed7fe74b5b" class="image"><a href="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled%2014.png"><img style="width:833px" src="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled%2014.png"/></a></figure><figure id="15a458e1-f6a9-4dae-8ff0-50efa23357f2" class="image"><a href="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled%2015.png"><img style="width:720px" src="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled%2015.png"/></a></figure></li></ol><h3 id="45835154-8a59-450b-b47d-a62ab8beaf53" class="">Валидация кода</h3><p id="dd2e1108-a574-4098-a747-9cee15cd9c6d" class="">Валидация - это автоматическая проверка кода на соответствие каким-то правилам. Хороший сервис валидации можно найти тут <a href="https://validator.w3.org/">http://validator.w3.org</a></p><p id="c92cdc9a-1704-40fc-9c99-fbedcc80719f" class="">Валидность кода определяет то, как будет выглядеть страница или веб-приложение в разных браузерах и на различных платформах. Валидный код во многих браузерах отображается предсказуемо. Он загружается быстрее невалидного. Валидность влияет на восприятие страниц и сайтов поисковыми системами.</p><p id="d02b74f5-4cc0-4399-861a-1c95896783c8" class="">Валидация зависит от того, какой указан тип документа <code>&lt;!DOCTYPE&gt;</code> (мы обычно используем <code>&lt;!DOCTYPE html&gt;</code>, что соответствует современному стандарту HTML5).</p><p id="073271ef-d7c8-4465-9032-9503430fdd7e" class="">Ошибки (<strong>Error</strong>) обязательно исправляем. Предупреждения (<strong>Warning) </strong>исправлять не обязательно, но это повод задуматься и почитать спецификацию.</p><p id="974d0bd1-2f4d-49f0-9368-7a7b318b88fd" class="">Подробнее про валидатор можно узнать в этом видео: <a href="https://youtu.be/e9Cqi6ol9Zc">https://youtu.be/e9Cqi6ol9Zc</a></p><figure id="dd23341e-68f3-4a2e-ba0c-d9a6d985c266"><div class="source"><a href="https://www.youtube.com/watch?v=ipWouO8neXc">https://www.youtube.com/watch?v=ipWouO8neXc</a></div></figure><h3 id="fe7772f9-7f0b-4a9d-ab11-6320c99b9a07" class="">Как определить, хорошая разметка или плохая</h3><ol type="1" id="8da20751-6497-4d9b-9a7b-8cb517557d58" class="numbered-list" start="1"><li>Она работает!</li></ol><ol type="1" id="6e4c6595-3188-4a8f-9e7f-61b1b35b08b2" class="numbered-list" start="2"><li>Она простая и понятная для других людей</li></ol><ol type="1" id="75a1015c-2c9c-4434-9011-b2f00c39dbb4" class="numbered-list" start="3"><li>В ней нет ничего лишнего</li></ol><ol type="1" id="5a37b6c0-3877-4a94-a7a4-552116c59165" class="numbered-list" start="4"><li>Соблюдается определенный в компании стиль написания кода</li></ol><ol type="1" id="68f10d55-2d49-4bee-8c85-dcfc181403e0" class="numbered-list" start="5"><li>Она проходит проверку на валидаторе</li></ol><h3 id="0da2dfa6-d1ab-45f8-afd3-2df957e02d90" class="">Что такое простая?</h3><p id="7a7c7614-a42b-4fd6-803f-8f7da836aa9b" class="">В ней минимально необходимое число тегов. Имена классов читаемые и говорят о том, для чего этот элемент нужен. Есть границы смысловых блоков, легко понять к какому блоку принадлежит тег.</p><h3 id="f26c0c02-6397-4074-8334-52d92d6a85e3" class="">Примеры</h3><p id="aa917ec7-4b40-4e35-af85-c96a7212ed0d" class="">Пример простой верстки страницы:</p><figure id="1fa6d8a2-5504-4a1b-841f-36209991a40b" class="image"><a href="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled%2016.png"><img style="width:400px" src="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled%2016.png"/></a></figure><p id="73a9cc1c-2c77-460c-ba10-b38d8a927787" class="">Пример посложнее:</p><figure id="14645e6a-15a7-4a19-bd15-30730ee6d273" class="image"><a href="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled%2017.png"><img style="width:1386px" src="%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%202%2048ce0ab7c0864b74a229829f8697224a/Untitled%2017.png"/></a></figure><h2 id="74b7ded8-95ab-43db-a3f0-e06d812933f6" class="">Итоги</h2><p id="14a246a7-3add-4c70-bf37-362a23967bcb" class="">
+</p><ol type="1" id="c9c442c1-54e1-4a78-ab30-68129992c394" class="numbered-list" start="1"><li><strong>Семантические теги</strong> — это <strong>теги</strong>, которые предназначены для того чтобы компьютерные программы (поисковые системы, сборщики информации, речевые браузеры и т. д.), понимали какой тип информации заложен в данных тегах.</li></ol><ol type="1" id="23811ec0-608c-49f5-af80-464677b2e32d" class="numbered-list" start="2"><li>Основные семантические теги : <code>header</code> , <code>nav</code>, <code>main</code>, <code>section </code>, <code>article</code>, <code>aside</code>, <code>footer</code>.</li></ol><ol type="1" id="fcfe1756-1991-44f9-8958-4cc594b23e26" class="numbered-list" start="3"><li>Тег <code>form</code> - представляет (собой) раздел документа, содержащий интерактивные элементы управления, которые позволяют пользователю отправлять информацию на веб-сервер.</li></ol><ol type="1" id="828950a6-c865-42d7-bdcd-696a12cffae3" class="numbered-list" start="4"><li>Для связки тега <code>input</code>  и <code>label</code> используется атрибут <strong>id.</strong></li></ol><ol type="1" id="0ad0f9de-4fc4-46aa-be5c-f42eed385718" class="numbered-list" start="5"><li>Видео на HTML- страницу , добовляем двумя разными способами:<ul id="44375f14-57fa-4576-a6a7-87288797b006" class="bulleted-list"><li style="list-style-type:disc">Через <strong>YouTube.</strong></li></ul><ul id="94fa1a20-27f4-4347-9a2d-eaa163ed7372" class="bulleted-list"><li style="list-style-type:disc">Через тег <code>video</code> .</li></ul></li></ol><p id="941c21cf-b959-475d-b8af-281e45f71578" class="">
+</p></div></article></body></html>

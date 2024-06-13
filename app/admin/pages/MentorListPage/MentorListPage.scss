@@ -1,0 +1,41 @@
+@import '../../../styles/vars.scss';
+@import '../../../styles/search&selects.scss';
+@import '../../../styles/modal.scss';
+
+.mentorList__header {
+	display: flex;
+	justify-content: space-between;
+	margin: 24px 17px;
+}
+
+.mentorList__header h1 {
+	color: $whiteColor;
+}
+
+.mentorList__btn_addMentor {
+	filter: hue-rotate(265deg) brightness(200%);
+}
+
+.mentorList__mentor-list {
+	width: 90vw;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 1111px) {
+	.mentorList__header {
+		justify-content: space-around;
+	}
+}
+
+// стили модального окна удаления ментора
+.mentorModal {
+	@include modal-mixin;
+}
+
+.mentorModal .ant-modal-footer button {
+	width: 100px;
+}
+
+.mentor-delModal .ant-modal-body {
+	padding: 0 10px;
+}

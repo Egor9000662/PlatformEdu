@@ -1,0 +1,120 @@
+@import '../../../styles/vars.scss';
+
+.groupPageWrapper {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.header-container {
+	width: 90vw;
+	max-width: 1270px;
+	padding: 20px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	&__btn {
+		position: absolute;
+		top: 20px;
+		left: 0;
+	}
+	.groupPage-title {
+		color: $whiteColor;
+		font-weight: 600;
+		font-size: 2em;
+		margin: auto;
+		line-height: 81.5px;
+	}
+
+	.counter-container {
+		position: absolute;
+		top: 40px;
+		right: 0;
+	}
+}
+
+.groupPage__buttonAndBell {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1223px;
+	height: 60px;
+	position: fixed;
+	bottom: 2%;
+	gap: 10px;
+}
+
+.groupPage__group-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+	font-size: 25px;
+	width: 13em;
+	line-height: 118.75%;
+	font-family: inherit;
+	font-weight: 600;
+	color: $whiteColor;
+	background: $colorBlueBtn;
+	border-radius: 50px;
+	border: $borderBtn;
+	padding: 0px 20px;
+
+	&:hover {
+		cursor: pointer;
+		background: $colorBlueBtnHover;
+	}
+}
+
+.groupPage__bell {
+	width: 55px;
+	height: 55px;
+	margin-left: 2%;
+	margin-right: 2%;
+	background: linear-gradient(
+		225deg,
+		rgba(146, 213, 241, 0.01) 0%,
+		rgba(146, 213, 241, 0.1) 100%
+	);
+	border: 1px solid $azureColor;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 8px rgba(146, 213, 241, 0.08),
+		0px 0px 2px rgba(146, 213, 241, 0.12),
+		0px 0px 1px rgba(146, 213, 241, 0.08);
+	backdrop-filter: blur(6px);
+	border-radius: 100px;
+	img {
+		width: 55px;
+		height: 55px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.groupPage__group-button {
+		height: 50px;
+		font-size: 16px;
+	}
+
+	.groupPage__bell {
+		width: 50px;
+		height: 50px;
+
+		img {
+			width: 50px;
+			height: 50px;
+		}
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	.groupPage__buttonAndBell {
+		max-width: 300px;
+	}
+
+	.groupPage__group-button {
+		height: 55px;
+		font-size: 20px;
+	}
+}

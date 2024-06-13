@@ -1,0 +1,31 @@
+@import '../../../styles/vars.scss';
+
+.homeBtn {
+	align-self: center;
+	border-radius: 50%;
+	box-shadow: 11px 8px 20px -6px rgba(146, 213, 241, 0.2);
+	&:hover {
+		cursor: pointer;
+		background-color: #a8daf165;
+	}
+	&:active {
+		background-color: #25506d65;
+	}
+
+	img {
+		width: 65px;
+		height: 65px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.homeBtn > img {
+		width: 45px;
+		height: 45px;
+	}
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	.homeBtn > img {
+		width: 55px;
+		height: 55px;
+	}
+}

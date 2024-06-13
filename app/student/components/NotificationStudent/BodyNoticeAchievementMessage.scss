@@ -1,0 +1,29 @@
+@import '../../../styles/vars.scss';
+
+.notice-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    padding: 10px;
+
+	@media screen and (max-width: 768px) {
+		flex-direction: column;
+	}
+
+	.notice__message-container{
+		display: flex;
+		flex-direction: column;
+		margin-left: 30px;
+
+		.notice__title, {
+			color: rgb(132 169 173);
+			font-size: 20px;
+		}
+		.notice__phrase {
+			font-size: 20px;
+			color: $whiteColor;
+			margin-bottom: 10px;
+		}
+	}
+}
+

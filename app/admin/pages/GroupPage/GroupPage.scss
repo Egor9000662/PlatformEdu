@@ -1,0 +1,145 @@
+@import '../../../styles/vars.scss';
+@import '../../../styles/modal.scss';
+@include modal-wrap;
+
+.groupPageWrapper-admin {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 10px;
+}
+
+.addStudent-modal {
+	@include modal-mixin;
+}
+
+.addStudent-modal .ant-modal-body {
+	height: 230px;
+}
+
+.addStudent-button {
+	filter: hue-rotate(265deg) brightness(200%);
+	display: flex;
+	justify-content: flex-end;
+}
+
+.addStudent-button:hover {
+	cursor: pointer;
+}
+
+.groupPageWrapper-students {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.groupPageWrapper__icon-container {
+	display: flex;
+}
+
+.group-send-icon,
+.group-add-icon {
+	width: 35px;
+	height: 35px;
+	margin: 1rem;
+}
+
+.groupPageWrapper__emails-container {
+	width: 70%;
+	text-align: center;
+	position: relative;
+}
+.groupPageWrapper__textarea-container{
+	width: 100%;
+}
+
+.groupPageWrapper__button-close {
+	position: absolute;
+	right: 45px;
+	color: $azureColor;
+	cursor: pointer;
+
+}
+
+.groupPageWrapper__textarea {
+	width: 90%;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 30px;
+	color: #ffffff;
+	background: radial-gradient(80% 80%, rgba(255, 255, 255, 0), rgba(176, 241, 243, 0.192));
+	border: none;
+	box-shadow: inset 4px 0px 35px 0px rgba(146, 212, 241, 0.4941176471);
+	clip-path: polygon(10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%, 0 10%);
+	padding: 24px;
+}
+
+.groupPageWrapper__button-send{
+	width: 150px;
+	height: 2.75rem;
+	background: linear-gradient(180deg, #a0fafa 0%, #35c8f7 16.67%, #07b9f1 43.23%, #5589d6 94.27%, #5d9cca 100%);
+	box-shadow: 0px 2px 2px rgba(10, 89, 133, 0.75);
+	border-radius: 50px;
+	border: 3px solid $whiteColor;
+	font-weight: 600;
+	font-size: 16px;
+	color: $whiteColor;
+}
+
+@media screen and (min-width: 1111px) {
+	.addStudent-button {
+		justify-content: center;
+		align-self: flex-end;
+	}
+
+	.groupPageWrapper-students {
+		width: 90%;
+		max-width: 1270px;
+		align-self: center;
+	}
+}
+
+.groupPage__buttonAndBell {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1223px;
+	height: 60px;
+	position: fixed;
+	bottom: 2%;
+	gap: 10px;
+}
+.groupPage__group-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+	font-size: 25px;
+	width: 13em;
+	line-height: 118.75%;
+	font-family: inherit;
+	font-weight: 600;
+	color: $whiteColor;
+	background: $colorBlueBtn;
+	border-radius: 50px;
+	border: $borderBtn;
+	padding: 0px 20px;
+
+	&:hover {
+		cursor: pointer;
+		background: $colorBlueBtnHover;
+	}
+
+	@media screen and (max-width: 480px) {
+		height: 50px;
+		font-size: 16px;
+	}
+
+	@media screen and (min-width: 481px) and (max-width: 768px) {
+		height: 55px;
+		font-size: 20px;
+	}
+}

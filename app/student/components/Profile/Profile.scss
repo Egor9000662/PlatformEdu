@@ -1,0 +1,246 @@
+@import '../../../styles/vars.scss';
+@import '../../../styles/modal.scss';
+
+.progressDay-modal {
+	@include modal-mixin;
+	color: $whiteColor;
+	.ant-modal-title {
+		@media screen and (max-width: 481px) {
+			font-size: 1.1rem;
+			padding: 0 1.3rem;
+		}
+	}
+}
+
+.progressDay-modal .ant-modal-content {
+	background-color: #15245c;
+}
+.profile__wrapper {
+	/*margin: auto 1rem;*/
+	color: $whiteColor;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	margin-bottom: 50px;
+}
+/*
+.cardToResume {
+	max-width: 300px;
+	height: 76px;
+	border: 1px solid;
+	border-radius: 10px;
+	background: radial-gradient(
+		80% 80%,
+		rgba(255, 255, 255, 0),
+		rgba(233, 176, 243, 0.3)
+	);
+	margin: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: $whiteColor;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 29px;
+}
+*/
+.profile__btn_info {
+	width: 220px;
+	height: 50px;
+	background: $colorBlueBtn;
+	box-shadow: 0px 2px 2px rgba(10, 89, 133, 0.75);
+	border-radius: 50px;
+	font-family: 'Rubik';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	color: $whiteColor;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: $borderBtn;
+	margin: 20px 0px 0px 0px;
+}
+
+.profile__btn_info:hover,
+.profile__btn_info:active {
+	cursor: pointer;
+	background: $colorBlueBtnHover;
+}
+
+/*
+@media screen and (max-width: 300px) {
+	.profile__crystall_box {
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+	}
+}*/
+
+@media screen and (max-width: 480px) {
+	.profile__crystall_hard,
+	.profile__crystall_soft {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: flex-end;
+		margin: 0px 10px 0px 10px;
+	}
+	.profile__crystalls_wrapper {
+		display: flex;
+		margin-bottom: 20px;
+	}
+	.profile__crystall_box {
+		display: flex;
+		flex-flow: column;
+		justify-content: flex-end;
+		align-items: flex-start;
+		margin-left: 10px;
+	}
+
+	.profile__crystall_amount {
+		font-family: 'Rubik';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 19px;
+		color: $whiteColor;
+	}
+
+	.profile__crystall_description {
+		font-family: 'Rubik';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 14.22px;
+		color: rgba(255, 255, 255, 0.5);
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	.profile__crystalls_wrapper {
+		display: flex;
+		margin-bottom: 20px;
+	}
+
+	.profile__crystall_hard,
+	.profile__crystall_soft {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: flex-end;
+		margin: 0px 20px 0px 20px;
+	}
+
+	.profile__crystall_box {
+		display: flex;
+		flex-flow: column;
+		justify-content: flex-end;
+		align-items: flex-start;
+		margin-left: 10px;
+	}
+
+	.profile__crystall_amount {
+		font-family: 'Rubik';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 19px;
+		color: $whiteColor;
+	}
+
+	.profile__crystall_description {
+		font-family: 'Rubik';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 14.22px;
+		color: rgba(255, 255, 255, 0.5);
+	}
+}
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+	.profile__crystalls_wrapper {
+		display: flex;
+		margin-bottom: 20px;
+	}
+
+	.profile__crystall_hard,
+	.profile__crystall_soft {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: flex-end;
+		margin: 0px 20px 0px 20px;
+	}
+
+	.profile__crystall_box {
+		display: flex;
+		flex-flow: column;
+		justify-content: flex-end;
+		align-items: flex-start;
+		margin-left: 15px;
+	}
+
+	.profile__crystall_amount {
+		font-family: 'Rubik';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 19px;
+		color: $whiteColor;
+	}
+
+	.profile__crystall_description {
+		font-family: 'Rubik';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 14.22px;
+		color: rgba(255, 255, 255, 0.5);
+	}
+}
+@media screen and (min-width: 1280px) {
+	.profile__crystalls_wrapper {
+		display: flex;
+		margin-bottom: 20px;
+	}
+
+	.profile__crystall_hard,
+	.profile__crystall_soft {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: flex-end;
+		margin: 0px 30px 0px 30px;
+	}
+
+	.profile__crystall_box {
+		display: flex;
+		flex-flow: column;
+		justify-content: flex-end;
+		align-items: flex-start;
+		margin-left: 10px;
+	}
+
+	.profile__crystall_amount {
+		font-family: 'Rubik';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 19px;
+		color: $whiteColor;
+	}
+
+	.profile__crystall_description {
+		font-family: 'Rubik';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 14.22px;
+		color: rgba(255, 255, 255, 0.5);
+	}
+}

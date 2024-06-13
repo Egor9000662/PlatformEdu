@@ -1,0 +1,56 @@
+@import '../../../../styles/vars.scss';
+
+.form-addMentor {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+	width: 280px;
+	padding: 5px;
+	border: 0 0 10px rgba(0, 0, 0, 0.5);
+	border-radius: 30px;
+}
+
+.addMentor-input {
+	padding: 16px;
+	margin-bottom: 16px;
+	width: 16.75rem;
+	height: 3.125rem;
+	border-radius: 50px;
+	color: $whiteColor;
+	background-color: transparent;
+	border: 1px solid $azureColor;
+}
+
+.addMentor-selectContainer {
+	position: relative;
+	width: 16.8rem;
+	margin-bottom: 16px;
+	& > .ant-select-multiple .ant-select-selector {
+		padding: 0;
+	}
+	& .ant-select-selection-overflow {
+		width: 16.75rem;
+	}
+}
+
+.addMentor-checkMark {
+	position: absolute;
+	top: 9px;
+	right: 5%;
+	z-index: -1;
+}
+
+.error-addMentor {
+	text-align: center;
+	color: $redColor;
+}
+
+.bottom-question_addMentor {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 19px;
+	color: $whiteColor;
+	padding-top: 15px;
+}

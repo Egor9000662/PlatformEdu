@@ -1,0 +1,142 @@
+@import '~react-notion-x/src/styles.css';
+@import './prism-okadia.scss';
+@import '../../../styles/vars.scss';
+
+.lesson-notion-container {
+	position: relative;
+	.notion-page-icon-wrapper,
+	.notion-header {
+		display: none;
+	}
+}
+
+.notionCard-header {
+	padding-top: 20px;
+	padding-left: 2%;
+	height: 60px;
+}
+
+.notion-toggle {
+	padding: 3px 2px;
+	width: 100%;
+}
+
+.notion-page-content-inner {
+	overflow: hidden;
+}
+
+.notion-list-numbered {
+	max-width: 100%;
+}
+
+.notion-list-disc {
+	list-style-type: disc;
+	padding-inline-start: 1.7em;
+	margin-top: 0;
+	margin-bottom: 0;
+	width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+	.notion-title {
+		font-size: 2rem;
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.notionCard-header {
+		padding-left: 4%;
+	}
+}
+
+// task style Notion-cards
+
+//.notion-page {
+//	padding: 0px 10vw !important;
+//}
+
+h2.notion-h,
+h3.notion-h,
+h4.notion-h {
+	padding: 3px 4px;
+	width: 100%;
+	text-align: center;
+}
+
+h2.notion-h {
+	background-color: rgb(120, 173, 183);
+}
+
+h3.notion-h {
+	background-color: #92d5f1;
+}
+
+code.notion-inline-code {
+	overflow-wrap: break-word;
+}
+
+.notion-hr {
+	margin: 0px 0px 20px 0px;
+}
+
+.lesson-notion-container h2,
+.lesson-notion-container h3 {
+	width: 100%;
+	text-align: center;
+}
+
+.notion-list-disc {
+	max-width: 72vw !important;
+}
+
+@media screen and (max-width: 769px) {
+	.notion-h2 {
+		margin-top: 1em;
+		margin-bottom: 0px;
+	}
+
+	.notion-title {
+		margin-bottom: 0px;
+	}
+
+	.notion-hr {
+		margin-bottom: 10px;
+	}
+
+	.notion-list-numbered {
+		max-width: 72vw !important;
+	}
+}
+
+@media (min-width: 770px) and (max-width: 1279px) {
+	.notion-h2 {
+		margin-top: 1.5em;
+		margin-bottom: 0.8em;
+	}
+}
+
+.notionCard-tableOfContent {
+	position: absolute;
+	top: 10%;
+	left: 5%;
+}
+
+.test{
+	width: 92vw;
+	background: white;
+	padding: 40px;
+	border-radius: 10px;
+	@media screen and (min-width: 769px) and (max-width: 1279px){
+		padding: 70px;
+	}
+	@media screen and (min-width: 1024px){
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.notion-page {
+		padding: 0px 0px !important;
+	}
+} 

@@ -1,0 +1,104 @@
+@import "../../../styles/vars.scss";
+.card-program {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 18rem;
+	min-height: 14rem;
+	margin: 25px auto;
+	border: 1px solid $azureColor;
+	clip-path: polygon(
+		8% 0,
+		92% 0,
+		100% 8%,
+		100% 92%,
+		92% 100%,
+		8% 100%,
+		0 92%,
+		0 8%
+	);
+
+	background: linear-gradient(
+			rgba(255, 255, 255, 0.342) 20%,
+			rgba(255, 255, 255, 0) 50%
+		),
+		linear-gradient(
+			to right,
+			rgba(255, 255, 255, 0.151) 20%,
+			rgba(255, 255, 255, 0) 60%
+		),
+		linear-gradient(
+			to left top,
+			rgb(146, 213, 241) 4%,
+			rgba(255, 255, 255, 0) 4%
+		),
+		linear-gradient(
+			to right top,
+			rgb(146, 213, 241) 4%,
+			rgba(255, 255, 255, 0) 4%
+		),
+		linear-gradient(
+			to left bottom,
+			rgb(146, 213, 241) 4%,
+			rgba(255, 255, 255, 0) 4%
+		),
+		linear-gradient(
+			to right bottom,
+			rgb(146, 213, 241) 4%,
+			rgba(255, 255, 255, 0) 4%
+		);
+}
+
+.card__header-wrap {
+	width: 100%;
+	margin: 15px 0px;
+	position: relative;
+	border-image-slice: 1;
+	text-align: center;
+}
+
+.card__header {
+	margin: 24px auto;
+	color: $whiteColor;
+	font-weight: bold;
+	font-size: 16px;
+	height: 19px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+.card__photo {
+	width: 14rem;
+	height: 14rem;
+	margin-bottom: 4rem;
+}
+
+.card__description {
+	color: $whiteColor;
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+	margin-left: 24px;
+}
+
+.teacherProfileIcon {
+	width: 201px;
+	height: 201px;
+	border-radius: 50%;
+	cursor: inherit;
+	margin-bottom: 24px;
+}
+
+.teacher_skills {
+	padding: 4px 8px;
+	margin-right: 10px;
+	background: linear-gradient(
+		rgba(255, 255, 255, 0.342) 10%,
+		rgba(255, 255, 255, 0) 90%
+	);
+
+	border: solid $whiteColor 0.5px;
+	border-radius: 40px;
+}

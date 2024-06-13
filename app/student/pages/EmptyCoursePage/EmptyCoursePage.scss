@@ -1,0 +1,17 @@
+@import '../../../styles/vars.scss';
+
+.emptyCourse-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	margin: 0 auto;
+	height: 90vh;
+	max-width: 1270px;
+	text-align: center;
+}
+
+.emptyCourse-text {
+	color: $whiteColor;
+}

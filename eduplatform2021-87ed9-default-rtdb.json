@@ -1,0 +1,1001 @@
+{
+	"courses": {
+		"course-unassigned": {
+			"groups": {
+				"group-unassigned": true
+			}
+		},
+		"frontend": {
+			"groups": {
+				"group-1": true
+			},
+			"lessons": {
+				"week-1": {
+					"block": "HTML CSS",
+					"description": "Установим все необходимые программы и разберём основы HTML",
+					"id": "week-1",
+					"tasks": [
+						{
+							"contentId": "99e9fc7bb67c40288409be10478ade97",
+							"id": "99e9fc7bb67c40288409be10478ade97",
+							"pageId": "94c35ede-0a00-46a6-b453-1207b43a7a20",
+							"title": "Знакомство с инструментами",
+							"type": "theme"
+						},
+						{
+							"contentId": "54e15fda8bcf4af68e9bf9c45feda081",
+							"id": "54e15fda8bcf4af68e9bf9c45feda081",
+							"pageId": "b5d3fd31-3081-40a4-9951-0e71dbf997fa",
+							"title": "Настройка окружения",
+							"type": "practice"
+						},
+						{
+							"contentId": "HTML-0e64be98d88742c0a9e4578beaed74f0",
+							"id": "HTML-0e64be98d88742c0a9e4578beaed74f0",
+							"pageId": "8636378a-012f-4411-b49a-7b0df2882b30",
+							"title": "Основы HTML",
+							"type": "theme"
+						},
+						{
+							"contentId": "d28acb2671ea4584b1842f515e52e612",
+							"id": "d28acb2671ea4584b1842f515e52e612",
+							"pageId": "2c88ff21-6bed-4a32-91be-b0943a5ca75b",
+							"title": "Основы HTML",
+							"type": "test"
+						},
+						{
+							"contentId": "4452617a1a7d484fb495e51a9b6de04c",
+							"id": "4452617a1a7d484fb495e51a9b6de04c",
+							"pageId": "d51676ed-0120-42f0-8589-620675041c5b",
+							"title": "Страница Кота Учёного",
+							"type": "practice"
+						}
+					],
+					"title": "Введение в HTML",
+					"weekNumber": 1
+				},
+				"week-11": {
+					"block": "HTML CSS",
+					"description": "Второй командный проект — это взаимодействие с живым заказчиком и возможность отработать все полученные на курсе навыки",
+					"id": "week-11",
+					"title": "Командный проект #2",
+					"weekNumber": 11
+				},
+				"week-13": {
+					"block": "JS",
+					"description": "Познакомимся с основными понятиями в JavaScript",
+					"id": "week-13",
+					"tasks": [
+						{
+							"contentId": "13-b44da218671e4cf08f32cbb1c94bb7cd",
+							"id": "13-b44da218671e4cf08f32cbb1c94bb7cd",
+							"pageId": "cc048c66-147a-4dc6-b0ef-c3a96d4a5d70",
+							"title": "Введение в JavaScript",
+							"type": "theme"
+						}
+					],
+					"title": "Введение в JavaScript",
+					"weekNumber": 13
+				},
+				"week-14": {
+					"block": "JS",
+					"description": "Начнём работать с функциями и браузерным окружением, узнаем о способах отладки кода",
+					"id": "week-14",
+					"tasks": [
+						{
+							"contentId": "14-4bf5ddc4a4c04cac98aaefdb143e2c9a",
+							"id": "14-4bf5ddc4a4c04cac98aaefdb143e2c9a",
+							"pageId": "4b519a4a-c3b6-41f1-aa5a-d1ebcc0905ae",
+							"title": "Функции, DOM, отладка",
+							"type": "theme"
+						}
+					],
+					"title": "Функции, DOM, отладка",
+					"weekNumber": 14
+				},
+				"week-15": {
+					"block": "JS",
+					"description": "Разберём условные и логические операторы и поработаем с событиями",
+					"id": "week-15",
+					"tasks": [
+						{
+							"contentId": "15-513c6f63a76b4ac6b672d0dd86e98156",
+							"id": "15-513c6f63a76b4ac6b672d0dd86e98156",
+							"pageId": "26414f8a-8d3a-43bb-99b0-f2d6855ad9ca",
+							"title": "Условия и события",
+							"type": "theme"
+						}
+					],
+					"title": "Условия и события",
+					"weekNumber": 15
+				},
+				"week-16": {
+					"block": "JS",
+					"description": "Рассмотрим более сложный тип данных - массивы, и научимся перебирать их с помощью циклов",
+					"id": "week-16",
+					"tasks": [
+						{
+							"contentId": "16-6c7ec95be6554920b6439f5e1519dd3c",
+							"id": "16-6c7ec95be6554920b6439f5e1519dd3c",
+							"pageId": "c98adb98-fc47-4133-b3b5-8891e9f6ac06",
+							"title": "Массивы, циклы, querySelector",
+							"type": "theme"
+						}
+					],
+					"title": "Массивы, циклы, querySelector",
+					"weekNumber": 16
+				},
+				"week-17": {
+					"block": "JS",
+					"description": "Узнаем подробнее о методах для работы со строками и познакомимся со встроенными объектами Date и Math",
+					"id": "week-17",
+					"tasks": [
+						{
+							"contentId": "17-638ea0d26dd142c3bf57d9d233c99f54",
+							"id": "17-638ea0d26dd142c3bf57d9d233c99f54",
+							"pageId": "631c64aa-0926-46dc-9ed0-d2cde917f20f",
+							"title": "Строки, даты, Math",
+							"type": "theme"
+						}
+					],
+					"title": "Строки, даты, Math",
+					"weekNumber": 17
+				},
+				"week-18": {
+					"block": "JS",
+					"description": "Научимся проверять данные на корректность и сохранять их в браузере",
+					"id": "week-18",
+					"tasks": [
+						{
+							"contentId": "18-261df8e6748847519bcf23b07d12cbf9",
+							"id": "18-261df8e6748847519bcf23b07d12cbf9",
+							"pageId": "aee2c3ba-9abe-4ee1-be0d-546a2c8ca697",
+							"title": "Валидация, веб-хранилища",
+							"type": "theme"
+						}
+					],
+					"title": "Валидация, веб-хранилища",
+					"weekNumber": 18
+				},
+				"week-19": {
+					"block": "JS",
+					"description": "Здесь нам откроется правда: всё в JavaScript является объектами",
+					"id": "week-19",
+					"tasks": [
+						{
+							"contentId": "19-fd32a957d9b44e819c95d2b4dc23cfbb",
+							"id": "19-fd32a957d9b44e819c95d2b4dc23cfbb",
+							"pageId": "f64821ff-57f2-429c-9e1b-9728f29906bf",
+							"title": "Знакомство с ООП",
+							"type": "theme"
+						}
+					],
+					"title": "Знакомство с ООП",
+					"weekNumber": 19
+				},
+				"week-2": {
+					"block": "HTML CSS",
+					"description": "Научимся создавать каркас страницы из семантических тегов",
+					"id": "week-2",
+					"title": "Семантическая вёрстка",
+					"weekNumber": 2
+				},
+				"week-20": {
+					"block": "JS",
+					"description": "Ознакомимся с наиболее популярным форматом передачи данных в web-среде, научимся работать с сетевыми запросами и асинхронностью",
+					"id": "week-20",
+					"tasks": [
+						{
+							"contentId": "API-9ab97f23e00941a493f445b3e5197f38",
+							"id": "API-9ab97f23e00941a493f445b3e5197f38",
+							"pageId": "c14b567c-17e1-4efa-a038-a999da6da653",
+							"title": "Работа с API сервера",
+							"type": "theme"
+						},
+						{
+							"contentId": "20-e685e7793eee43ec90b53cda5e45262a",
+							"id": "20-e685e7793eee43ec90b53cda5e45262a",
+							"pageId": "e3668b4f-0136-4409-b5c4-8b9120e1f24a",
+							"title": "JSON",
+							"type": "theme"
+						},
+						{
+							"contentId": "JSON-fetch-b8cac5f530b948c4b2cd10771f48a1bf",
+							"id": "JSON-fetch-b8cac5f530b948c4b2cd10771f48a1bf",
+							"pageId": "acb645c0-66df-4b54-bfec-07fc3bdf824f",
+							"title": "Тест",
+							"type": "practice"
+						},
+						{
+							"contentId": "5974de0c82654ca9923f58ed9366ec4d",
+							"id": "5974de0c82654ca9923f58ed9366ec4d",
+							"pageId": "2a927f6c-ff7b-4850-b25b-5f8c9ed9d2bf",
+							"title": "База супергероев Марвелл",
+							"type": "practice"
+						},
+						{
+							"contentId": "API-6f6a5668dcbb4740a868cba3f9ae176a",
+							"id": "API-6f6a5668dcbb4740a868cba3f9ae176a",
+							"pageId": "009e29f3-0819-44e4-b794-1db79f35ff08",
+							"title": "Тестируем API",
+							"type": "practice"
+						},
+						{
+							"contentId": "API-e4b30f31ad4e44f5831f0cc7f74dd600",
+							"id": "API-e4b30f31ad4e44f5831f0cc7f74dd600",
+							"pageId": "a59a532b-5e28-45c1-8f0c-ee85a508f67f",
+							"title": "Пишем свой сайт с API",
+							"type": "practice"
+						}
+					],
+					"title": "JSON, работа с API",
+					"weekNumber": 20
+				},
+				"week-21": {
+					"block": "JS",
+					"description": "Изучим, как запрашивать и отправлять данные на сервер",
+					"id": "week-21",
+					"tasks": [
+						{
+							"contentId": "21-2d88a71fb10846e68057f3cb0694a011",
+							"id": "21-2d88a71fb10846e68057f3cb0694a011",
+							"pageId": "549fbc10-6ce3-43dd-8d27-6bc7fcc42b08",
+							"title": "HTTP-заголовки, GET и POST",
+							"type": "theme"
+						}
+					],
+					"title": "HTTP-заголовки, GET и POST",
+					"weekNumber": 21
+				},
+				"week-22": {
+					"block": "JS",
+					"id": "week-22",
+					"tasks": [
+						{
+							"contentId": "22-cff88a18ed614fbeb130011621805f91",
+							"id": "22-cff88a18ed614fbeb130011621805f91",
+							"pageId": "b4462281-797b-444f-ace5-bc2985847647",
+							"title": "Обработка ошибок, модули и npm",
+							"type": "theme"
+						}
+					],
+					"title": "Обработка ошибок, модули и npm",
+					"weekNumber": 22
+				},
+				"week-3": {
+					"block": "HTML CSS",
+					"description": "Попробуем управлять внешним видом текста на странице, а также работать с графикой",
+					"id": "week-3",
+					"title": "Знакомство с CSS",
+					"weekNumber": 3
+				},
+				"week-4": {
+					"block": "HTML CSS",
+					"description": "Настроим расположение элементов на странице и их размеры",
+					"id": "week-4",
+					"title": "Box-model, позиционирование",
+					"weekNumber": 4
+				},
+				"week-5": {
+					"block": "HTML CSS",
+					"description": "Рассмотрим простой и удобный способ управлять расположением элементов — flexbox",
+					"id": "week-5",
+					"title": "Flexbox",
+					"weekNumber": 5
+				},
+				"week-6": {
+					"block": "HTML CSS",
+					"description": "Следующий уровень — овладение css grid. И снова лягушки нам в этом помогут!",
+					"id": "week-6",
+					"title": "CSS Grid",
+					"weekNumber": 6
+				},
+				"week-7": {
+					"block": "HTML CSS",
+					"description": "Узнаем, что такое media выражения и как сделать сайт одинаково удобным на разных устройствах",
+					"id": "week-7",
+					"title": "Адаптивная вёрстка",
+					"weekNumber": 7
+				},
+				"week-8": {
+					"block": "HTML CSS",
+					"description": "Как придумать сайт, если нет дизайнерского взгляда? В этом помогут специальные библиотеки компонент, например, bootstrap",
+					"id": "week-8",
+					"title": "Bootstrap",
+					"weekNumber": 8
+				},
+				"week-9": {
+					"block": "HTML CSS",
+					"description": "Начинаем работу над первым командным проектом — вёрстка по учебному макету",
+					"id": "week-9",
+					"title": "Командный проект #1",
+					"weekNumber": 9
+				}
+			},
+			"tests": {
+				"d28acb2671ea4584b1842f515e52e612": {
+					"id": "d28acb2671ea4584b1842f515e52e612",
+					"questions": [
+						{
+							"options": [
+								{
+									"comment": "Это сокращение создат необходимые теги html, head и body.\nТакже работает ! + Enter",
+									"isValid": true,
+									"title": "Ввести ! и нажать Tab"
+								},
+								{
+									"comment": "Добавится только <!DOCTYPE html>",
+									"isValid": false,
+									"title": "Ввести !!! и нажать Tab"
+								},
+								{
+									"comment": "Добавится только <!DOCTYPE html>",
+									"isValid": false,
+									"title": "Ввести < и нажать Enter"
+								},
+								{
+									"comment": "Добавится только <!DOCTYPE html>",
+									"isValid": false,
+									"title": "Ввести < и нажать Tab"
+								}
+							],
+							"title": "Как с помощью плагина Emmet можно быстро создать основу HTML документа?",
+							"type": "solo"
+						},
+						{
+							"options": [
+								{
+									"comment": "Тег br является одиночным тегом, так писать нельзя",
+									"isValid": true,
+									"title": "</ br>"
+								},
+								{
+									"comment": "",
+									"isValid": false,
+									"title": "<br>"
+								},
+								{
+									"comment": "",
+									"isValid": false,
+									"title": "<br />"
+								}
+							],
+							"title": "В каком варианте тега br допущена ошибка?",
+							"type": "solo"
+						},
+						{
+							"options": [
+								{
+									"comment": "",
+									"isValid": false,
+									"title": "name"
+								},
+								{
+									"comment": "src — это обязательный атрибут любого изображения, иначе оно не будет загружено",
+									"isValid": true,
+									"title": "src"
+								},
+								{
+									"comment": "",
+									"isValid": false,
+									"title": "title"
+								},
+								{
+									"comment": "alt-текст нужен для любого изображения, которое иллюстрирует или дополняет текст",
+									"isValid": true,
+									"title": "alt"
+								},
+								{
+									"comment": "",
+									"isValid": false,
+									"title": "url"
+								}
+							],
+							"title": "Выберите атрибуты, которые могут быть у тега img:",
+							"type": "multi"
+						},
+						{
+							"options": [
+								{
+									"comment": "Код символа <",
+									"isValid": false,
+									"title": "&lt;"
+								},
+								{
+									"comment": "Код символа ©",
+									"isValid": false,
+									"title": "&copy;"
+								},
+								{
+									"comment": "Код символа >",
+									"isValid": false,
+									"title": "&gt;"
+								},
+								{
+									"comment": "Код символа … . Другие коды можно посмотреть на сайте https://dev.w3.org/html5/html-author/charref",
+									"isValid": true,
+									"title": "&mldr;"
+								}
+							],
+							"title": "Какой спецсимвол используется для указания знака многоточия?",
+							"type": "solo"
+						},
+						{
+							"options": [
+								{
+									"comment": "",
+									"isValid": false,
+									"title": "-"
+								},
+								{
+									"comment": "ol - ordered list - упорядоченный список",
+									"isValid": false,
+									"title": "-"
+								},
+								{
+									"comment": "ul — unordered list — то есть маркированный список",
+									"isValid": true,
+									"title": "-"
+								},
+								{
+									"comment": "Здесь есть ошибка в синтаксисе",
+									"isValid": false,
+									"title": "-"
+								}
+							],
+							"title": "Какой html код соответствует маркированному списку?",
+							"type": "solo"
+						},
+						{
+							"options": [
+								{
+									"comment": "жирное начертание без дополнительного смысла",
+									"isValid": false,
+									"title": "<b>"
+								},
+								{
+									"comment": "Этот вариант подходит лучше всех, так как тег strong означает высокую важность текста, а также дополнительно выделяется жирным",
+									"isValid": true,
+									"title": "<strong>"
+								},
+								{
+									"comment": "эмоциональное выделение слова или фразы",
+									"isValid": false,
+									"title": "<em>"
+								},
+								{
+									"comment": "дополнительное выделение (иностранные слова, термины) или просто курсив",
+									"isValid": false,
+									"title": "<i>"
+								}
+							],
+							"title": "Выберите тег, который лучше всего подходит для оформления сообщения об урагане:",
+							"type": "solo"
+						}
+					]
+				}
+			}
+		},
+		"mobile": {
+			"groups": {
+				"group-2": true
+			},
+			"lessons": {
+				"week-1": {
+					"block": "Основы разработки мобильных приложений",
+					"description": "Почему мы выбираем Flutter? Что такое Dart? Установим все нужные инструменты разработчика и настроим окружение",
+					"id": "week-1",
+					"tasks": [
+						{
+							"contentId": "47713a71fc40448a9c8993d19f2a1085",
+							"description": "Персонажи курса, что же такое Flutter и преимущества Dart",
+							"id": "47713a71fc40448a9c8993d19f2a1085",
+							"pageId": "541d0ca9-8e03-471b-b619-58e45579d157",
+							"title": "Знакомство с курсом",
+							"type": "theme"
+						},
+						{
+							"contentId": "da5bf649b9df49059c6ca8839b9ba6d4",
+							"description": "VSCode, web-редаторы для Flutter и Dart",
+							"id": "da5bf649b9df49059c6ca8839b9ba6d4",
+							"pageId": "b8573a81-5821-4c3f-8c5b-74da910c9b21",
+							"title": "С чего начать работу",
+							"type": "theme"
+						},
+						{
+							"contentId": "4ff650b548c94a10aaeb9948063d664e",
+							"description": "Android SDK, XCode, Flutter SDK, JDK",
+							"id": "4ff650b548c94a10aaeb9948063d664e",
+							"pageId": "44c18e0c-5a23-4fc7-9e7d-61c84abf5112",
+							"title": "Настройка окружения",
+							"type": "theme"
+						},
+						{
+							"contentId": "ebc827002d3345af976d87874ab9b656",
+							"description": "Установка всех необходимых для работы программ :)",
+							"id": "ebc827002d3345af976d87874ab9b656",
+							"pageId": "34b4c455-8edc-4c74-878d-62322881f19a",
+							"title": "Настройка окружения",
+							"type": "practice"
+						},
+						{
+							"contentId": "Flutter-1-317da615b4614f17a3c8b0cefa3bbb91",
+							"description": "Вопросы для самопроверки",
+							"id": "Flutter-1-317da615b4614f17a3c8b0cefa3bbb91",
+							"pageId": "05697cb9-f4b8-4958-b08c-f20db4cfc8b2",
+							"title": "Настройка окружения",
+							"type": "practice"
+						},
+						{
+							"contentId": "Dart-71a2bd3b0bb1457e9b0e5a424ce70c57",
+							"description": "Переменные и константы, типы данных",
+							"id": "Dart-71a2bd3b0bb1457e9b0e5a424ce70c57",
+							"pageId": "8ade7e70-4541-40f1-a620-799d9d31da2b",
+							"title": "Введение в Dart",
+							"type": "theme"
+						},
+						{
+							"contentId": "Dart-1-ad168849b7004e809ddc659e04db0019",
+							"description": "Ответьте на вопросы и отправьте их Коту 😺",
+							"id": "Dart-1-ad168849b7004e809ddc659e04db0019",
+							"pageId": "64b137ba-c559-4c5e-8ad6-81e8ba15df32",
+							"title": "Введение в Dart",
+							"type": "practice"
+						}
+					],
+					"title": "Глава Flutter 1, в которой мы узнаем, что такое Dart и Flutter",
+					"weekNumber": 1
+				},
+				"week-10": {
+					"block": "Основы разработки мобильных приложений",
+					"id": "week-10",
+					"title": "Командный проект №1",
+					"weekNumber": 10
+				},
+				"week-13": {
+					"block": "Продвинутая разработка мобильных приложений",
+					"id": "week-13",
+					"title": "Хранение данных Keychain, Keystore, Local Storage",
+					"weekNumber": 13
+				},
+				"week-14": {
+					"block": "Продвинутая разработка мобильных приложений",
+					"id": "week-14",
+					"title": "Push-уведомления",
+					"weekNumber": 14
+				},
+				"week-15": {
+					"block": "Продвинутая разработка мобильных приложений",
+					"id": "week-15",
+					"title": "Работа с базами данных",
+					"weekNumber": 15
+				},
+				"week-17": {
+					"block": "Продвинутая разработка мобильных приложений",
+					"id": "week-17",
+					"title": "Анимация и графика",
+					"weekNumber": 17
+				},
+				"week-18": {
+					"block": "Продвинутая разработка мобильных приложений",
+					"id": "week-18",
+					"title": "Работа с BLoc, Redux",
+					"weekNumber": 18
+				},
+				"week-19": {
+					"block": "Продвинутая разработка мобильных приложений",
+					"id": "week-19",
+					"title": "Исключения",
+					"weekNumber": 19
+				},
+				"week-2": {
+					"block": "Основы разработки мобильных приложений",
+					"description": "Пишем первое приложение",
+					"id": "week-2",
+					"tasks": [
+						{
+							"contentId": "Flutter-116fe9d7ed5142a89fbe2bad9929d426",
+							"id": "Flutter-116fe9d7ed5142a89fbe2bad9929d426",
+							"pageId": "3991bd52-c0b6-4b09-8e3c-929ca2201bfc",
+							"title": "Первое приложение на Flutter",
+							"type": "theme"
+						},
+						{
+							"contentId": "98e097d5703f423f951a4117ad393a78",
+							"description": "Какие бывают форматы графики, подключение графики в проект",
+							"id": "98e097d5703f423f951a4117ad393a78",
+							"pageId": "23eb7bde-c987-44f5-951c-4a51ddb598a4",
+							"title": "Графика",
+							"type": "theme"
+						},
+						{
+							"contentId": "7b9a90fd9b5c41c2b896d09c112f3a3e",
+							"description": "Как отлаживать приложение?",
+							"id": "7b9a90fd9b5c41c2b896d09c112f3a3e",
+							"pageId": "292e1247-70ae-4de3-9d59-bd721efd445e",
+							"title": "Дебагинг",
+							"type": "theme"
+						},
+						{
+							"contentId": "flutter-56a7e927fe594aee8836ae35d01a0d51",
+							"id": "flutter-56a7e927fe594aee8836ae35d01a0d51",
+							"pageId": "3b246bc0-da25-46b5-9112-8b445983f66a",
+							"title": "Первое приложение на Flutter",
+							"type": "practice"
+						},
+						{
+							"contentId": "Dart-e2610fc2ebe745f8bdae67148f214f33",
+							"description": "Значение null, nullable-типы и null-безопасность, арифметические операции",
+							"id": "Dart-e2610fc2ebe745f8bdae67148f214f33",
+							"pageId": "9ae26cd8-d009-45b9-af0c-796d789a6ee2",
+							"title": "Основы Dart",
+							"type": "theme"
+						},
+						{
+							"contentId": "Dart-2-8126b7a13cad48fe86ca5e26c0fd8800",
+							"id": "Dart-2-8126b7a13cad48fe86ca5e26c0fd8800",
+							"pageId": "31bca7a3-0b9f-4234-8690-ff536205952b",
+							"title": "Основы Dart: вопросы",
+							"type": "practice"
+						},
+						{
+							"contentId": "DartPad-cb0da1e6e9774ccfac9777da1f3a576b",
+							"id": "DartPad-cb0da1e6e9774ccfac9777da1f3a576b",
+							"pageId": "03870454-fc7c-4cbe-9e89-66a0d6735605",
+							"title": "Первое приложение по шаблону DartPad",
+							"type": "practice"
+						}
+					],
+					"title": "Глава Flutter 2, в которой мы сделаем первое приложение",
+					"weekNumber": 2
+				},
+				"week-20": {
+					"block": "Продвинутая разработка мобильных приложений",
+					"id": "week-20",
+					"title": "Публикация приложений",
+					"weekNumber": 20
+				},
+				"week-21": {
+					"block": "Продвинутая разработка мобильных приложений",
+					"description": "",
+					"id": "week-21",
+					"title": "",
+					"weekNumber": 21
+				},
+				"week-3": {
+					"block": "Основы разработки мобильных приложений",
+					"id": "week-3",
+					"tasks": [
+						{
+							"id": "d2104a1e-70ec-4653-a7b9-2f88301f7c40",
+							"pageId": "d2104a1e-70ec-4653-a7b9-2f88301f7c40",
+							"title": "Типы виджетов, простые виджеты и верстка на Flutter (основы компоновки), задание стилей, виджеты Column, Container, Center, Align и пр. ",
+							"type": "theme"
+						}
+					],
+					"title": "Понятие виджета, Material/Scaffold, базовые виджеты (AppBar, картинка, текст), подключение картинок и шрифтов, пакеты и зависимости",
+					"weekNumber": 3
+				},
+				"week-4": {
+					"block": "Основы разработки мобильных приложений",
+					"id": "week-4",
+					"title": "Виджеты Stateless&Stateful",
+					"weekNumber": 4
+				},
+				"week-5": {
+					"block": "Основы разработки мобильных приложений",
+					"id": "week-5",
+					"title": "Работа с формами + Material & Cupertino",
+					"weekNumber": 5
+				},
+				"week-6": {
+					"block": "Основы разработки мобильных приложений",
+					"id": "week-6",
+					"title": "Асинхронность, Future, Streams",
+					"weekNumber": 6
+				},
+				"week-7": {
+					"block": "Основы разработки мобильных приложений",
+					"id": "week-7",
+					"title": "Работа с сетью (Api, JSON)",
+					"weekNumber": 7
+				},
+				"week-8": {
+					"block": "Основы разработки мобильных приложений",
+					"id": "week-8",
+					"title": "Навигация(Route/Navigator)",
+					"weekNumber": 8
+				},
+				"week-9": {
+					"block": "Основы разработки мобильных приложений",
+					"id": "week-9",
+					"title": "Работа с библиотеками",
+					"weekNumber": 9
+				}
+			}
+		}
+	},
+	"groups": {
+		"group-1": {
+			"course": "frontend",
+			"endDate": "20.07.2022",
+			"mentor": {
+				"name": "Алиса",
+				"specialization": "Фронтенд-разработчик",
+				"experience": "18 лет.",
+				"generalInfo": "Cтарший разработчик в международной IT-компании «Opera». Приглашенный эксперт конференций «DevFest», «Dartup», «IWD2021» и других. Эксперт ООН для международного развития в сфере «Информационные технологии & IT образование»",
+				"keyCompetence": "проектирование опыта взаимодействия с цифровыми продуктами, фасилитация и креативные методики.",
+				"companies": "Альфабанк, РЖД, Tele2 и социальные проекты."
+			},
+			"schedule": {
+				"week-1": {
+					"dateEnd": 1632689999000,
+					"dateStart": 1632081600000,
+					"id": "week-1",
+					"weekNumber": 1
+				},
+				"week-11": {
+					"dateEnd": 1639342799000,
+					"dateStart": 1638133200000,
+					"id": "week-11",
+					"weekNumber": 11
+				},
+				"week-2": {
+					"dateEnd": 1633294799000,
+					"dateStart": 1632690000000,
+					"id": "week-2",
+					"weekNumber": 2
+				},
+				"week-3": {
+					"dateEnd": 1633899599000,
+					"dateStart": 1633294800000,
+					"id": "week-3",
+					"weekNumber": 3
+				},
+				"week-4": {
+					"dateEnd": 1634504399000,
+					"dateStart": 1633899600000,
+					"id": "week-4",
+					"weekNumber": 4
+				},
+				"week-5": {
+					"dateEnd": 1635109199000,
+					"dateStart": 1634504400000,
+					"id": "week-5",
+					"weekNumber": 5
+				},
+				"week-6": {
+					"dateEnd": 1635713999000,
+					"dateStart": 1635109200000,
+					"id": "week-6",
+					"weekNumber": 6
+				},
+				"week-7": {
+					"dateEnd": 1636318799000,
+					"dateStart": 1635714000000,
+					"id": "week-7",
+					"weekNumber": 7
+				},
+				"week-8": {
+					"dateEnd": 1636923599000,
+					"dateStart": 1636318800000,
+					"id": "week-8",
+					"weekNumber": 8
+				},
+				"week-9": {
+					"dateEnd": 1638133199000,
+					"dateStart": 1636923600000,
+					"id": "week-9",
+					"weekNumber": 9
+				}
+			},
+			"startDate": "20.09.2021",
+			"students": {
+				"DwBVuupEbjstnE06h0eVEzWv3fZD": true,
+				"dGwF1ro0fR9cBx3pXBPOjy4pl8N0": true,
+				"obi85rjNJbtxij7oeOYJa9ER5I9n": true
+			},
+			"videos": [
+				{
+					"theme": "Встреча про GIT",
+					"link": "https://youtu.be/USjZcfj8yxE"
+				},
+				{
+					"theme": "Встреча про HTML",
+					"link": "https://youtu.be/qz0aGYrrlhU"
+				},
+				{
+					"theme": "Встреча про Javascript",
+					"link": "https://www.youtube.com/watch?v=DuWyc76lYC4"
+				},
+				{
+					"theme": "Встреча про React",
+					"link": "https://www.youtube.com/watch?v=GNrdg3PzpJQ&t=274s"
+				}
+			]
+		},
+		"group-2": {
+			"course": "mobile",
+			"endDate": "20.03.2022",
+			"mentor": {
+				"name": "Марина",
+				"specialization": "Mobile-разработчик",
+				"experience": "5 лет.",
+				"generalInfo": "Head of UX Сравни.ру. Со-основатель и продюссер арт-объединения SENSE. Эксперт в области дизайн-исследований и проектирования / Human-Centeres Design.",
+				"keyCompetence": "проектирование опыта взаимодействия с цифровыми продуктами, фасилитация и креативные методики.",
+				"companies": "Mail.ru и социальные проекты."
+			},
+			"schedule": {
+				"week-1": {
+					"dateEnd": 1632689999000,
+					"dateStart": 1632081600000,
+					"id": "week-1",
+					"weekNumber": 1
+				},
+				"week-11": {
+					"dateEnd": 1639342799000,
+					"dateStart": 1638133200000,
+					"id": "week-11",
+					"weekNumber": 11
+				},
+				"week-2": {
+					"dateEnd": 1633294799000,
+					"dateStart": 1632690000000,
+					"id": "week-2",
+					"weekNumber": 2
+				},
+				"week-3": {
+					"dateEnd": 1633899599000,
+					"dateStart": 1633294800000,
+					"id": "week-3",
+					"weekNumber": 3
+				},
+				"week-4": {
+					"dateEnd": 1634504399000,
+					"dateStart": 1633899600000,
+					"id": "week-4",
+					"weekNumber": 4
+				},
+				"week-5": {
+					"dateEnd": 1635109199000,
+					"dateStart": 1634504400000,
+					"id": "week-5",
+					"weekNumber": 5
+				},
+				"week-6": {
+					"dateEnd": 1635713999000,
+					"dateStart": 1635109200000,
+					"id": "week-6",
+					"weekNumber": 6
+				},
+				"week-7": {
+					"dateEnd": 1636318799000,
+					"dateStart": 1635714000000,
+					"id": "week-7",
+					"weekNumber": 7
+				},
+				"week-8": {
+					"dateEnd": 1636923599000,
+					"dateStart": 1636318800000,
+					"id": "week-8",
+					"weekNumber": 8
+				},
+				"week-9": {
+					"dateEnd": 1638133199000,
+					"dateStart": 1636923600000,
+					"id": "week-9",
+					"weekNumber": 9
+				}
+			},
+			"startDate": "20.09.2021",
+			"students": {
+				"Mo84qsejrj0X3ULvs4rHWtR7rIGZ": true
+			},
+			"videos": [
+				{
+					"theme": "Встреча про CSS",
+					"link": "https://www.youtube.com/watch?v=GoBvYPwv-g8"
+				},
+				{
+					"theme": "Встреча про Flexbox",
+					"link": "youtube.com/watch?v=EO8hH_2OwCU"
+				},
+				{
+					"theme": "Встреча про VSCode",
+					"link": "https://www.youtube.com/watch?v=nxCLXMBl4e4"
+				},
+				{
+					"theme": "Встреча про БЭМ",
+					"link": "https://www.youtube.com/watch?v=HihYQVuH64U"
+				}
+			]
+		},
+		"group-unassigned": {
+			"course": "course-unassigned",
+			"endDate": "",
+			"mentor": {
+				"name": "",
+				"specialization": "",
+				"experience": "",
+				"key-competence": "",
+				"companies": ""
+			},
+			"schedule": {
+				"week-1": {
+					"dateEnd": "",
+					"dateStart": "",
+					"id": "week-1",
+					"weekNumber": 0
+				}
+			},
+			"startDate": "",
+			"students": {
+				"1ckpgFbBeajJWV5OT20cqEza53Ov": true,
+				"GF84JpsPxUs6glwyNvKo3BAul3cO": true,
+				"GLO3pWolCHGhn8BnkmMQzqKg3UZ8": true,
+				"Xy4iDkCuoESoZcAiP1JEvSdsRYm8": true
+			}
+		}
+	},
+	"progress": {
+		"DwBVuupEbjstnE06h0eVEzWv3fZD": {
+			"theme": {
+				"6156ee82435843a3978f341b28aa7635": true,
+				"99e9fc7bb67c40288409be10478ade97": true,
+				"HTML-0e64be98d88742c0a9e4578beaed74f0": true
+			}
+		},
+		"suik6eQx9Jo4eJ8ta6d116rAa3nP": {
+			"theme": {
+				"47713a71fc40448a9c8993d19f2a1085": true,
+				"4ff650b548c94a10aaeb9948063d664e": true,
+				"Dart-71a2bd3b0bb1457e9b0e5a424ce70c57": true,
+				"da5bf649b9df49059c6ca8839b9ba6d4": true
+			}
+		}
+	},
+	"users": {
+		"DwBVuupEbjstnE06h0eVEzWv3fZD": {
+			"course": "frontend",
+			"group": "group-1",
+			"name": "Марина Титова ",
+			"uid": "DwBVuupEbjstnE06h0eVEzWv3fZD"
+		},
+		"GF84JpsPxUs6glwyNvKo3BAul3cO": {
+			"course": "frontend",
+			"group": "group-1",
+			"name": "Монстрик ",
+			"uid": "GF84JpsPxUs6glwyNvKo3BAul3cO"
+		},
+		"GLO3pWolCHGhn8BnkmMQzqKg3UZ8": {
+			"course": "mobile",
+			"group": "group-2",
+			"name": "zasfasf ",
+					"uid": "GLO3pWolCHGhn8BnkmMQzqKg3UZ8"
+		},
+		"Mo84qsejrj0X3ULvs4rHWtR7rIGZ": {
+			"course": "frontend",
+			"group": "group-2",
+			"name": "Телефонная Богиня",
+			"uid": "Mo84qsejrj0X3ULvs4rHWtR7rIGZ"
+		},
+		"Xy4iDkCuoESoZcAiP1JEvSdsRYm8": {
+			"course": "course-unassigned",
+			"group": "group-unassigned",
+			"name": "Roo ",
+						"uid": "Xy4iDkCuoESoZcAiP1JEvSdsRYm8"
+		},
+		"dGwF1ro0fR9cBx3pXBPOjy4pl8N0": {
+			"course": "course-unassigned",
+			"group": "group-unassigned",
+			"name": "Федора Котиковна",
+						"uid": "dGwF1ro0fR9cBx3pXBPOjy4pl8N0"
+		},
+		"obi85rjNJbtxij7oeOYJa9ER5I9n": {
+			"course": "frontend",
+			"group": "group-1",
+			"name": "Русалка Админ",
+						"uid": "obi85rjNJbtxij7oeOYJa9ER5I9n"
+		}
+	}
+}

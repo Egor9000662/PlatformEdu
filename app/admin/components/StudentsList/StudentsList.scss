@@ -1,0 +1,64 @@
+@import "../../../styles/search&selects.scss";
+@import "../../../styles/modal.scss";
+@import "../../../styles/vars.scss";
+
+.students-admin-list {
+	width: 90vw;
+}
+
+.studentWrap {
+	display: flex;
+	justify-content: center;
+}
+
+.studentsListWrapper {
+	margin: auto 1rem;
+}
+
+.searchInput {
+	margin: 20px auto;
+	width: 90vw;
+	position: relative;
+}
+
+.searchInput-input {
+	@include search-selects-mixin;
+
+	&_admin {
+		width: 100%;
+	}
+}
+
+.searchInput-icon {
+	@include search-selects-icon;
+}
+
+.std-removeModal .ant-modal-body {
+	padding: 20px;
+}
+
+.std-moveModal .ant-modal-body {
+	padding: 0 10px;
+}
+
+.stdModal {
+	@include modal-mixin;
+}
+
+
+.stdModal .ant-modal-footer button {
+	width: 100px;
+}
+
+@media screen and (max-width: 480px) {
+	.searchInput-input {
+		height: 75px;
+		font-size: 17px;
+	}
+}
+
+@media screen and (min-width: 1279px) {
+	.searchInput {
+		max-width: 1270px;
+	}
+}

@@ -1,0 +1,144 @@
+@import '../../../styles/vars.scss';
+@import '../../../styles/search&selects.scss';
+
+.person__wrap {
+    display: flex;
+    justify-content: center;
+    color: $whiteColor;
+    margin-bottom: 10px;
+}
+
+.person__avatar {
+    margin-right: -41px;
+}
+
+.person__avatar-img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.person {
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+    width: 100%;
+    min-height: 3rem;
+    margin: 0 0 15px 0;
+    border: 0.5px solid $azureColor;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    background: radial-gradient(80% 80%,
+            rgba(146, 213, 241, 0.01),
+            rgba(146, 213, 241, 0.1));
+}
+
+.person__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 2rem;
+}
+
+.person__name {
+    font-weight: bold;
+    font-size: 2em;
+    color: $whiteColor;
+}
+
+.person__icons img {
+    margin-right: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    filter: hue-rotate(226deg) brightness(200%);
+}
+
+.person__icons .person__icon_delete {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(276deg) brightness(114%) contrast(101%);
+}
+
+@media screen and (max-width: 481px) {
+    .person__avatar-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .person {
+        clip-path: url('#window-1');
+    }
+
+    .person__info-container {
+        padding-left: 40px;
+    }
+
+    .person__name {
+        font-size: 1.3rem;
+    }
+
+    .person__icons img {
+        margin-right: 0.1rem;
+    }
+
+    .person__icons {
+        margin-left: 0.2rem;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 696px) {
+    .person {
+        clip-path: url('#window-2');
+    }
+
+    .person__info-container {
+        padding-left: 55px;
+    }
+
+    .person__avatar {
+        margin-right: -45px;
+        margin-top: 5px;
+    }
+
+    .person__avatar-img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width: 696px) and (max-width: 1111px) {
+    .person {
+        clip-path: url('#window-3');
+        padding: 9px 9px;
+    }
+
+    .person__info-container {
+        padding-left: 55px;
+    }
+
+    .person__avatar {
+        margin-right: -55px;
+    }
+
+    .person__avatar-img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (min-width: 1111px) {
+    .person {
+        clip-path: url('#window-4');
+        max-width: 1223px;
+        padding: 11px 11px;
+    }
+
+    .person__info-container {
+        padding-left: 60px;
+    }
+
+    .person__avatar {
+        margin-right: -60px;
+    }
+}

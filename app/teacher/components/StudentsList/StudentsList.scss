@@ -1,0 +1,61 @@
+@import '../../../styles/search&selects.scss';
+
+@import '../../../styles/vars.scss';
+
+.searchInput {
+	margin: 20px auto;
+	position: relative;
+
+	&-input {
+		width: 100%;
+		zoom: 1;
+		// text-align: start;
+		margin-bottom: 15px;
+	}
+}
+
+.searchInput .searchInput-input {
+	@include search-selects-mixin;
+	width: 100%;
+}
+
+.searchInput-icon {
+	@include search-selects-icon;
+	position: absolute;
+	&_messenger {
+		left: 27%;
+	}
+}
+
+.students-list {
+	color: $whiteColor;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 90vw;
+}
+
+.students-list a {
+	width: 100%;
+}
+
+// @media screen and (min-width: 769px) and (max-width: 1278px) {
+// 	.searchInput-input {
+// 		// margin-left: 50%;
+// 	}
+// }
+
+@media screen and (min-width: 1279px) {
+	.searchInput {
+		max-width: 1270px;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+	.searchInput-icon {
+		@include search-selects-icon;
+		&_messenger {
+			left: 24%;
+		}
+	}
+}

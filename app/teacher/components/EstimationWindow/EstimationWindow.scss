@@ -1,0 +1,190 @@
+@import '../../../styles/vars.scss';
+
+.est-main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: $whiteColor;
+}
+
+.est-header {
+	margin-top: 20px;
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 28px;
+	letter-spacing: 0em;
+	text-align: center;
+	color: $whiteColor;
+}
+
+.est-crystal {
+	margin-top: 1.5rem;
+	margin-bottom: 3rem;
+}
+
+.est-settings {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.est-setting {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding-bottom: 5px;
+}
+
+.est-text {
+	padding: 6px 0;
+	text-align: start;
+	font-size: 1rem;
+	width: 80%;
+}
+
+.est-toggle {
+	padding: 2px 0;
+	margin-left: auto;
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+}
+
+.est-slider {
+	position: relative;
+	display: inline-block;
+	width: 51px;
+	height: 31px;
+	margin: 0;
+	vertical-align: top;
+	background: #cacaca;
+	border-radius: 30px;
+	outline: none;
+	cursor: pointer;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	transition: all 0.5s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+}
+
+.est-slider::after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	left: 2px;
+	top: 2px;
+	width: 27px;
+	height: 27px;
+	background-color: $whiteColor;
+	box-shadow: 4px 4px 8px 0px rgba(15, 28, 37, 0.2);
+	border-radius: 50%;
+	transform: translateX(0);
+	transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+}
+
+.est-slider:checked::after {
+	transform: translateX(70%);
+	background-color: $whiteColor;
+}
+
+.est-slider:checked {
+	background-color: #07b9f1;
+}
+
+.est-btns {
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.est-btn {
+	padding: 0.5rem 2.5rem;
+	width: 13.75rem;
+	font-size: 1rem;
+	border: 2px solid $whiteColor;
+	border-radius: 25px;
+	font-weight: 700;
+	color: $whiteColor;
+}
+
+.est-btns__accept {
+	display: block;
+	margin-bottom: 1rem;
+	background: $colorGreenBtn;
+}
+
+.est-btns__decline {
+	margin-bottom: 20px;
+	background: $colorRedBtn;
+}
+.est-btns__accept:hover {
+	cursor: pointer;
+	background: $colorGreenBtn;
+}
+.est-btns__decline:hover {
+	cursor: pointer;
+	background: $colorRedBtn;
+}
+
+.est-remark {
+	padding: 0px 0.6875rem;
+	flex-direction: column;
+	justify-content: baseline;
+	align-items: baseline;
+	text-align: center;
+}
+
+.est-remark__title {
+	margin-bottom: 0;
+	font-weight: 700;
+	font-size: 1rem;
+	color: $whiteColor;
+}
+.est-remark__text {
+	margin-top: 1.5rem;
+	width: 13.75rem;
+	height: 14.375rem;
+	line-height: 19px;
+	outline: none;
+	border: none;
+	background-color: transparent;
+	color: $whiteColor;
+}
+
+.est-remark__text::placeholder {
+	font-size: 1.0625rem;
+	font-weight: bold;
+	line-height: 20px;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.est-remark__text::-webkit-scrollbar {
+	display: none;
+}
+
+.est-remark__btn {
+	margin-top: 18px;
+	background: linear-gradient(to bottom, #72e5f9, #09b7f0, #4f8cd8);
+	border-radius: 50px;
+	border: 3px solid $whiteColor;
+}
+
+.est-remark__btn:hover {
+	cursor: pointer;
+	background: linear-gradient(to bottom, #a0eefc, #6ac9e9, #6698d4);
+}
+.est-remark__btn[disabled] {
+	background: $lightGreyColor;
+	cursor: not-allowed;
+}
+.est-disabled-link {
+	pointer-events: none;
+}
+
+.est-errSpan {
+	padding-top: 10px;
+	font-weight: 600;
+	color: $minorNoticeColor;
+}

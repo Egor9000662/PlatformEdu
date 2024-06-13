@@ -1,0 +1,237 @@
+@import '../../../styles/vars.scss';
+
+.resumeWrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 80px;
+}
+
+.resumeWrap-header {
+	width: 90vw;
+	max-width: 1270px;
+	padding: 20px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.resumeWrap-header__h {
+	font-family: 'Rubik';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	color: $whiteColor;
+	margin: 0 auto;
+}
+
+.resumeWrap-body__card {
+	width: 342px;
+	height: fit-content;
+	background-color: rgba(255, 255, 255, 0.2);
+	border: 1px solid $azureColor;
+	clip-path: polygon(
+		10% 0,
+		90% 0,
+		100% 5%,
+		100% 95%,
+		90% 100%,
+		10% 100%,
+		0 95%,
+		0 5%
+	);
+}
+
+.resumeWrap-body__card-user {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.resumeWrap-body__card-user-avatar {
+	width: 100px;
+	height: 100px;
+	padding: 3px;
+	border-radius: 50%;
+	clip-path: polygon(80% 0, 100% 20%, 100% 100%, 0 100%, 0 0);
+	object-fit: cover;
+}
+
+.resumeWrap-body__card-userName,
+.resumeWrap-body__card-userSpecialty,
+.resumeWrap-body__card-userExperience,
+.resumeWrap-body__card-userProjects,
+.resumeWrap-body__card-userKeySkillsList,
+.resumeWrap-body__card-userKeySkillsTitle,
+.resumeWrap-body__card-userSkills {
+	font-weight: bold;
+	font-size: 16px;
+	color: $whiteColor;
+}
+
+.resumeWrap-body__card-userName {
+	font-size: 24px;
+	line-height: 28px;
+}
+
+.resumeWrap-body__card-userProjects {
+	margin-bottom: 0px;
+}
+
+.resumeWrap-body__card-userSkills {
+	font-weight: normal;
+}
+
+.resumeWrap-body__card-userKeySkillsList {
+	padding: 10px;
+}
+
+.resumeWrap-body__card-btnDownload {
+	align-self: center;
+	padding: 15px 30px;
+	width: 214px;
+	margin-top: 24px;
+	line-height: 118.75%;
+	/* font-size: calc(16px + (16 + 16 * 0.7) * ((100vw - 375px) / 1280)); */
+	font-size: 16px;
+	font-family: inherit;
+	font-weight: 700;
+	color: $whiteColor;
+	background: $colorBlueBtn;
+	border-radius: 50px;
+	border: $borderBtn;
+}
+
+.resumeWrap-body__card-btnDownload:hover,
+.resumeWrap-body__card-btnDownload:active {
+	cursor: pointer;
+	background: $colorBlueBtnHover;
+}
+
+ul {
+	list-style-type: circle;
+}
+
+.resumeWrap-body__card-userUnable {
+	color: rgb(177, 171, 171);
+	font-weight: normal;
+	font-size: 16px;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+	.resumeWrap {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		row-gap: 1.5rem;
+	}
+
+	.resumeWrap-header {
+		width: 50%;
+	}
+	.resumeWrap-header-btn {
+	display: none;
+	}
+	.resumeWrap-header__h {
+		margin: 0;
+	}
+
+	.resumeWrap-body__card-btnDownload {
+		margin: 0;
+	}
+
+	.resumeWrap-body__card {
+		order: 3;
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		align-items: flex-start;
+		border-radius: 20px;
+		background-color: $whiteColor;
+		box-shadow: 0px 4px 10px 0px rgba(146, 213, 241, 0.08);
+		backdrop-filter: blur(3px);
+		clip-path: none;
+		color: $blueColor;
+}
+
+.resumeWrap-body__card-user {
+	justify-content: flex-end;
+	flex-direction: row-reverse;
+}
+
+.resumeWrap-body__card-user-avatar {
+    width: 76px;
+    height: 76px;
+	margin-right: 24px;
+}
+
+.resumeWrap-body__card-item {
+	margin-left: -100px;
+}
+
+.resumeWrap-body__card-userExperience,
+.resumeWrap-body__card-userProjects,
+.resumeWrap-body__card-userKeySkillsList,
+.resumeWrap-body__card-userKeySkillsTitle,
+.resumeWrap-body__card-userSkills {
+	font-weight: bold;
+	font-size: 16px;
+	color: $blueColor;
+}
+
+.resumeWrap-body__card-userName {
+	color: $blueColor;
+	font-family: Rubik;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin-bottom: 10px;
+}
+
+.resumeWrap-body__card-userSpecialty {
+	color: var(--2, #677589);
+	font-family: Rubik;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.resumeWrap-body__card-userKeySkillsList {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	list-style-type: none;
+}
+
+.resumeWrap-body__card-userUnable,
+.resumeWrap-body__card-userSkills {
+	color: $whiteColor;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	padding: 6px 8px;
+	border-radius: 30px;
+	border: 1px solid var(--07-b-9-f-1, #07B9F1);
+	background: var(--07-b-9-f-1, #07B9F1);
+	box-shadow: 0px 4px 10px 0px rgba(146, 213, 241, 0.08);
+	backdrop-filter: blur(3px);
+}
+
+.resumeWrap-body__card-text {
+	color: $blueColor;
+	background: none;
+	border: none;
+	box-shadow: none;
+	backdrop-filter: none;
+}
+}
+
+

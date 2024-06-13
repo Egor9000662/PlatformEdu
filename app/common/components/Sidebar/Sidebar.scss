@@ -1,0 +1,223 @@
+@import '../../../styles/vars.scss';
+
+.sidebar-container {
+	display: none;
+}
+
+@media screen and (min-width: 1024px) {
+.sidebar-container {
+	flex-shrink: 1;
+	display: inline-flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 16px;
+	max-width: 360px;
+}
+
+.sidebar__nav-container {
+	display: flex;
+	align-items: flex-start;;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	padding: 12px 16px;
+	border-radius: 20px;
+	border: 1px solid var(--text-input, #88B3D2);
+	background: var(--unnamed, #0E163D);
+}
+
+.notification-icon {
+	position: relative;
+}
+
+.tab-notification {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: red;
+	border-radius: 50%;
+	width: 0.5rem;
+	height: 0.5rem;
+	box-shadow: 0px 0px 4px 0.8px $lightRedColor;
+}
+
+.sidebar__settings {
+	width: 100%;
+}
+
+.sidebar__navigate{
+	width: 100%;
+	// height: 216px;
+}
+
+.sidebar__userInfo-container {
+	width: 100%;
+	height: 100%;
+	fill: var(--unnamed, #0E163D);
+	stroke-width: 1px;
+	stroke: var(--text-input, #88B3D2);
+	padding-top: 10px;
+}
+
+.sidebar__userInfo {
+	width: 100%;
+	// height: 169px;
+	padding: 9px 9px;
+	position: relative;
+}
+
+nav {
+	width: 100%;
+}
+
+.sidebar__nav {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	cursor: pointer;
+	padding: 10px;
+}
+
+.sidebar-text {
+	color: var(--2, #677589);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin: 0 0 0 16px;
+
+	&:hover {
+		color: $whiteColor;
+	}
+}
+
+.active {
+	color: $whiteColor;
+}
+
+.user__avatar-img{
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	top: 5px;
+	left: 5px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.sidebar__userInfo_header {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 16px;
+	margin-left: 70px;
+}
+
+.sidebar__username {
+	color: $whiteColor;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.user-courses {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+}
+
+.userInfo-header__button[disabled] {
+	opacity: 0.3;
+}
+.userInfo__arrow {
+	cursor: pointer;
+	fill: var(--unnamed, #92D5F1);
+	filter: drop-shadow(0px 0px 10px #92D5F1);
+	width: 25px;
+	height: 25px;
+
+	&_left {
+		transform: rotate(180deg);
+	}
+}
+
+.userInfo-courseName {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-inline: 5px;
+	min-width: 120px;
+
+	padding: 6px 0;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	color: $whiteColor;
+	text-align: center;
+
+	border-radius: 30px;
+	border: 1px solid var(--text-input, #88B3D2);
+	background: var(--input, linear-gradient(225deg, rgba(146, 213, 241, 0.01) 0%, rgba(146, 213, 241, 0.10) 100%));
+	box-shadow: 0px 4px 10px 0px rgba(146, 213, 241, 0.08);
+	backdrop-filter: blur(3px);
+}
+
+.sidebar__userProgress {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
+	padding: 24px 10px 0;
+	position: relative;
+}
+
+.crystal-img {
+	height: 20px;
+}
+
+.userProgress-crystal {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.count-crystal {
+	color: $whiteColor;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	padding-left: 5px;
+	margin-bottom: 0;
+}
+
+.crystal-text {
+	color: var(--2, #677589);
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+}
+
+@media screen and (min-width: 1170px) {
+	.sidebar__userInfo_header {
+		margin-left: 90px;
+	}
+
+	.sidebar__username {
+		font-size: 24px;
+		margin-left: 0;
+	}
+
+	.sidebar-text {
+		font-size: 20px;
+	}
+}
+
+.sidebar-hidden {
+    display: none;
+}

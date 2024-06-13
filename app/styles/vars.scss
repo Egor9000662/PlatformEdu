@@ -1,0 +1,76 @@
+//Colors
+$whiteColor: #ffffff;
+$minorNoticeColor: #ffb44f;
+$blueColor: #0e163d;
+$azureColor: #92d5f1;
+$lightGreyColor: #828282;
+$lightRedColor: #fb5456;
+$redColor: #ff0000;
+
+// Btns
+$borderBtn: 3px solid $whiteColor;
+$colorGreyBtn: linear-gradient(180deg, #acbbc1 0%, #96a8b2 100%);
+$colorGreenBtn: linear-gradient(
+	180deg,
+	#ccef82 0%,
+	#469a29 94.27%,
+	#7cbc55 100%
+);
+$colorGreenBtnHover: linear-gradient(
+	180deg,
+	#d4f097 0%,
+	#5da745 94.27%,
+	#86bb65 100%
+);
+$colorBlueBtn: linear-gradient(
+	180deg,
+	#a0fafa 0%,
+	#35c8f7 16.67%,
+	#07b9f1 43.23%,
+	#5589d6 94.27%,
+	#5d9cca 100%
+);
+$colorBlueBtnHover: linear-gradient(to bottom, #a0eefc, #6ac9e9, #6698d4);
+$colorRedBtn: linear-gradient(
+	180deg,
+	#faa0a0 0%,
+	#f74135 16.67%,
+	#f33f33 43.23%,
+	#cc524a 94.27%,
+	#e16d6d 100%
+);
+$colorRedBtnHover: linear-gradient(
+	180deg,
+	#f8aaaa 0%,
+	#ff685d 16.67%,
+	#f55448 43.23%,
+	#cc635c 94.27%,
+	#dd7575 100%
+);
+
+// Inputs + selects
+$inputOutline: 2px solid #92d4f1c9;
+$inputBorder: 1px solid #92d5f1;
+$optionBackground: rgba(1, 18, 46, 0.85);
+
+// GroupCards
+//active
+$groupCardBorder: 1px solid rgb(79, 219, 196);
+$groupCardBackground: radial-gradient(
+	40% 65%,
+	rgba(73, 156, 233, 0.287),
+	rgba(119, 241, 229, 0.4)
+);
+//graduated
+$groupGraduatedBackground: radial-gradient(
+	40% 65%,
+	rgba(73, 156, 233, 0.287),
+	rgba(245, 207, 244, 0.4)
+);
+//archived
+$groupArchivedBorder: 1px solid #989898;
+$groupArchivedBackground: linear-gradient(
+	228.3deg,
+	rgba(196, 196, 196, 0.01) -33.36%,
+	rgba(196, 196, 196, 0.219) 72.4%
+);

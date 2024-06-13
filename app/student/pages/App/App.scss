@@ -1,0 +1,25 @@
+
+@media screen and (min-width: 1024px) {
+.app-container {
+    max-width: 1937px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 43px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: grid;
+    grid-template-columns: 27% 70%;
+    gap: 20px;
+}
+}
+
+@media screen and (min-width: 1170px) {
+    .app-container {
+    padding-left: 44px;
+    padding-right: 25px;
+}
+}
+
+.app-container-sidebar-hidden {
+    grid-template-columns: 100%;
+}

@@ -1,0 +1,140 @@
+@import '../../../styles/vars.scss';
+@import '../../../styles/modal.scss';
+@include modal-wrap;
+
+.homePage-groups__text {
+	color: $whiteColor;
+	text-align: center;
+	font-size: 20px;
+}
+
+#divider {
+	border: #31d4b8;
+}
+
+#divider-span {
+	color: #ffff;
+	font-weight: 700;
+	font-size: 24px;
+}
+
+.homeWrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.signup-modal,
+.createGroup-modal {
+	@include modal-mixin;
+}
+
+.username {
+	margin: 0.5rem;
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+
+.logoutBtn {
+	float: right;
+	margin: 0.2rem;
+}
+
+.icon-add,
+.icon-mentor-list {
+	margin: 1rem;
+	width: 35px;
+	height: 35px;
+}
+
+.admin-notifsBtn {
+	margin: 1rem;
+}
+
+.admin-notifsBtn-btn {
+	&:disabled {
+		filter: grayscale(1) brightness(110%);
+		opacity: 0.9;
+		cursor: initial;
+	}
+}
+
+.icon-createNotif {
+	background: linear-gradient(
+			225deg,
+			rgba(146, 213, 241, 0.01) 0%,
+			rgba(146, 213, 241, 0.1) 100%
+	);
+	border: 1px solid $azureColor;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 8px rgba(146, 213, 241, 0.08),
+	0px 0px 2px rgba(146, 213, 241, 0.12),
+	0px 0px 1px rgba(146, 213, 241, 0.08);
+	backdrop-filter: blur(6px);
+	border-radius: 100px;
+	img {
+		width: 55px;
+		height: 55px;
+	}
+}
+
+.logoutbtn-wrapper {
+	display: flex;
+	justify-content: flex-end;
+	position: absolute;
+	right: 0;
+	top: 35px;
+}
+
+.home-admin-icon {
+	filter: hue-rotate(265deg) brightness(200%);
+}
+
+.icon-add-course {
+	margin: 1rem;
+	width: 30px;
+	height: 30px;
+	filter: invert(89%) sepia(100%) saturate(7496%) hue-rotate(160deg) brightness(107%) contrast(101%);
+}
+
+.homePage-controls {
+	width: 90vw;
+	max-width: 1270px;
+	padding: 20px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+
+	&__back {
+		position: absolute;
+		left: 0;
+		top: 20px;
+	}
+}
+
+.groups-container {
+	display: flex;
+	flex-direction: column;
+	width: 90vw;
+	max-width: 1270px;
+
+	.homePage-groups {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.homePage-controls  {
+		justify-content: space-between;
+	}
+	.adding-buttons * {
+		margin-left: 6px;
+		margin-right: 6px;
+	}
+}
+
+

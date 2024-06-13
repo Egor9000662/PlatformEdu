@@ -1,0 +1,30 @@
+// разделитель
+@import "../../../styles/vars.scss";
+
+.divider__box {
+	width: 100%;
+	padding: 0px 24px 10px 24px;
+}
+
+.divider {
+	display: flex;
+	margin: 10px 0;
+	align-items: center;
+	.divider__text {
+		size: 16px;
+		color: rgba(255, 255, 255, 0.5);
+	}
+}
+.divider::before,
+.divider::after {
+	flex: 1;
+	height: 1px;
+	background: #aaa;
+	content: "";
+}
+.divider::before {
+	margin-right: 24px;
+}
+.divider::after {
+	margin-left: 24px;
+}

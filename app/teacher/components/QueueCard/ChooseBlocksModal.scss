@@ -1,0 +1,88 @@
+@import '../../../styles/vars.scss';
+@import '../../../styles/modal.scss';
+
+.ant-select-selection-overflow {
+	padding: 13px;
+	width: 17rem;
+	border-radius: 50px;
+	border: 1px solid $azureColor;
+}
+
+.selection-priority-block {
+	padding: 10px;
+	margin: 15px 0px 5px 3px;
+	width: 17rem;
+	border-radius: 50px;
+	color: $azureColor;
+	border: 1px solid $azureColor;
+	.ant-select-arrow {
+		display: none;
+	}
+	.ant-select-selection-placeholder {
+		color: white;
+	}
+}
+
+.ant-select-selection-placeholder {
+	color: $whiteColor;
+}
+
+.block-ChooseModal .ant-modal-body {
+	padding: 0 10px;
+}
+
+.blockModal {
+	@include modal-mixin;
+}
+
+.priority-block__message {
+	max-width: 265px;
+	text-align: center;
+	font-size: 13px;
+	color: #ffef77;
+}
+
+.blockChoose-checkMark {
+	position: absolute;
+	top: 9px;
+	right: -1%;
+	z-index: -1;
+}
+
+.blockChoose-checkMark__priority {
+	position: absolute;
+	bottom: 15px;
+	right: -1%;
+	z-index: -1;
+}
+
+.ant-select-selection-search-input {
+	color: transparent;
+}
+
+.ant-select-multiple {
+	.ant-select-selection-item {
+		border: 1px solid $azureColor;
+		background: transparent;
+		color: $azureColor;
+		border-radius: 50px;
+	}
+
+	.ant-select-selection-placeholder {
+		left: 20px;
+	}
+
+	.ant-select-selection-item-remove {
+		color: $azureColor;
+	}
+}
+
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+	border: none;
+	background-color: transparent;
+}
+
+.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input)
+	.ant-select-selector {
+	box-shadow: none;
+}

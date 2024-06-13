@@ -1,0 +1,52 @@
+@import "../../../../styles/vars.scss";
+
+.feedback-theme-form-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.feedback-theme-form-container h2 {
+	padding: 0 1rem;
+	color: #0e163d;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+}
+
+.feedback-theme-form_comment {
+	width: 20rem;
+	min-height: 70px;
+	border: 1px solid #d5d5d5;
+	text-indent: 6px;
+	padding: 8px;
+	margin: 5px;
+	border: 1px solid rgb(194, 194, 194);
+	background: #f4f4f4;
+	box-shadow: 0px 24px 32px rgba(45, 44, 45, 0.04),
+		0px 16px 24px rgba(45, 44, 45, 0.04), 0px 4px 8px rgba(45, 44, 45, 0.04),
+		0px 0px 1px rgba(45, 44, 45, 0.04);
+	border-radius: 50px;
+	resize: none;
+	@media screen and (max-width: 374px) {
+		width: 18rem;
+	}
+	@media screen and (min-width: 769px) {
+		width: 35rem;
+	}
+}
+
+.feedback-theme-form_comment::placeholder {
+	color: #2d2c2d80;
+	font-size: 16px;
+	line-height: 19px;
+	padding-left: 5px;
+}
+
+.feedback-comment-card__err-message {
+	padding: 0 10px;
+	font-size: 12px;
+	line-height: 16px;
+	color: $minorNoticeColor;
+}

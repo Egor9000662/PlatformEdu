@@ -1,0 +1,25 @@
+@import "../../../styles/vars.scss";
+
+.urgentNotice_container {
+	padding: 30px 100px;
+	@media screen and (max-width: 480px){
+		padding: 10px 30px;
+	}
+	@media screen and (min-width: 481px) and (max-width: 768px){
+		padding: 10px 50px;
+	}
+
+	.urgentNotice_header{
+
+		.urgentNotice_title{
+			text-align: center;
+			color: $whiteColor;
+		}
+	}
+
+	.urgentNotice_body{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+}

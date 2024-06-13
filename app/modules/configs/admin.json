@@ -1,0 +1,12 @@
+{
+    "TYPE": "service_account",
+    "PROJECT_ID": "eduplatform2021-87ed9",
+    "PRIVATE_KEY_ID": "75c51a01961f1799330ec1a9ac10d73fd6bc2554",
+    "PRIVATE_KEY": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC0FASJ1k/fUxu3\nYGysSQ2YeGkk0Z6b4SIbYdlkRZZJm2qcumTqlqLYYMu00ld0SqCpZSQbOJNTc+5i\nB8pC185WpRuLkvpxlhBC8ygEBVDeN5ptflKoPGItEFkMLoH7u66SVMLRUwADRrxM\nU+S0plLEhd1v9EjLLxrohWCCFqFaaToYvpYgz/qiPksuI4GzVy3exhV1A0eHiAJA\nSs0sipeSMA42f4iQPOE7E8wcdH8SDEKx+tPU9kMc8dSPoyBTltQ7c7Cge3NoSSA5\nzGIrF7CvSytQFjhRyWt+7t/xDOxWCMh20kHC0loWgaE/RJegbLdYKcY/oKTGg40Q\nAT3MjTTpAgMBAAECggEADffGhq2FBQN5285i0jXuvslKOI+k3/Oaymkbgb5ZuFcR\n3NsiuZqFF50Md/e1I7an1x6FVNzdepnnCfC6P4Hkm05pFaQJK+HSButm9XGMcqwj\n8kMb5Ljy/DVaKYp698cjSkOWV+0PoXFtaMs8wHFtQUPz55DudjTZag3xwi1rXGs5\nhI+8yMfSjjHWj/De6IGVeWUlpJ12By2sMlKLELA3c8rwX9ov6ynX4vFl2uqiTBSA\nXWxs5YYH7Q1zioWRjbwaWj4rxnTK+zMN1B4y/QBXSChLwJBpS04XtwA0V+ktWTAA\nA6Qiz8ENGqddrQfVBhmayqM4UVwyYo9vvyLnSgWjvQKBgQD7we5vPs6fRmHBVUiN\nK/wKUXpgK4eRu4b6va4/cXLXggyV8fGXT4kuBoPWzwVjIpJf1kgpk94h9kegLtpJ\n1OyMI1XqyxKcBZfMfoqyQ1s5v+NMbXGa1+jkuWbsIXoTKDhhftxjXCwwh2Is/quR\n5sX0JhdRBRhD8tIwp+vbr4UHxQKBgQC3HN2OLJQhZeNxDUMj9yr2WL5Lu3NgdIPC\n6GOnFoLUQtTJZ17475nd+t+YfYHZWEOa8JMAgaabv3Irnec6/UUxRJqUkA5xxKYw\nEFi1dKfh7c2LFdEx5pnqsYI6RE6CdS+PPsI/hF0029XBwuYyMTDXjc9ysau226Ir\noA4cKcSm1QKBgCLbfRnmBlHDOvG7zynMtz7ufRUnscOZxVyeOqwKFy6DkR6JuzuK\nBaJbwJFTZJmPRdkDIEaxdIYbRVuGYS7rzjyw/8pch50WoSftNWLtNIpQaTZByQL5\ndgOFMBztnatdXEETgYw4TN4DQLKeKD8xRqNBSuUq4Ws3Cac2+M8YBEFJAoGBAJRI\nRMYQJXiSOMdg1QD39At/u8I6LulqERUx+RjiqtlWsVfTZN4zsSdIM+8Zm6A00LJU\npMYhN5kiREM74Hcth+2ov4EU0w2gEHAVnLB8okLbvrol1b0SH4wlaO7kR6tvWC8o\nxEaJWq0mZIg+2wjEOugjR116sTIn08B+IU7/J+dtAoGAWsZhRCOkglNQ/ZCZP357\nTU2rIVcIMxKTISuUkVUr0j2XI1UgZ15FYdDawIgs32d7S6frBuuLdCYjuEXtDwfS\ncexJM4RvDMQvM2IQIhz1GwdTcJSNC+oztib/X51X7IAaL553gNWgYo8mvif/W+vP\n4EvW9YD8bVAjc+/bUTC9unk=\n-----END PRIVATE KEY-----\n",
+    "CLIENT_EMAIL": "firebase-adminsdk-ulrep@eduplatform2021-87ed9.iam.gserviceaccount.com",
+    "CLIENT_ID": "108426045880516821453",
+    "AUTH_URI": "https://accounts.google.com/o/oauth2/auth",
+    "TOKEN_URI": "https://oauth2.googleapis.com/token",
+    "AUTH_PROVIDER_X509_CERT_URL": "https://www.googleapis.com/oauth2/v1/certs",
+    "CLIENT_X509_CERT_URL": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-ulrep%40eduplatform2021-87ed9.iam.gserviceaccount.com"
+}

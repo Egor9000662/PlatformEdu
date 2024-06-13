@@ -1,0 +1,425 @@
+@import '../../../styles/search&selects.scss';
+@import '../../../styles/vars.scss';
+
+.createNotice-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 1rem;
+}
+
+.createNotice-header {
+	width: 90vw;
+	max-width: 1270px;
+	padding: 20px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	&__btn {
+		position: absolute;
+		top: 20px;
+		left: 0;
+	}
+}
+
+.createNotice-title {
+	width: 100%;
+	text-align: center;
+	font-family: 'Rubik', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 19px;
+	color: $whiteColor;
+	margin: 0;
+	line-height: 81.5px;
+}
+
+.createNotice-form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.createNotice-selectContainer {
+	position: relative;
+	width: 100%;
+	z-index: 1;
+
+	@media screen and (max-width: 479px) {
+		width: 90%;
+		margin: 10px 15px;
+	}
+	@media (min-width: 480px) and (max-width: 768px) {
+		width: 90%;
+		margin: 10px 0;
+	}
+	@media (min-width: 769px) and (max-width: 1279px) {
+		width: 70%;
+		margin: 10px 0;
+	}
+	@media screen and (min-width: 1280px) {
+		width: 60%;
+		margin: 15px 0;
+	}
+}
+
+.select-container{
+	width: 100%;
+}
+
+.createNotice-select {
+	@include search-selects-mixin;
+	width: 100%;
+	// font-family: 'SF Pro Display', sans-serif;
+	font-style: normal;
+	text-align: start;
+	margin-bottom: 10px;
+	backdrop-filter: none;
+	padding-right: 40px;
+	cursor: pointer;
+	@media screen and (max-width: 768px) {
+		height: 55px;
+	}
+	@media screen and (max-width: 480px) {
+		padding-right: 40px;
+	}
+	& .ant-select-selector {
+		width: 100%;
+		@media screen and (max-width: 768px) {
+			height: 55px;
+		}
+	}
+	& .ant-select-selection-overflow {
+		border: none;
+		padding: 10px 20px;
+		overflow-y: scroll;
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+		@media screen and (max-width: 768px) {
+			height: 55px;
+		}
+	}
+	& .ant-select-selection-overflow::-webkit-scrollbar {
+		display: none;
+	}
+
+	& .ant-select-selection-item-content {
+		font-size: 18px;
+		@media screen and (max-width: 768px) {
+			font-size: 14px;
+		}
+	}
+}
+
+.createNotice-checkMark {
+	@include search-selects-icon;
+	z-index: -1;
+	@media screen and (max-width: 480px) {
+		top: 0;
+	}
+	@media (min-width: 481px) and (max-width: 768px) {
+		top: -10px;
+	}
+}
+
+.createNotice-textareaContainer {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	@media screen and (max-width: 479px) {
+		width: 90%;
+		margin: 10px 15px;
+	}
+	@media (min-width: 480px) and (max-width: 768px) {
+		width: 90%;
+		margin: 10px 0;
+	}
+	@media (min-width: 769px) and (max-width: 1279px) {
+		width: 70%;
+		margin: 10px 0;
+	}
+	@media screen and (min-width: 1280px) {
+		width: 60%;
+		margin: 15px 0;
+	}
+}
+
+.createNotice-textarea {
+	width: 100%;
+	height: 19.875rem;
+	font-family: 'Rubik', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 20px;
+	color: $whiteColor;
+	background: radial-gradient(
+		80% 80%,
+		rgba(255, 255, 255, 0),
+		rgba(176, 241, 243, 0.192)
+	);
+	border: none;
+	box-shadow: inset 4px 0px 35px 0px #92d4f17e;
+	clip-path: polygon(
+		10% 0,
+		90% 0,
+		100% 5%,
+		100% 95%,
+		90% 100%,
+		10% 100%,
+		0 95%,
+		0 5%
+	);
+	padding: 24px 32px;
+	margin: 0 14px 0 14px;
+
+	&:focus {
+		outline: none;
+	}
+
+	&::placeholder {
+		font-family: 'Rubik', sans-serif;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 17px;
+		line-height: 20px;
+		color: rgba(255, 255, 255, 0.5);
+	}
+
+	@media screen and (min-width: 769px) {
+		padding: 28px 36px;
+	}
+}
+
+.createNotice-radioGroup {
+	width: 100%;
+	@media screen and (max-width: 479px) {
+		width: 90%;
+		margin: 10px 15px;
+	}
+	@media (min-width: 480px) and (max-width: 768px) {
+		width: 90%;
+		margin: 10px 0;
+	}
+	@media (min-width: 769px) and (max-width: 1279px) {
+		width: 70%;
+		margin: 10px 0;
+	}
+	@media screen and (min-width: 1280px) {
+		width: 60%;
+		margin: 15px 0;
+	}
+}
+
+.createNotice-radioGroup div {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.createNotice-radioGroup .ant-form-item {
+	margin-bottom: 10px;
+	backdrop-filter: blur(10px);
+}
+
+.createNotice-radioOne {
+	// font-family: 'SF Pro Display', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 19px;
+	color: $whiteColor;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin: 0 0 0 14px;
+}
+
+.createNotice-radioGroup .ant-radio {
+	background: linear-gradient(
+		225deg,
+		rgba(146, 213, 241, 0.01) 0%,
+		rgba(146, 213, 241, 0.1) 100%
+	);
+	border: $inputBorder;
+	border-radius: 50%;
+	box-shadow: 0px 4px 8px rgba(146, 213, 241, 0.04),
+		0px 0px 2px rgba(146, 213, 241, 0.06),
+		0px 0px 1px rgba(146, 213, 241, 0.04);
+	backdrop-filter: blur(6px);
+	cursor: pointer;
+	margin: 16px 16px 16px 0;
+
+	@media screen and (max-width: 480px) {
+		min-width: 40px;
+		min-height: 40px;
+	}
+	@media screen and (min-width: 481px) and (max-width: 768px) {
+		min-width: 45px;
+		min-height: 45px;
+	}
+	@media screen and (min-width: 769px) and (max-width: 1279px) {
+		min-width: 50px;
+		min-height: 50px;
+	}
+	@media screen and (min-width: 1280px) {
+		min-width: 55px;
+		min-height: 55px;
+	}
+}
+
+.createNotice-radioGroup .ant-radio-inner {
+	background-color: transparent;
+	visibility: hidden;
+}
+
+.createNotice-radioGroup .ant-radio-inner::after {
+	background-color: transparent;
+	visibility: hidden;
+}
+
+.createNotice-radioGroup .ant-radio-wrapper:hover .ant-radio,
+.createNotice-radioGroup .ant-radio:hover .ant-radio-inner,
+.createNotice-radioGroup .ant-radio-input:focus + .ant-radio-inner {
+	outline: none;
+	box-shadow: none;
+	border: 1px solid #31d4b8;
+}
+
+.createNotice-radioGroup .ant-radio-checked,
+.createNotice-radioGroup .ant-radio:hover {
+	border: 1px solid #31d4b8;
+	background: linear-gradient(
+		225deg,
+		rgba(146, 213, 241, 0.01) 0%,
+		rgba(146, 213, 241, 0.1) 100%
+	);
+	box-shadow: 0px 4px 8px rgba(146, 213, 241, 0.04),
+		0px 0px 2px rgba(146, 213, 241, 0.06),
+		0px 0px 1px rgba(146, 213, 241, 0.04);
+	backdrop-filter: blur(6px);
+}
+
+.createNotice-radioGroup.ant-radio:hover::after,
+.createNotice-radioGroup .ant-radio-checked::after {
+	content: '\2714';
+	position: absolute;
+	text-align: center;
+	top: 0px;
+	color: $azureColor;
+	border: none;
+	visibility: visible;
+	animation-fill-mode: none;
+	animation: none;
+	filter: drop-shadow(0px 0px 10px $azureColor);
+
+	@media screen and (max-width: 480px) {
+		line-height: 40px;
+		font-size: 22px;
+	}
+	@media screen and (min-width: 481px) and (max-width: 768px) {
+		line-height: 45px;
+		font-size: 25px;
+	}
+	@media screen and (min-width: 769px) and (max-width: 1279px) {
+		line-height: 50px;
+		font-size: 30px;
+	}
+	@media screen and (min-width: 1280px) {
+		line-height: 55px;
+		font-size: 35px;
+	}
+}
+.createNotice-controls {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1223px;
+	width: 100vw;
+	height: 60px;
+	bottom: 2%;
+}
+
+.createNotice-btn {
+	width: 13.375rem;
+	height: 2.75rem;
+	background: $colorBlueBtn;
+	box-shadow: 0px 2px 2px rgba(10, 89, 133, 0.75);
+	border-radius: 50px;
+	border: $borderBtn;
+	font-family: 'Rubik', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	color: $whiteColor;
+
+	&:hover {
+		cursor: pointer;
+		background: $colorBlueBtnHover;
+	}
+}
+
+@media screen and (min-width: 480px) {
+	.createNotice-radioOne,
+/* 	.createNotice-textarea,
+ */	.createNotice-textarea::placeholder {
+		font-size: 1.1rem;
+	}
+	.createNotice-controls {
+		max-width: 300px;
+	}
+}
+
+@media screen and (min-width: 1279px) {
+	.createNotice-form {
+		max-width: 1223px;
+	}
+
+	.createNotice-selectContainer,
+	.createNotice-radioGroup,
+	.createNotice-textareaContainer {
+		margin-left: 26px;
+	}
+
+	.createNotice-select,
+	.createNotice-radioGroup,
+	.createNotice-textareaContainer {
+		max-width: 1221px;
+	}
+
+	.createNotice-btn {
+		font-size: 25px;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 769px) {
+	.createNotice-btn {
+		font-size: 18px;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+	.createNotice-btn {
+		font-size: 22px;
+	}
+}
+
+.createNotice-errorsOutput,
+.createNotice-successOutput {
+	margin-top: 30px;
+	font-family: 'Rubik', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 22px;
+}
+.createNotice-successOutput {
+	color: rgb(163, 255, 126);
+}
+.createNotice-errorsOutput {
+	color: rgb(255, 126, 126);
+}

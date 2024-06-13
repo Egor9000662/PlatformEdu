@@ -1,0 +1,165 @@
+@import "../../../styles/vars.scss";
+@mixin general-Modul {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.gameLevels-disabled-link {
+	pointer-events: none;
+}
+
+.gameLevels-Container {
+	@include general-Modul;
+}
+
+.gameLevels-header {
+	width: 90vw;
+	max-width: 1270px;
+	padding: 20px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.gameLevels-ThemeText {
+	width: 160px;
+	margin-bottom: 1rem;
+	font-family: "Rubik";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	color: $whiteColor;
+}
+
+.gameLevels-ThemeModul,
+.gameLevels-Body {
+	@media (min-width: 320px) {
+		width: 288px;
+	}
+
+	@media (min-width: 375px) {
+		width: 90vw;
+	}
+
+	@media (min-width: 425px) {
+		width: 365px;
+	}
+}
+
+.gameLevels-ThemeModul {
+	@include general-Modul;
+	margin-bottom: 1.5rem;
+}
+
+.gameLevels-Body a {
+	width: 160px;
+}
+
+.gameLevels-Lesson {
+	position: relative;
+	display: flex;
+	width: 100%;
+}
+
+.gameLevels-Lesson:not(:first-child) {
+	margin-top: -50px;
+}
+
+.gameLevels-Lesson:nth-child(even) {
+	justify-content: flex-end;
+}
+.gameLevels-btnMeeting {
+	width: 100px;
+	height: 45px;
+	font-size: 13px;
+	font-style: normal;
+	font-family: inherit;
+	font-weight: bold;
+	background-color: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(6px);
+	border: 1px solid $azureColor;
+	border-radius: 50px;
+	color: $whiteColor;
+}
+
+.gameLevels-btnMeeting:hover,
+.gameLevels-btnMeeting:active {
+	cursor: pointer;
+	background: $colorBlueBtn;
+}
+
+.gameLevels-dash {
+	position: absolute;
+	bottom: -10%;
+	left: 35%;
+	width: 88px;
+	height: 88px;
+}
+
+.gameLevels-Lesson:nth-child(even) .gameLevels-dash {
+	left: 40%;
+	transform: scale(-1, 1);
+}
+.gameLevels-Lesson:last-child .gameLevels-dash {
+	display: none;
+}
+
+// media queries
+
+@media screen and (min-width: 1024px) {
+.gameLevels-header,
+.gameLevels-ThemeModul {
+	display: none;
+}
+
+.gameLevels-Container {
+	flex-direction: row;
+	justify-content: flex-start;
+	width: 90%;
+	max-width: 1100px;
+
+	overflow-x: scroll;
+	scroll-behavior: smooth;
+
+	&::-webkit-scrollbar {
+		width: 0;
+		height: 0;
+	}
+}
+
+.gameLevels-Body {
+	display: flex;
+	gap: 20px;
+	max-width: 1128px;
+	height: 360px;
+	padding: 20px;
+}
+
+.gameLevels-Lesson:not(:first-child) {
+    margin-top: -0; 
+}
+
+.gameLevels-Lesson:nth-child(even) {
+	align-self: flex-start;
+}
+
+.gameLevels-Lesson:nth-child(odd) {
+	align-self: flex-end;
+}
+
+.gameLevels-Lesson:nth-child(even) .gameLevels-dash {
+	left: 70%;
+	top: 80%;
+	transform: scale(1, 1);
+}
+
+.gameLevels-Lesson:nth-child(odd) .gameLevels-dash {
+	left: 90%;
+	bottom: 30%;
+	transform: scale(-1, 1);
+}
+}

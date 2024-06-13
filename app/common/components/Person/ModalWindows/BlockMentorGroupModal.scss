@@ -1,0 +1,12 @@
+@import "../../../../styles/vars.scss";
+
+.block-button {
+	border-radius: 50px;
+	color: $whiteColor;
+	border: 3px solid $whiteColor;
+	line-height: 10px;
+	min-width: 200px;
+	height: 40px;
+	font-size: 17px;
+	margin-top: 20px;
+}

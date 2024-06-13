@@ -1,0 +1,39 @@
+@import '../../../../styles/vars.scss';
+
+.miniTitle {
+	color: $azureColor;
+}
+
+.error-signup {
+    text-align: center;
+    color: red;
+}
+
+.bottom-question_signUp {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 19px;
+    color: white;
+    padding-top: 15px;
+}
+
+.authForm__input-password {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+.authForm__passwordInput {
+    padding-right: 60px;
+}
+
+.authForm__password-icon {
+    position: absolute;
+    cursor: pointer;
+    width: 60px;
+    top: 5%;
+    right: 5px;
+    z-index: 2;
+}

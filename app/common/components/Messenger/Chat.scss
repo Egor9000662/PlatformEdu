@@ -1,0 +1,63 @@
+@import '../../../styles/vars.scss';
+
+.mesengerUserContainer {
+	cursor: pointer;
+	width: 100%;
+}
+
+.chat-container {
+	display: flex;
+	align-items: center;
+	margin: 10px 0;
+	padding: 5px 10px;
+	gap: 2px;
+}
+
+.chat-container--active {
+	border: $inputBorder;
+	border-radius: 25px;
+	background-color: #92d4f177;
+}
+
+.chat-info {
+	color: $whiteColor;
+}
+
+.chat-info h2 {
+	font-weight: 600px;
+	color: $whiteColor;
+		/* To wrap the line */
+		-ms-hyphens: auto;
+		-webkit-hyphens: auto;
+		hyphens: auto;
+		word-break: break-word;
+		white-space: pre-wrap;
+}
+
+.chat-avatar {
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	object-fit: cover;
+	margin-right: 10px;
+	object-fit: cover;
+
+	@media screen and (max-width: 530px) {
+		width: 60px;
+		height: 60px;
+	}
+}
+
+.chat-unseenCounter {
+	margin-left: auto;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.priorityStudent h2,
+.priorityStudent p {
+	color: $minorNoticeColor;
+}
+.priorityLostStudent h2 {
+	color: $lightRedColor;
+}

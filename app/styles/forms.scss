@@ -1,0 +1,137 @@
+@import './vars.scss';
+
+.authFormWrapper {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.authForm {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 23rem;
+	padding: 24px 37px;
+	border: 0 0 10px rgba(0, 0, 0, 0.5);
+	background: radial-gradient(
+		80% 80%,
+		rgba(255, 255, 255, 0),
+		rgba(176, 224, 243, 0.425)
+	);
+	box-shadow: inset 4px 0px 35px 0px #92d4f17e;
+	clip-path: polygon(
+		7% 0,
+		93% 0,
+		100% 7%,
+		100% 93%,
+		93% 100%,
+		7% 100%,
+		0 93%,
+		0 7%
+	);
+	@media (max-width: 374px) {
+		padding: 17px 30px;
+		width: 310px;
+	}
+}
+
+.registerForm__admin {
+	display: flex;
+	flex-direction: column;
+}
+
+.password-questions {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.authForm__controls {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin: 1rem auto;
+}
+
+.authForm__title {
+	margin-top: 0;
+	color: $whiteColor;
+	font-weight: 600;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.authForm__input {
+	padding: 10px;
+	margin-bottom: 16px;
+	width: 100%;
+	height: 3rem;
+	border-radius: 25px;
+	color: $whiteColor;
+	background-color: transparent;
+	border: 1px solid $azureColor;
+}
+
+.authForm__input::placeholder {
+	color: $whiteColor;
+}
+
+.authForm__input:focus {
+	outline: $inputOutline;
+}
+
+.button {
+	height: 2.75rem;
+	font-size: 16px;
+	font-weight: 600;
+	color: $whiteColor;
+	border-radius: 50px;
+	margin: 1rem auto;
+	width: 100%;
+	border: $borderBtn;
+}
+
+.authForm__button {
+	background: $colorBlueBtn;
+	margin-bottom: 40px;
+}
+
+.signup-button {
+	background: $colorGreenBtn;
+}
+
+.signup-link {
+	text-decoration: none;
+	color: $whiteColor;
+}
+
+.signup-button[disabled],
+.authForm__button[disabled]{
+	background: $colorGreyBtn;
+	cursor: default;
+}
+
+.bottom-question__text,
+.congratulations-text {
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.authForm__text {
+	color: $whiteColor;
+}
+.authForm__error-message {
+	max-width: 265px;
+	text-align: center;
+	font-size: 13px;
+	color: #ffef77;
+}
+
+.forgot-link {
+	text-align: center;
+}
+.forgot-link:hover {
+	color: $whiteColor;
+}

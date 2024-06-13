@@ -1,0 +1,49 @@
+@import "../../../styles/vars.scss";
+
+.profileIcon {
+	padding: 0;
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	z-index: 10;
+}
+
+.text-download {
+	display: none;
+	position: absolute;
+	font-size: 15px;
+	font-weight: 500;
+	text-align: center;
+	justify-items: center;
+	line-height: 10em;
+	color: #fff;
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	overflow: auto;
+	animation: fade 0.5s linear forwards;
+}
+
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.profileIcon:hover {
+	.text-download {
+		display: block;
+		overflow: auto;
+		background: rgba(0, 0, 0, 0.7);
+	}
+}
+
+.profileIcon img {
+	width: 165px;
+	height: 165px;
+	border-radius: 50%;
+	object-fit: cover;
+}

@@ -1,0 +1,46 @@
+@import "../../../styles/vars.scss";
+@import "../../../styles/modal.scss";
+.om-header {
+	text-align: center;
+	font-weight: 600;
+}
+
+.om-list {
+	padding: 10px 0;
+}
+
+.om-list ul {
+	margin-bottom: 5px;
+}
+
+.overdue-modal,
+.om-header {
+	color: $whiteColor;
+}
+
+.overdue-modal {
+	@include modal-mixin;
+}
+
+
+
+.overdue-modal .ant-modal-content {
+	margin: 8px;
+	background: linear-gradient(
+		228.3deg,
+		rgba(251, 84, 87, 0.4) -33.36%,
+		rgba(251, 84, 87, 0.5) 72.4%
+	);
+	box-shadow: 0px 4px 8px rgba(251, 84, 87, 0.4),
+		0px 0px 2px rgba(251, 84, 86, 0.5), 0px 0px 1px rgba(251, 84, 86, 0.4);
+	clip-path: polygon(
+		7% 0,
+		93% 0,
+		100% 7%,
+		100% 93%,
+		93% 100%,
+		7% 100%,
+		0 93%,
+		0 7%
+	);
+}

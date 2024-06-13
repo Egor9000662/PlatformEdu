@@ -1,0 +1,77 @@
+@import "../../../styles/vars.scss";
+
+.card {
+	position: relative;
+	width: 18rem;
+	min-height: 14rem;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	height: fit-content;
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: inset 4px 0px 35px 0px #92d4f17e;
+	clip-path: polygon(
+		10% 0,
+		90% 0,
+		100% 15%,
+		100% 85%,
+		90% 100%,
+		10% 100%,
+		0 85%,
+		0 15%
+	);
+}
+
+.overdue {
+	background-color: rgba(236, 65, 65, 0.377);
+	box-shadow: inset 4px 0px 35px 0px #ee2b2b7e;
+}
+
+.lesson-ribbon {
+	top: 42px;
+}
+
+@media screen and (min-width: 799px) {
+	.card {
+		width: 35vw;
+	}
+}
+
+.c-card__header-wrap {
+	width: 100%;
+	min-height: fit-content;
+	margin: 15px 0px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+.c-card__header {
+	margin-top: 20px;
+	color: $whiteColor;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.card__description-week {
+	color: $whiteColor;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	margin: 10% 10%;
+}
+
+.card__children {
+	margin: 10% auto;
+}
+
+.overdue-children {
+	display: none;
+}
+
+.card__overdue-block {
+	margin: 10% auto;
+	text-align: center;
+	color: $whiteColor;
+}

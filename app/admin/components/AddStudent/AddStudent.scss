@@ -1,0 +1,70 @@
+@import "../../../styles/vars.scss";
+.form-addStudent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+	width: 280px;
+	max-height: 530px;
+	padding: 5px;
+	border: 0 0 10px rgba(0, 0, 0, 0.5);
+	border-radius: 30px;
+}
+
+.addStudent-btn {
+	width: 13.375rem;
+	height: 2.75rem;
+	margin-top: 20px;
+	font-size: 16px;
+	font-weight: 600;
+	color: $whiteColor;
+	background: $colorBlueBtn;
+	border-radius: 50px;
+	border: 3px solid $whiteColor;
+}
+
+.addStudent-btn:hover {
+	cursor: pointer;
+	background: $colorBlueBtnHover;
+}
+
+.addStudentButton-modal {
+	margin: 1rem auto 2rem auto;
+}
+
+.addStudent-select option {
+	background-color: $optionBackground;
+}
+
+.addStudent-input {
+	padding: 16px;
+	margin-bottom: 16px;
+	width: 16.75rem;
+	height: 3.125rem;
+	border-radius: 50px;
+	color: $whiteColor;
+	background-color: transparent;
+	border: 1px solid $azureColor;
+}
+
+.addStudent-select {
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+.addStudent-input:focus,
+.addStudent-select:focus {
+	outline: $inputOutline;
+}
+
+.addStudent-selectContainer {
+	position: relative;
+	width: 16.8rem;
+}
+
+.createGroup-checkMark {
+	position: absolute;
+	top: 9px;
+	right: 5%;
+	z-index: -1;
+}

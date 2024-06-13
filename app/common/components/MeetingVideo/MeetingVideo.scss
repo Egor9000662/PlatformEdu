@@ -1,0 +1,211 @@
+@import '../../../styles/vars.scss';
+.meeting-videoContainer {
+	width: 342px;
+	margin-bottom: 20px;
+}
+
+.videoTitle {
+	color: $whiteColor;
+	font-family: 'Rubik', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.meeting-videoDesc {
+	display: none;
+}
+
+.meeting-videoNavbar {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+
+.meeting-videoHeader {
+	display: flex;
+	gap: 2%;
+	align-items: center;
+}
+
+.iconDelete {
+	width: 1.5rem;
+	height: 1.5rem;
+	filter: hue-rotate(200deg) brightness(200%);
+}
+
+.materials {
+	background: rgb(80, 119, 162);
+	box-shadow: 0px 24px 32px rgba(255, 255, 255, 0.04),
+		0px 16px 24px rgba(255, 255, 255, 0.04),
+		0px 4px 8px rgba(255, 255, 255, 0.04),
+		0px 0px 1px rgba(255, 255, 255, 0.04);
+	border-radius: 10px;
+	margin-top: 16px;
+	border: 1px solid $azureColor;
+}
+
+.materialTitle {
+	font-family: 'Rubik', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: left;
+	color: $whiteColor;
+	margin: 24px 0px 16px 8px;
+}
+
+.materialLink {
+	display: flex;
+	margin-left: 8px;
+	align-items: center;
+	margin-bottom: 8px;
+	text-decoration: underline;
+}
+
+.materialIcon {
+	color: $whiteColor;
+	font-size: 12px;
+	justify-content: center;
+	align-items: center;
+}
+
+.materialText {
+	font-family: 'Rubik', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 19px;
+	font-weight: 400;
+	color: $whiteColor;
+	margin-left: 8px;
+}
+
+.materialText:hover {
+	text-decoration: none;
+	color: $whiteColor;
+}
+
+.video__wrapper {
+	position: relative;
+	padding-top: 56.25%;
+}
+.reactPlayer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+	.meeting-videoContainer {
+		width: 60vw;
+	}
+
+	.videoTitle {
+		font-size: 26px;
+		margin-top: 26px;
+		margin-bottom: 26px;
+	}
+	.video__wrapper {
+		position: relative;
+		padding-top: 56.25%;
+	}
+
+	.materialTitle {
+		font-size: 22px;
+	}
+	.materialText {
+		font-size: 14px;
+		margin-bottom: 4px;
+	}
+}
+
+@media (min-width: 769px) {
+	.meeting-videoNavbar {
+		margin-bottom: 10px;
+	}
+	
+	.videoTitle {
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		font-size: 26px;
+		margin-top: 26px;
+		margin-bottom: 26px;
+		color: $blueColor;
+		grid-column-start: 1;
+	}
+
+	.videoDate,
+	.videoSpeaker  {
+		color: #07b9f1;
+	}
+
+	.meeting-videoDesc {
+	display: flex;
+	gap: 30%;
+	margin-bottom: 10px;
+	}
+
+	.video__block {
+		grid-column-start: 2;
+		grid-row: span 2;
+	}
+
+	.video__wrapper {
+		position: relative;
+		padding-top: 56.25%;
+	}
+
+	.materials {
+		background-color: transparent;
+		border: none;
+		grid-column-start: 1;
+	}
+
+	.materialTitle {
+		font-size: 28px;
+		color: $blueColor;
+	}
+	.materialText {
+		font-size: 20px;
+		margin-bottom: 6px;
+		color: #07b9f1;
+	}
+
+	.materialLink {
+		text-decoration: none;
+	}
+
+	.materialText:hover {
+		color:  $blueColor;
+	}
+
+	.materialIcon {
+		color: #07b9f1;
+		font-size: 18px;
+	}
+
+	.meeting-videoContainer {
+		background-color: $whiteColor;
+		width: 90%;
+		padding: 20px;
+		border-radius: 20px;
+		display: grid;
+		grid-gap: 24px;
+		grid-template-columns: 50%;	
+		grid-auto-flow: dense;  
+	}
+
+	@media (min-width: 900px) {
+
+			.materialText {
+				margin-bottom: 6px;
+			}
+	}
+}

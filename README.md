@@ -1,8 +1,11 @@
 <h1 align="center" >EduPlatform</h1>
 <p align="center">
-   <img src="https://img.shields.io/badge/React-18.0-brightgreen" alt="React">
+   <img src="https://img.shields.io/badge/React-17.01-brightgreen" alt="React">
    <img src="https://img.shields.io/badge/%C2%A0%C2%A0SAAS-cd6799" alt="Sass">
    <img src="https://img.shields.io/badge/%C2%A0%C2%A0Apollo-014d9e" alt="GraphQl">
+	<img src="https://img.shields.io/badge/StoryBook-brightgreen" alt="StoryBook">
+	<img src="https://img.shields.io/badge/Webpack-579bc8" alt="Webpack">
+	<img src="https://img.shields.io/badge/Ant%20Design-5.0%20-red" alt="antd">
 </p>
 
 ## About
